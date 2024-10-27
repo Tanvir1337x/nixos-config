@@ -944,9 +944,9 @@ in {
       # End of Tumbler Thumbnailers
 
       # VPN Clients
+      protonvpn-cli_2 # CLI: ProtonVPN command-line client using OpenVPN.
       /*
       protonvpn-gui # GUI: ProtonVPN client.
-      protonvpn-cli_2 # CLI: ProtonVPN command-line client using OpenVPN.
       protonvpn-cli # CLI: ProtonVPN command-line client.
       */
       # End of VPN Clients
