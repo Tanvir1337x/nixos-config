@@ -28,7 +28,7 @@
     packages = with pkgs; [
       # Noto Fonts Family for wide language support
       noto-fonts
-      noto-fonts-cjk
+      noto-fonts-cjk-sans
       noto-fonts-emoji
 
       # Fira Code for programming with ligatures
