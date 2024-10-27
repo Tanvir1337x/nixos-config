@@ -1,5 +1,5 @@
 # Nix-Specific Tweaks Configuration
-{ ...}: {
+_: {
   system.autoUpgrade = {
     enable = false;
     channel = "nixos";
