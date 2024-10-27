@@ -19,7 +19,7 @@
   # Enable flakes
   # <https://nix-community.github.io/home-manager/index.html#sec-flakes-prerequisites>
   nix = {
-    package = pkgs.nixFlakes;
+    # package = pkgs.nixFlakes; # 'nixFlakes' has been renamed to/replaced by 'nixVersions.stable'
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
