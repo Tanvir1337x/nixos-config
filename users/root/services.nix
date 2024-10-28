@@ -22,6 +22,42 @@
       };
     };
 
+    # Replaced by home-manager activitywatch service
+    /*
+    activitywatch = {
+      description = "Start ActivityWatch";
+      wantedBy = ["graphical-session.target"];
+      serviceConfig = {
+        Type = "simple";
+        ExecStart = "${pkgs.aw-server-rust}/bin/aw-server";
+        Restart = "on-failure";
+        RestartSec = 5;
+      };
+    };
+
+    activitywatch-afk = {
+      description = "Start ActivityWatch AFK";
+      wantedBy = ["graphical-session.target"];
+      serviceConfig = {
+        Type = "simple";
+        ExecStart = "${pkgs.activitywatch}/bin/aw-watcher-afk";
+        Restart = "on-failure";
+        RestartSec = 5;
+      };
+    };
+
+    activitywatch-window = {
+      description = "Start ActivityWatch Window";
+      wantedBy = ["graphical-session.target"];
+      serviceConfig = {
+        Type = "simple";
+        ExecStart = "${pkgs.activitywatch}/bin/aw-watcher-window";
+        Restart = "on-failure";
+        RestartSec = 5;
+      };
+    };
+    */
+
     /*
     polkit-gnome-authentication-agent-1 = {
       description = "polkit-gnome-authentication-agent-1";

@@ -44,9 +44,44 @@ in {
         lockCmd = "${pkgs.i3lock-fancy-rapid}/bin/i3lock-fancy-rapid 5 5";
       };
 
-      # TODO: Setup activitywatch
-      # <https://activitywatch.net/>
-      activitywatch.enable = false;
+      # <https://activitywatch.net>
+      activitywatch = {
+        enable = true;
+        package = pkgs.aw-server-rust;
+
+        /*
+        settings = {
+          address = "127.0.0.1";
+          port = 5600;
+        };
+
+        extraOptions = [
+          "--port"
+          "5600"
+        ];
+        */
+
+        # <https://docs.activitywatch.net/en/latest/configuration.html>
+        watchers = {
+          awatcher.package = pkgs.awatcher;
+
+          aw-watcher-afk = {
+            package = pkgs.aw-server-rust;
+            settings = {
+              poll_time = 5;
+              timeout = 180;
+            };
+          };
+
+          aw-watcher-window = {
+            package = pkgs.aw-server-rust;
+            settings = {
+              exclude_title = false;
+              poll_time = 1;
+            };
+          };
+        };
+      };
 
       # network-manager-applet.enable = true;
 
