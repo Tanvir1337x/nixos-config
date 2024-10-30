@@ -177,6 +177,10 @@ musnix https://github.com/musnix/musnix/archive/master.tar.gz
 
 - [xdg-override](https://github.com/koiuo/xdg-override) - Override `xdg-open` behavior.
 
+- [devshell](https://github.com/numtide/devshell) - Per project developer environments.
+
+Discover more on my [starred repositories page](https://github.com/stars/TanvirOnGH/lists/nix-nixos)!
+
 <h2 align="center">
   Abandon Hope, All Ye Who Enter Here
 </h2>
