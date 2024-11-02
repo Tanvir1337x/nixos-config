@@ -51,7 +51,7 @@ in {
           "file:///mnt/media2"
           "file:///mnt/media3"
           "file:///mnt/windows"
-          "file:///mnt/games"
+          # "file:///mnt/games"
         ];
 
         # <https://docs.gtk.org/gtk3/class.Settings.html#properties>
