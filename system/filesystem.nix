@@ -85,6 +85,7 @@
   */
 
   fileSystems = {
+    # NVMe SSDs
     #- List btfs subvolumes: `<su> btrfs subvolume list /`
     "/" = {
       device = "/dev/disk/by-uuid/2d9be16a-ddf3-43fc-8fd6-85d53984c447";
@@ -121,7 +122,7 @@
       options = ["subvol=home" "compress=zstd:8" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
     };
 
-    # HDDs
+    # SATA HDDs
     "/mnt/media1" = {
       device = "/dev/disk/by-uuid/2decf340-db87-4575-b46f-46c0bd0d585f";
       fsType = "btrfs";
@@ -138,6 +139,13 @@
       device = "/dev/disk/by-uuid/50324084-8cf5-40ef-b6ee-aad441063567";
       fsType = "btrfs";
       options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
+    };
+
+    # SATA SSDs
+    "/mnt/media4" = {
+      device = "/dev/disk/by-uuid/b41447d4-6b72-40e2-a815-94191c1290ea";
+      fsType = "btrfs";
+      options = ["compress=zstd:7" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
     };
 
     /*
@@ -190,10 +198,12 @@
 
     # <https://wiki.nixos.org/wiki/NTFS>
     # Windows Partition
+    /*
     "/mnt/windows" = {
-      device = "/dev/disk/by-uuid/DC28A61F28A5F8A2";
+      device = "/dev/disk/by-uuid/";
       fsType = "ntfs-3g";
       options = ["rw" "uid=1000"]; # Requires fast boot to be disabled in Windows for write support
     };
+    */
   };
 }

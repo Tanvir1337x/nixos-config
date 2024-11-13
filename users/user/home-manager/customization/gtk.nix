@@ -50,7 +50,8 @@ in {
           "file:///mnt/media1"
           "file:///mnt/media2"
           "file:///mnt/media3"
-          "file:///mnt/windows"
+          "file:///mnt/media4"
+          # "file:///mnt/windows"
           # "file:///mnt/games"
         ];
 
