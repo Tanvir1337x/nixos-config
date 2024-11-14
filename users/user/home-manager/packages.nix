@@ -816,8 +816,8 @@ in {
       # End of Font Management
 
       # Screenshot Tools
-      flameshot # GUI: Feature-rich screenshot tool.
       /*
+      flameshot # GUI: Feature-rich screenshot tool.
       scrot # CLI: Command-line screenshot utility.
       maim # CLI: Command-line screenshot utility.
       shotgun # CLI: Minimal X screenshot utility.
@@ -974,8 +974,8 @@ in {
       # End of Tumbler Thumbnailers
 
       # VPN Clients
-      protonvpn-cli_2 # CLI: ProtonVPN command-line client using OpenVPN.
       /*
+      protonvpn-cli_2 # CLI: ProtonVPN command-line client using OpenVPN.
       protonvpn-gui # GUI: ProtonVPN client.
       protonvpn-cli # CLI: ProtonVPN command-line client.
       */
