@@ -408,13 +408,13 @@ in {
       # End of Torrent Clients and Tools
 
       # YouTube/Spotify Downloaders
-      spotdl # CLI: Spotify downloader.
       /*
       yt-dlp # CLI: Fork of youtube-dl with additional features.
       tartube-yt-dlp # GUI: GUI frontend for youtube-dl and yt-dlp.
       youtube-dl # CLI: Tool to download videos from YouTube and other sites (unmaintained).
       yt-dlg # GUI: Cross-platform GUI for youtube-dl.
       ytmdl # CLI: CLI tool to download music from YouTube.
+      spotdl # CLI: Spotify downloader.
       */
       # End of YouTube/Spotify Downloaders
 
