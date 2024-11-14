@@ -261,7 +261,9 @@ in {
 
       # P2P File Sharing
       #- Music
+      /*
       nicotine-plus # GUI: Modern and maintained graphical client for the SoulSeek peer-to-peer system.
+      */
       # End of P2P File Sharing
 
       # Email Clients
@@ -586,7 +588,7 @@ in {
       mate.engrampa # GUI: Archive manager for MATE.
       lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
       xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
-      xar # CLI: Extensible archiver.
+      # xar # CLI: Extensible archiver.
       # End of Compression and Archiving Tools
 
       # Document Viewers
