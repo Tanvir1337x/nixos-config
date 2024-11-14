@@ -256,11 +256,13 @@ in {
 
         download = "${config.home.homeDirectory}/downloads";
 
-        music = "${config.home.homeDirectory}/media/musics";
+        # music = "${config.home.homeDirectory}/media/musics";
         pictures = "${config.home.homeDirectory}/media/pictures";
-        videos = "${config.home.homeDirectory}/media/videos";
+        # videos = "${config.home.homeDirectory}/media/videos";
 
         # Don't need these
+        music = null;
+        videos = null;
         desktop = null;
         documents = null;
         publicShare = null;
