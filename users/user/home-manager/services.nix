@@ -30,6 +30,26 @@ in {
         };
       };
 
+      flameshot = {
+        enable = true;
+        package = pkgs.flameshot;
+        settings = {
+          General = {
+            allowMultipleGuiInstances = true;
+            autoCloseIdleDaemon = true;
+            contrastOpacity = 191;
+            drawColor = "#00e9ff";
+            drawThickness = 1;
+            saveAfterCopy = true;
+            savePath = "/home/user/media/pictures/screenshots";
+            showMagnifier = true;
+            uiColor = "#c38f8f";
+            uploadHistoryMax = 100;
+            userColors = "picker, #00ff00, #000000, #ff2e00, #ff0069, #ff00aa, #a400ff, #0d00ff, #00e9ff, #00ffa5, #75baff";
+          };
+        };
+      };
+
       easyeffects = {
         enable = false;
         package = pkgs.easyeffects;
