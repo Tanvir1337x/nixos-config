@@ -999,7 +999,19 @@ in {
       */
       # End of Miscellaneous Tools and Applications
 
+      # Libraries
+      #- <https://wiki.nixos.org/wiki/FAQ/I_installed_a_library_but_my_compiler_is_not_finding_it._Why%3F>
+      #- <https://discourse.nixos.org/t/how-to-install-openssl-to-compile-against/1249>
+      /*
+      openssl # Lib+CLI: Cryptographic library and tools.
+      */
+      # End of Libraries
+
       # Essential System Utilities
+      nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
+      nvitop # CLI: NVIDIA GPU process viewer.
+      i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
+      /*
       resources # GUI: System resource monitor.
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
       # gnome-usage # GUI: System resource usage viewer.
@@ -1009,20 +1021,15 @@ in {
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
       # xsettingsd # CLI: Provides settings to X11 applications.
       # xfce.xfce4-taskmanager # GUI: XFCE task manager.
-      nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
-      nvitop # CLI: NVIDIA GPU process viewer.
-      i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
       # tree # CLI: Displays directory structure as a tree.
       # smartmontools # CLI: Hard drive health monitoring tools.
       # nvme-cli # CLI: NVM-Express user space tools.
       # lm_sensors # CLI: Hardware sensor reading tools.
       # linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
-      #- <https://wiki.nixos.org/wiki/FAQ/I_installed_a_library_but_my_compiler_is_not_finding_it._Why%3F>
-      #- <https://discourse.nixos.org/t/how-to-install-openssl-to-compile-against/1249>
-      # openssl # Lib+CLI: Cryptographic library and tools.
+      */
       #- jq - JSON Processor
-      # jq # CLI: Command-line JSON processor.
       /*
+      jq # CLI: Command-line JSON processor.
       jqp # CLI: TUI playground for jq.
       ijq # CLI: Interactive wrapper for jq.
       */
@@ -1104,7 +1111,9 @@ in {
       # End of Firewall
 
       # Network Diagnostics
-      # ooniprobe-cli # CLI: Network interference probe.
+      /*
+      ooniprobe-cli # CLI: Network interference probe.
+      */
       # End of Network Diagnostics
 
       # Gaming and Windows Compatibility
@@ -1120,7 +1129,7 @@ in {
       wine-wayland # CLI: Wine with experimental Wayland support.
       wine-staging # CLI: Wine with staging patches.
       winetricks # GUI: Installs DLLs and components for Wine.
-      #bottles # GUI: Wine prefix manager.
+      bottles # GUI: Wine prefix manager.
       #- Proton
       protontricks # CLI: Runs Winetricks commands for Proton games.
       protonup-qt # GUI: Manages Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris.
