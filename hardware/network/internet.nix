@@ -39,6 +39,9 @@ _: {
     extraHosts = ''
       127.0.0.1 searxng.local
       ::11 searxng.local
+
+      127.0.0.1 activitywatch.local
+      ::11 activitywatch.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
