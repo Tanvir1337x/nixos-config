@@ -180,6 +180,8 @@
           bind_address = "127.0.0.1";
           secret_key = "ultrasecretkeylol";
           base_url = "http://searxng.local";
+          http_protocol_version = "1.1"; # 1.0 and 1.1 are supported
+          method = "GET"; # GET is generally faster and more efficient due to caching and simpler processing
           image_proxy = true;
           default_locale = "en";
           limiter = false;
