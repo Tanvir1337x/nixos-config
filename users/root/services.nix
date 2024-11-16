@@ -221,6 +221,10 @@
           default_theme = "simple";
           theme_args.simple_style = "dark";
         };
+
+        redis = {
+          url = false;
+        };
       };
 
       redisCreateLocally = false; # Disable as I don't need rate limiter and bot protection of SearXNG
