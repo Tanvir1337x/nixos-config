@@ -117,6 +117,23 @@
       lidSwitch = "suspend-then-hibernate";
     };
 
+    nginx = {
+      enable = true;
+      virtualHosts = {
+        "searxng.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 80;
+            }
+          ];
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:9999";
+          };
+        };
+      };
+    };
+
     #- <https://wiki.nixos.org/wiki/SearXNG>
     searx = {
       enable = true;
