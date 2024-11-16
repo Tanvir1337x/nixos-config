@@ -36,6 +36,11 @@ _: {
       "94.140.15.15" # AdGuard Secondary
     ];
 
+    extraHosts = ''
+      127.0.0.1 searxng.local
+      ::11 searxng.local
+    '';
+
     # <https://wiki.nixos.org/wiki/WireGuard>
     wireguard.enable = false;
 
