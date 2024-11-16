@@ -184,7 +184,6 @@
           default_locale = "en";
           limiter = false;
           public_instance = false;
-          # default_theme = "oscar";
         };
 
         outgoing = {
@@ -206,6 +205,19 @@
           contact_url = false;
           privacypolicy_url = false;
           enable_metrics = false;
+        };
+
+        ui = {
+          default_locale = "en";
+          static_use_hash = true;
+          query_in_title = true;
+          infinite_scroll = true;
+          center_alignment = true;
+          results_on_new_tab = true;
+          search_on_category_select = true;
+          hotkeys = "default";
+          default_theme = "simple";
+          theme_args.simple_style = "dark";
         };
       };
 
