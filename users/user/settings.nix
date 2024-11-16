@@ -28,6 +28,7 @@
         "kvm"
         "libvirtd"
         "adbusers"
+        "aria2"
         # "nginx"
         # "dialout"
         # "boinc"
