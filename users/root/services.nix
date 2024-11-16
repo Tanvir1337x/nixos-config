@@ -227,6 +227,16 @@
         redis = {
           url = false;
         };
+
+        enabled_plugins = [
+          "Basic Calculator"
+          "Hash plugin"
+          "Tor check plugin"
+          "Open Access DOI rewrite"
+          "Hostnames plugin"
+          "Unit converter plugin"
+          "Tracker URL remover"
+        ];
       };
 
       redisCreateLocally = false; # Disable as I don't need rate limiter and bot protection of SearXNG
