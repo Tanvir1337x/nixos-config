@@ -119,6 +119,12 @@
 
     nginx = {
       enable = true;
+      recommendedOptimisation = true;
+      recommendedTlsSettings = true;
+      recommendedZstdSettings = true;
+      recommendedGzipSettings = true;
+      # recommendedProxySettings = true;
+      recommendedBrotliSettings = true;
       virtualHosts = {
         # SearXNG Instance
         "searxng.local" = {
@@ -222,14 +228,15 @@
     # WebUI (default): <http://localhost:6800>
     aria2 = {
       enable = false;
-      openPorts = true;
-      rpcSecretFile = "/run/secrets/aria2-rpc-token.txt";
+      openPorts = false;
+      # Irrelevant, we are protected by HTTP authentication
+      rpcSecretFile = pkgs.writeText "secret" "aria2rpc";
 
       settings = {
-        # dir = "/aria2/downloads";
         enable-rpc = true;
         rpc-listen-port = 6800;
-        # listen-port (from = 6881; to = 6999;)
+        dir = "/home/user/downloads/aria2";
+        listen-port = []; # UDP listening port range used by DHT(IPv4, IPv6) and UDP tracker
       };
     };
 
