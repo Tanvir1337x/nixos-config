@@ -1,5 +1,9 @@
 # Services Configuration
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   # For programs like gparted (that requires root permission) to work
   # <https://wiki.nixos.org/wiki/Polkit>
   security.polkit.enable = true;
@@ -190,6 +194,7 @@
           public_instance = false;
         };
 
+        # Outgoing requests
         outgoing = {
           request_timeout = 3.0; # Timeout in seconds for requests
           max_request_timeout = 5.8; # Maximum timeout in seconds for requests
@@ -237,6 +242,294 @@
           "Unit converter plugin"
           "Tracker URL remover"
         ];
+
+        search = {
+          safe_search = 0; # 0: None, 1: Moderate, 2: Strict
+          autocomplete = "google";
+          favicon_resolver = "google"; # Leaving it blank turns it off
+          autocomplete_min = 2;
+          default_lang = "all";
+          max_page = 0; # Unlimited number of pages
+          ban_time_on_fail = 6.0; # in seconds
+          max_ban_time_on_fail = 25.0; # in seconds
+          formats = [
+            "html"
+            "csv"
+            "json"
+            "rss"
+          ];
+        };
+
+        # Search engines
+        # 1: Standard weight
+        # Weight > 1: Will give more importance to the search engine
+        # Weight < 1: Will give less importance to the search engine
+        engines = lib.mapAttrsToList (name: value: {inherit name;} // value) {
+          # General
+          #- Translate
+          "dictzone".disabled = true;
+          "libretranslate".disabled = true;
+          "lingva".disabled = true;
+          "mozhi".disabled = true;
+          "mymemory translated".disabled = true;
+          #- Web
+          "bing".disabled = true;
+          "brave".disabled = true;
+          "duckduckgo".disabled = true;
+          "google".disabled = true;
+          "google".weight = 10.0;
+          "mojeek".disabled = true;
+          "presearch".disabled = true;
+          "presearch videos".disabled = true;
+          "qwant".disabled = true;
+          "startpage".disabled = true;
+          "wiby".disabled = true;
+          "yahoo".disabled = true;
+          "seznam".disabled = true;
+          "goo".disabled = true;
+          "naver".disabled = true;
+          #- Wikimedia
+          "wikibooks".disabled = true;
+          "wikiquote".disabled = true;
+          "wikisource".disabled = true;
+          "wikispecies".disabled = true;
+          "wikiversity".disabled = true;
+          "wikivoyage".disabled = true;
+          #- Without further subgrouping
+          "ask".disabled = true;
+          "cloudflareai".disabled = true;
+          "crowdview".disabled = true;
+          "curlie".disabled = true;
+          "currency".disabled = true;
+          "ddg definitions".disabled = true;
+          "encyclosearch".disabled = true;
+          "mwmbl".disabled = true;
+          "right dao".disabled = true;
+          "searchmysite".disabled = true;
+          "stract".disabled = true;
+          "tineye".disabled = true;
+          "wikidata".disabled = true;
+          "wikipedia".disabled = true;
+          "wolframalpha".disabled = true;
+          "yacy".disabled = true;
+          "yep".disabled = true;
+          "bpb".disabled = true;
+          "tagesschau".disabled = true;
+          "wikimini".disabled = true;
+
+          # Images
+          #- Web
+          "bing images".disabled = true;
+          "brave.images".disabled = true;
+          "duckduckgo images".disabled = true;
+          "google images".disabled = true;
+          "mojeek images".disabled = true;
+          "presearch images".disabled = true;
+          "qwant images".disabled = true;
+          #- Without further subgrouping
+          "1x".disabled = true;
+          "artic".disabled = true;
+          "deviantart".disabled = true;
+          "findthatmeme".disabled = true;
+          "flickr".disabled = true;
+          "frinkiac".disabled = true;
+          "imgur".disabled = true;
+          "library of congress".disabled = true;
+          "material icons".disabled = true;
+          "openverse".disabled = true;
+          "pinterest".disabled = true;
+          "svgrepo".disabled = true;
+          "unsplash".disabled = true;
+          "wallhaven".disabled = true;
+          "wikicommons.images".disabled = true;
+          "yacy images".disabled = true;
+          "yep images".disabled = true;
+          "seekr images".disabled = true;
+
+          # Videos
+          #- Web
+          "bing videos".disabled = true;
+          "brave.videos".disabled = true;
+          "duckduckgo videos".disabled = true;
+          "google videos".disabled = true;
+          "qwant videos".disabled = true;
+          #- Without further subgrouping
+          "bilibili".disabled = true;
+          "dailymotion".disabled = true;
+          "google play movies".disabled = true;
+          "invidious".disabled = true;
+          "livespace".disabled = true;
+          "media.ccc.de".disabled = true;
+          "odysee".disabled = true;
+          "peertube".disabled = true;
+          "piped".disabled = true;
+          "rumble".disabled = true;
+          "sepiasearch".disabled = true;
+          "vimeo".disabled = true;
+          "wikicommons.videos".disabled = true;
+          "youtube".disabled = true;
+          "mediathekviewweb".disabled = true;
+          "seekr videos".disabled = true;
+          "ina".disabled = true;
+
+          # News
+          #- Web
+          "duckduckgo news".disabled = true;
+          "mojeek news".disabled = true;
+          "presearch news".disabled = true;
+          #- Wikimedia
+          "wikinews".disabled = true;
+          #- Without further subgrouping
+          "bing news".disabled = true;
+          "brave.news".disabled = true;
+          "google news".disabled = true;
+          "qwant news".disabled = true;
+          "yahoo news".disabled = true;
+          "yep news".disabled = true;
+          # "tagesschau".disabled = true;
+          "seekr news".disabled = true;
+
+          # Map
+          "apple maps".disabled = true;
+          "openstreetmap".disabled = true;
+          "photon".disabled = true;
+
+          # Music
+          #- Lyrics
+          "genius".disabled = true;
+          #- Radio
+          "radio browser".disabled = true;
+          #- Without further subgrouping
+          "bandcamp".disabled = true;
+          "deezer".disabled = true;
+          # "invidious".disabled = true;
+          "mixcloud".disabled = true;
+          "piped.music".disabled = true;
+          "soundcloud".disabled = true;
+          "wikicommons.audio".disabled = true;
+          # "youtube".disabled = true;
+
+          # IT
+          #- Packages
+          "alpine linux packages".disabled = true;
+          "crates.io".disabled = true;
+          "docker hub".disabled = true;
+          "hex".disabled = true;
+          "hoogle".disabled = true;
+          "lib.rs".disabled = true;
+          "metacpan".disabled = true;
+          "npm".disabled = true;
+          "packagist".disabled = true;
+          "pkg.go.dev".disabled = true;
+          "pub.dev".disabled = true;
+          "pypi".disabled = true;
+          "rubygems".disabled = true;
+          "voidlinux".disabled = true;
+          #- Q&A
+          "askubuntu".disabled = true;
+          "caddy.community".disabled = true;
+          "discuss.python".disabled = true;
+          "pi-hole.community".disabled = true;
+          "stackoverflow".disabled = true;
+          "superuser".disabled = true;
+          #- Repos
+          "bitbucket".disabled = true;
+          "codeberg".disabled = true;
+          "gitea.com".disabled = true;
+          "github".disabled = true;
+          "gitlab".disabled = true;
+          "sourcehut".disabled = true;
+          #- Software Wikis
+          "arch linux wiki".disabled = true;
+          "free software directory".disabled = true;
+          "gentoo".disabled = true;
+          #- Without further subgrouping
+          "anaconda".disabled = true;
+          "cppreference".disabled = true;
+          "habrahabr".disabled = true;
+          "hackernews".disabled = true;
+          "lobste.rs".disabled = true;
+          "mankier".disabled = true;
+          "mdn".disabled = true;
+          "searchcode code".disabled = true;
+
+          # Science
+          #- Scientific publications
+          "arxiv".disabled = true;
+          "crossref".disabled = true;
+          "google scholar".disabled = true;
+          "internetarchivescholar".disabled = true;
+          "pubmed".disabled = true;
+          "semantic scholar".disabled = true;
+          #- Wikimedia
+          # "wikispecies".disabled = true;
+          #- Without further subgrouping
+          "openairedatasets".disabled = true;
+          "openairepublications".disabled = true;
+          "pdbe".disabled = true;
+
+          # Files
+          #- Apps
+          "apk mirror".disabled = true;
+          "apple app store".disabled = true;
+          "fdroid".disabled = true;
+          "google play apps".disabled = true;
+          # Without further subgrouping
+          "1337x".disabled = true;
+          "annas archive".disabled = true;
+          "bt4g".disabled = true;
+          "btdigg".disabled = true;
+          "kickass".disabled = true;
+          "library genesis".disabled = true;
+          "nyaa".disabled = true;
+          "openrepos".disabled = true;
+          "piratebay".disabled = true;
+          "solidtorrents".disabled = true;
+          "tokyotoshokan".disabled = true;
+          "wikicommons.files".disabled = true;
+          "z-library".disabled = true;
+
+          # Social Media
+          "9gag".disabled = true;
+          "lemmy comments".disabled = true;
+          "lemmy communities".disabled = true;
+          "lemmy posts".disabled = true;
+          "lemmy users".disabled = true;
+          "mastodon hashtags".disabled = true;
+          "mastodon users".disabled = true;
+          "reddit".disabled = true;
+          "tootfinder".disabled = true;
+
+          # Other
+          #- Dictionaries
+          "etymonline".disabled = true;
+          "wiktionary".disabled = true;
+          "wordnik".disabled = true;
+          "duden".disabled = true;
+          "woxikon.de synonyme".disabled = true;
+          "jisho".disabled = true;
+          "sjp.pwn".disabled = true;
+          #- Movies
+          "imdb".disabled = true;
+          "rottentomatoes".disabled = true;
+          "tmdb".disabled = true;
+          "moviepilot".disabled = true;
+          #- Shopping
+          "geizhals".disabled = true;
+          #- Weather
+          "duckduckgo weather".disabled = true;
+          "openmeteo".disabled = true;
+          "wttr.in".disabled = true;
+          #- Without further subgrouping
+          "emojipedia".disabled = true;
+          "erowid".disabled = true;
+          "fyyd".disabled = true;
+          "goodreads".disabled = true;
+          "podcastindex".disabled = true;
+          "yummly".disabled = true;
+          "chefkoch".disabled = true;
+          "destatis".disabled = true;
+        };
       };
 
       redisCreateLocally = false; # Disable as I don't need rate limiter and bot protection of SearXNG
