@@ -117,6 +117,43 @@
       lidSwitch = "suspend-then-hibernate";
     };
 
+    #- <https://wiki.nixos.org/wiki/SearXNG>
+    searx = {
+      enable = true;
+      package = pkgs.searxng;
+      # <https://searx.github.io/searx/admin/settings.html>
+      settings = {
+        # Server settings
+        server = {
+          port = 9999;
+          bind_address = "127.0.0.1";
+          secret_key = "ultrasecretkeylol";
+          image_proxy = true;
+          default_locale = "en";
+          # default_theme = "oscar";
+        };
+
+        outgoing = {
+          request_timeout = 3.0; # Timeout in seconds for requests
+          max_request_timeout = 5.8; # Maximum timeout in seconds for requests
+        };
+
+        # Instance settings
+        general = {
+          debug = false; # Debug mode is only for development
+          instance_name = "SearXNG Instance";
+          donation_url = false;
+          contact_url = false;
+          privacypolicy_url = false;
+          enable_metrics = false;
+        };
+      };
+
+      redisCreateLocally = false; # Disable as I don't need rate limiter and bot protection of SearXNG
+      # Recommended mode for public or large instances
+      runInUwsgi = false; # Disable as it's unnecessary for LAN or local-only use
+    };
+
     teamviewer.enable = false;
     vnstat.enable = true;
     fstrim.enable = false;
