@@ -22,10 +22,10 @@ _: {
 
     nameservers = [
       # Public DNS Servers
-      "1.1.1.1" # Cloudflare Primary
-      "1.0.0.1" # Cloudflare Secondary
       "9.9.9.9" # Quad9 Primary
       "149.112.112.112" # Quad9 Secondary
+      "1.1.1.1" # Cloudflare Primary
+      "1.0.0.1" # Cloudflare Secondary
       "76.76.19.19" # Alternate DNS Primary
       "76.223.122.150" # Alternate DNS Secondary
       "8.8.8.8" # Google Primary
