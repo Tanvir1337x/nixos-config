@@ -179,8 +179,11 @@
           port = 9999;
           bind_address = "127.0.0.1";
           secret_key = "ultrasecretkeylol";
+          base_url = "http://searxng.local";
           image_proxy = true;
           default_locale = "en";
+          limiter = false;
+          public_instance = false;
           # default_theme = "oscar";
         };
 
