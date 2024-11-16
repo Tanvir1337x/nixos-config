@@ -145,6 +145,19 @@
             proxyPass = "http://127.0.0.1:5600";
           };
         };
+
+        # Jackett Instance
+        "jackett.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 80;
+            }
+          ];
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:9117";
+          };
+        };
       };
     };
 
