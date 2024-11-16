@@ -120,6 +120,7 @@
     nginx = {
       enable = true;
       virtualHosts = {
+        # SearXNG Instance
         "searxng.local" = {
           listen = [
             {
@@ -129,6 +130,19 @@
           ];
           locations."/" = {
             proxyPass = "http://127.0.0.1:9999";
+          };
+        };
+
+        # ActivityWatch Instance
+        "activitywatch.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 80;
+            }
+          ];
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:5600";
           };
         };
       };
