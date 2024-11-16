@@ -174,6 +174,8 @@
       package = pkgs.searxng;
       # <https://docs.searxng.org/admin/settings/index.html>
       settings = {
+        default_doi_resolver = "doi.org";
+
         # Server settings
         server = {
           port = 9999;
