@@ -6,7 +6,11 @@ in {
     (import "${home-manager}/nixos")
   ];
 
-  home-manager.users.user = {pkgs, ...}: {
+  home-manager.users.user = {
+    pkgs,
+    lib,
+    ...
+  }: {
     programs = {
       firefox = {
         enable = true;
@@ -145,8 +149,8 @@ in {
           embed-info-json = true;
           embed-metadata = true;
           compat-options = "no-certifi";
-          # downloader = lib.getExe pkgs.aria2;
-          # downloader-args = "aria2c:'-c -x8 -s8 -k1M'";
+          downloader = lib.getExe pkgs.aria2;
+          downloader-args = "aria2c:'-c -x8 -s8 -k1M'";
           # sponsorblock-mark = "all";
         };
 
