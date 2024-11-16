@@ -168,10 +168,11 @@
     };
 
     #- <https://wiki.nixos.org/wiki/SearXNG>
+    # <https://docs.searxng.org>
     searx = {
       enable = true;
       package = pkgs.searxng;
-      # <https://searx.github.io/searx/admin/settings.html>
+      # <https://docs.searxng.org/admin/settings/index.html>
       settings = {
         # Server settings
         server = {
