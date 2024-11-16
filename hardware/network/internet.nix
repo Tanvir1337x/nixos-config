@@ -42,6 +42,9 @@ _: {
 
       127.0.0.1 activitywatch.local
       ::11 activitywatch.local
+
+      127.0.0.1 jackett.local
+      ::11 jackett.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
