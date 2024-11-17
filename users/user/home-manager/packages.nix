@@ -590,8 +590,13 @@ in {
       # End of PipeWire Tools
 
       # Compression and Archiving Tools
-      file-roller # GUI: Archive manager from GNOME.
+      mate.engrampa # GUI: Archive manager for MATE.
+      lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
+      /*
+      libsForQt5.ark # GUI: KDE archive manager.
+      xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
       archiver # GUI: Create and extract archives, compress and decompress files.
+      file-roller # GUI: Archive manager from GNOME.
       brotli # CLI: Generic-purpose lossless compression algorithm and tool.
       lz4 # CLI: Extremely fast compression algorithm.
       zip # CLI: Compressor/archiver for ZIP files.
@@ -611,11 +616,7 @@ in {
       snzip # CLI: Snappy-based compression/decompression tool.
       crabz # CLI: Rust-based parallel compression tool like pigz.
       rar # CLI: Utility for RAR archives.
-      libsForQt5.ark # GUI: KDE archive manager.
-      mate.engrampa # GUI: Archive manager for MATE.
-      lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
-      xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
-      /*
+      libarchive-qt # GUI: A Qt based archiving solution with libarchive backend.
       xar # CLI: Extensible archiver.
       peazip # GUI: Cross-platform file and archive manager.
       */
