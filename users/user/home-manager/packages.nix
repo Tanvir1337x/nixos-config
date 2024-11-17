@@ -75,10 +75,10 @@ in {
       # End of Development Tools
 
       # Android
+      /*
       gnirehtet # CLI: Reverse tethering over adb for Android
       scrcpy # CLI: Display and control Android devices over USB or TCP/IP
       android-file-transfer # GUI: Reliable MTP client with minimalistic UI
-      /*
       agi # GUI: Android GPU Inspector by Google
       aemu # UTIL: Android emulation utilities library
       android-studio-full # GUI: Official IDE for Android development (Stable channel)
