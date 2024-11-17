@@ -69,7 +69,7 @@
     };
 
     #- Xen currently does not support EFI boot
-    # xen.enable = true;
+    xen.enable = false;
 
     # <https://wiki.nixos.org/wiki/VirtualBox>
     virtualbox = {

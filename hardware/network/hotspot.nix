@@ -10,7 +10,7 @@ _: {
       WIFI_IFACE = "wlp41s0";
       SSID = "NixOS";
       # TODO: Setup Ragenix (https://github.com/yaxitech/ragenix)
-      PASSPHRASE = "mysecret";
+      PASSPHRASE = "SECRET";
     };
   };
 }

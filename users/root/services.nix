@@ -26,6 +26,14 @@
       };
     };
 
+    /*
+    picom = {
+      after = ["display-manager.service"];
+      partOf = ["display-manager.service"];
+      wantedBy = ["display-manager.service"];
+    };
+    */
+
     # Replaced by home-manager activitywatch service
     /*
     activitywatch = {
