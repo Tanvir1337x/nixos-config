@@ -840,11 +840,11 @@ in {
 
       # Compositors
       /*
+      picom-pijulius # Daemon: Picom fork with extensive animation support.
       picom # Daemon: Compositing manager for X servers.
       fastcompmgr # Daemon: Fast compositor for X11
       neocomp # Daemon: Fork of Compton, a compositor for X11
       */
-      picom-pijulius # Daemon: Picom fork with extensive animation support.
       # End of Compositors
 
       # Notification Daemons
