@@ -90,7 +90,7 @@
     openvpn3.enable = false;
 
     atop = {
-      enable = true;
+      enable = false;
       atopgpu.enable = true;
     };
 
