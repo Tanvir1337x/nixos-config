@@ -9,7 +9,7 @@
     # Linux Containers (LXC), which provides tools for creating and managing system
     # or application containers
     lxc = {
-      enable = true;
+      enable = false;
       package = pkgs.lxc;
 
       # LXCFS is a FUSE filesystem for LXC
