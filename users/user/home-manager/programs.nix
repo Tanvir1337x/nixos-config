@@ -75,6 +75,17 @@ in {
         package = pkgs.vscode.fhs; # gui: vscode with fhs-3.0 environment (chroot)
       };
 
+      kitty = {
+        enable = true;
+        shellIntegration = {
+          # https://sw.kovidgoyal.net/kitty/shell-integration
+          mode = "no-rc"; # no-rc is always implied
+          enableBashIntegration = true;
+          enableZshIntegration = true;
+          enableFishIntegration = true;
+        };
+      };
+
       direnv = {
         enable = true;
         nix-direnv.enable = true;
@@ -301,6 +312,10 @@ in {
       };
 
       gh-dash.enable = true;
+
+      spotify-player = {
+        enable = false;
+      };
     };
   };
 }
