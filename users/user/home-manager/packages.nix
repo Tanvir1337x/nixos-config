@@ -161,8 +161,6 @@ in {
       # Command-Line Utilities
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       bat # CLI: Cat clone with syntax highlighting and Git integration.
-      # exa # CLI: Modern replacement for 'ls' written in Rust.
-      # eza # CLI: Modern, maintained replacement for 'ls'.
       grc # CLI: Generic text colorizer.
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
@@ -173,6 +171,8 @@ in {
       fzf # CLI: Command-line fuzzy finder written in Go.
       zoxide # CLI: Fast 'cd' command that learns your habits.
       /*
+      exa # CLI: Modern replacement for 'ls' written in Rust.
+      eza # CLI: Modern, maintained replacement for 'ls'.
       navi # CLI: Interactive cheatsheet tool for the command-line.
       progress # CLI: Shows the progress of coreutils programs.
       gping # CLI: Ping with a graphical representation.
@@ -503,8 +503,10 @@ in {
 
       # Media Players and Tools
       #- Video Players
-      vlc # GUI: Versatile media player.
+      /*
       mpv # CLI: Powerful media player.
+      vlc # GUI: Versatile media player.
+      */
       #- End of Video Players
       #- Image Viewers
       gthumb # GUI: Image browser and viewer for GNOME.
@@ -533,15 +535,15 @@ in {
       imagemagickBig # CLI: Suite for creating, editing, and converting images.
       #- End of Image Tools
       #- Audio Players
-      amberol # GUI: Small and simple audio player.
-      lollypop # GUI: Modern music player for GNOME.
-      rhythmbox # GUI: Music player for GNOME.
-      exaile # GUI: Music player with a simple interface.
       audacious # GUI: Lightweight and versatile audio player.
       audacious-plugins # Plugin: Plugins for Audacious.
       /*
+      amberol # GUI: Small and simple audio player.
+      lollypop # GUI: Modern music player for GNOME.
+      rhythmbox # GUI: Music player for GNOME.
       tauon # GUI: Music player with a futuristic interface.
       mpvc # CLI: MPC-like control interface for mpv.
+      exaile # GUI: Music player with a simple interface.
       */
       /*
       libsForQt5.vvave # GUI: Multi-platform media player.
@@ -606,7 +608,6 @@ in {
       unzip # CLI: Extraction utility for ZIP archives.
       p7zip # CLI: 7z archiver with additional codecs and improvements.
       plzip # CLI: Parallel lzlib-based data compressor.
-      # peazip # GUI: Cross-platform file and archive manager.
       snzip # CLI: Snappy-based compression/decompression tool.
       crabz # CLI: Rust-based parallel compression tool like pigz.
       rar # CLI: Utility for RAR archives.
@@ -614,20 +615,23 @@ in {
       mate.engrampa # GUI: Archive manager for MATE.
       lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
       xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
-      # xar # CLI: Extensible archiver.
+      /*
+      xar # CLI: Extensible archiver.
+      peazip # GUI: Cross-platform file and archive manager.
+      */
       # End of Compression and Archiving Tools
 
       # Document Viewers
-      # librum # GUI: Ebook reader focused on simplicity and enjoyment.
-      libsForQt5.okular # GUI: KDE document viewer.
       evince # GUI: GNOME document viewer.
-      llpp # GUI: MuPDF-based PDF pager written in OCaml.
       mate.atril # GUI: Multi-page document viewer for MATE.
-      mupdf # GUI: Lightweight PDF, XPS, and ebook viewer.
-      zathura # GUI: Highly customizable PDF viewer.
       /*
+      libsForQt5.okular # GUI: KDE document viewer.
+      zathura # GUI: Highly customizable PDF viewer.
+      llpp # GUI: MuPDF-based PDF pager written in OCaml.
+      mupdf # GUI: Lightweight PDF, XPS, and ebook viewer.
       qpdfview # GUI: Tabbed PDF viewer.
       calibre # GUI: Comprehensive ebook management software.
+      librum # GUI: Ebook reader focused on simplicity and enjoyment.
       foliate # GUI: Simple and modern GTK ebook reader.
       koreader # GUI: Ebook reader supporting various formats.
       xreader # GUI: Document viewer for PDF, Postscript, and other formats.
