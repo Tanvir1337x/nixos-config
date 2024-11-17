@@ -89,11 +89,30 @@ in {
 
       mpv = {
         enable = true;
-        defaultProfiles = ["custom"];
+        defaultProfiles = ["gpu-hq"];
         config = {
-          profile = "custom";
+          profile = "gpu-hq";
+          keep-open = true;
+          fs = false; # Don't start in fullscreen mode by default
+          # hwdec = "auto";
+          gpu-context = "auto";
           ytdl-format = "bestvideo[height<=1080]+bestaudio/best[height<=1080]"; # 1080p Max
+          cache = "yes";
           cache-default = 4000000;
+          force-window = "yes";
+          volume = 100;
+          volume-max = 200;
+          subs-fallback = "default";
+          alang = "en,eng";
+          slang = "en,eng";
+          vlang = "en,eng";
+          screenshot-directory = "/home/user/media/pictures/screenshots/";
+        };
+
+        scriptOpts = {
+          thumbfast = {
+            hwdec = false;
+          };
         };
       };
 
