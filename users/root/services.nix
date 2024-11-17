@@ -586,7 +586,7 @@
     devmon.enable = true;
 
     gnome.gnome-keyring.enable = true; # Keyring for SSH
-    blueman.enable = true; # GUI Bluetooth Manager
+    blueman.enable = false; # GUI Bluetooth Manager
     cpupower-gui.enable = false; # GUI for CPU power management
     packagekit.enable = false; # Required for KDE Discover
 
