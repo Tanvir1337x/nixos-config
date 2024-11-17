@@ -619,17 +619,19 @@ in {
       # End of File Managers
 
       # Terminal Emulators
+      /*
       kitty # GUI: GPU-accelerated terminal emulator.
-      # alacritty # GUI: GPU-accelerated terminal emulator.
+      alacritty # GUI: GPU-accelerated terminal emulator.
+      */
       # End of Terminal Emulators
 
       # Application Launchers and Menus
-      # bemenu # GUI: Dynamic menu inspired by dmenu.
-      #- X11 Launchers
-      # rofi # GUI: Window switcher, run dialog, and dmenu replacement for X11.
-      # dmenu # GUI: Generic, customizable menu for X11.
-      #- Wayland Launchers
       /*
+      bemenu # GUI: Dynamic menu inspired by dmenu.
+      #- X11 Launchers
+      rofi # GUI: Window switcher, run dialog, and dmenu replacement for X11.
+      dmenu # GUI: Generic, customizable menu for X11.
+      #- Wayland Launchers
       rofi-wayland # GUI: Rofi for Wayland.
       */
       # End of Application Launchers and Menus
@@ -675,7 +677,10 @@ in {
       # End of IRC Clients
 
       # RSS/Atom Feed Readers
-      # liferea # GUI: GTK-based RSS/Atom feed reader.
+      /*
+      liferea # GUI: GTK-based RSS/Atom feed reader.
+      gnome-feeds # GUI: RSS/Atom feed reader for GNOME.
+      */
       # End of RSS/Atom Feed Readers
 
       # Fractal Engines
@@ -748,12 +753,12 @@ in {
       # End of Audio and Video Editors
 
       # Desktop Customization Tools
-      # flashfocus # Daemon: Adds focus animations to tiling window managers.
       /*
+      flashfocus # Daemon: Adds focus animations to tiling window managers.
       #- Wallpaper Managers
       nitrogen # GUI: Wallpaper browser and setter for X11.
-      # hyprpaper # GUI: Wayland wallpaper utility.
-      # swww # CLI: Animated wallpaper daemon for Wayland.
+      hyprpaper # GUI: Wayland wallpaper utility.
+      swww # CLI: Animated wallpaper daemon for Wayland.
       #- End of Wallpaper Managers
       themix-gui # GUI: Theme designer with plugin support.
       lxappearance # GUI: Configures themes and fonts for GTK applications.
@@ -766,8 +771,10 @@ in {
       # End of Desktop Customization Tools
 
       # Network Management
-      # networkmanagerapplet # GUI/Tray: NetworkManager applet for GNOME.
-      # nm-tray # GUI/Tray: Simple NetworkManager frontend written in Qt.
+      /*
+      networkmanagerapplet # GUI/Tray: NetworkManager applet for GNOME.
+      nm-tray # GUI/Tray: Simple NetworkManager frontend written in Qt.
+      */
       # End of Network Management
 
       # Tor Tools
@@ -782,6 +789,11 @@ in {
 
       # Password Managers
       keepassxc # GUI: Offline password manager.
+      /*
+      bitwarden-desktop # GUI: Secure and free password manager for all of your devices.
+      bitwarden-cli # CLI: Command-line interface for Bitwarden.
+      proton-pass # GUI: Desktop application for Proton Pass
+      */
       # End of Password Managers
 
       # Status Bars
@@ -791,7 +803,11 @@ in {
       # End of Status Bars
 
       # Compositors
-      # picom # Daemon: Compositing manager for X servers.
+      /*
+      picom # Daemon: Compositing manager for X servers.
+      fastcompmgr # Daemon: Fast compositor for X11
+      neocomp # Daemon: Fork of Compton, a compositor for X11
+      */
       picom-pijulius # Daemon: Picom fork with extensive animation support.
       # End of Compositors
 
@@ -898,7 +914,7 @@ in {
 
       # Scientific Software
       /*
-      # mathematica-cuda # GUI: Wolfram Mathematica with CUDA support.
+      mathematica-cuda # GUI: Wolfram Mathematica with CUDA support.
       octaveFull # GUI: Scientific programming language.
       scilab-bin # GUI: Numerical computation software (Matlab-like).
       gnuplot # GUI: Command-line graphing utility.
@@ -940,10 +956,12 @@ in {
 
       # Color Pickers
       #- Wayland Color Pickers
-      # hyprpicker # CLI: Wayland color picker.
-      #- X11 Color Pickers
-      # gcolor2 # GUI: Simple GTK color selector.
       /*
+      hyprpicker # CLI: Wayland color picker.
+      */
+      #- X11 Color Pickers
+      /*
+      gcolor2 # GUI: Simple GTK color selector.
       gcolor3 # GUI: Color selector.
       gpick # GUI: Advanced color picker.
       libsForQt5.kcolorchooser # GUI: KDE color chooser.
@@ -967,10 +985,12 @@ in {
       webp-pixbuf-loader # Lib: WebP thumbnail support.
       poppler # Lib: PDF thumbnail support.
       ffmpegthumbnailer # Lib: Video thumbnail support.
-      libgsf # Lib: ODF thumbnail support.
       gnome-epub-thumbnailer # Lib: EPub and MOBI thumbnail support.
+      /*
+      libgsf # Lib: ODF thumbnail support.
       f3d # Lib: 3D file thumbnail support (glTF, stl, step, ply, obj, fbx).
-      # mcomix # Lib: Comic book thumbnail support (cbz, cbr).
+      mcomix # Lib: Comic book thumbnail support (cbz, cbr).
+      */
       # End of Tumbler Thumbnailers
 
       # VPN Clients
@@ -1009,9 +1029,9 @@ in {
 
       # Essential System Utilities
       nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
-      nvitop # CLI: NVIDIA GPU process viewer.
       i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
       /*
+      nvitop # CLI: NVIDIA GPU process viewer.
       resources # GUI: System resource monitor.
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
       # gnome-usage # GUI: System resource usage viewer.
@@ -1133,7 +1153,7 @@ in {
       #- Proton
       protontricks # CLI: Runs Winetricks commands for Proton games.
       protonup-qt # GUI: Manages Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris.
-      # Misc Gaming Tools
+      #- Misc Gaming Tools
       lutris # GUI: Open-source gaming platform for Linux.
       */
       # End of Gaming and Windows Compatibility
