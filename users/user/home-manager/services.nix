@@ -111,7 +111,7 @@ in {
 
       # Compositor (X11)
       picom = {
-        enable = true;
+        enable = false;
         package = pkgs.picom-pijulius;
       };
 
