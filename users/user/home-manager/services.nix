@@ -110,7 +110,10 @@ in {
       # pasystray.enable = true;
 
       # Compositor (X11)
-      # picom.enable = false;
+      picom = {
+        enable = true;
+        package = pkgs.picom-pijulius;
+      };
 
       # Clipboard Manager
       # copyq.enable = true;
