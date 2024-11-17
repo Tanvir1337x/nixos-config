@@ -556,7 +556,7 @@ in {
       # pasystray # Tray: PulseAudio system tray icon.
       #- End of Audio Controllers
       #- Media Tools
-      ffmpeg_7-full # CLI: Complete solution for recording, converting, and streaming audio and video.
+      ffmpeg-full # CLI: Complete solution for recording, converting, and streaming audio and video.
       /*
       mediainfo # CLI: Provides technical and tag information about media files.
       exiftool # CLI: Tool for reading, writing, and editing EXIF metadata.
