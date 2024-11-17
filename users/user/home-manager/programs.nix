@@ -90,30 +90,70 @@ in {
       mpv = {
         enable = true;
         defaultProfiles = ["gpu-hq"];
+        # Values adapted from: <https://github.com/Tsubajashi/mpv-settings/blob/master/mpv_linux.conf>
         config = {
           profile = "gpu-hq";
+          hwdec = "auto-copy"; # enable hardware decoding, defaults to 'no'
+          vo = "gpu-next";
           keep-open = true;
           fs = false; # Don't start in fullscreen mode by default
-          # hwdec = "auto";
           gpu-context = "auto";
           ytdl-format = "bestvideo[height<=1080]+bestaudio/best[height<=1080]"; # 1080p Max
-          cache = "yes";
-          cache-default = 4000000;
-          force-window = "yes";
+          cache = true;
+          force-window = true;
+
+          dither-depth = "auto";
+
           volume = 100;
-          volume-max = 200;
+          volume-max = 125;
+          # audio-stream-silence = true; # fix audio popping on random seek | Breaks certain player behavior
+          audio-file-auto = "fuzzy"; # external audio doesn't has to match the file name exactly to autoload
+          audio-pitch-correction = true; # automatically insert scaletempo when playing with higher speed
+
           subs-fallback = "default";
           alang = "en,eng";
           slang = "en,eng";
           vlang = "en,eng";
+
+          screenshot-format = "png";
+          screenshot-png-compression = 5; # Range is 0 to 10
+          screenshot-tag-colorspace = true;
+          screenshot-high-bit-depth = true; # Same output bitdepth as the video
           screenshot-directory = "/home/user/media/pictures/screenshots/";
+
+          hr-seek-framedrop = false;
+
+          deband = true;
+          deband-iterations = 4;
+          deband-threshold = 35;
+          deband-range = 16;
+          deband-grain = 4;
+
+          # video-sync = "display-resample";
+          # interpolation = true;
+          # tscale = "sphinx";
+
+          # SDR
+          # tone-mapping = "bt.2446a";
+
+          # HDR
+          # target-colorspace-hint = true;
+
+          deinterlace = false; # Global reset of deinterlacing to off
+
+          # osc = false;
+          # border = false;
+          # msg-color = true;
+          # msg-module = false;
         };
 
+        /*
         scriptOpts = {
           thumbfast = {
             hwdec = false;
           };
         };
+        */
       };
 
       direnv = {
