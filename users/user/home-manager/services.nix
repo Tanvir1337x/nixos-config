@@ -126,6 +126,18 @@ in {
         enable = true;
         enableSshSupport = true;
       };
+
+      spotifyd = {
+        enable = false;
+        package = pkgs.spotifyd.override {withKeyring = true;};
+        settings = {
+          global = {
+            username = "Tanvir";
+            password = "SECRET";
+            device_name = "NixOS";
+          };
+        };
+      };
     };
   };
 }

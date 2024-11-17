@@ -86,6 +86,16 @@ in {
         };
       };
 
+      mpv = {
+        enable = true;
+        defaultProfiles = ["custom"];
+        config = {
+          profile = "custom";
+          ytdl-format = "bestvideo[height<=1080]+bestaudio/best[height<=1080]"; # 1080p Max
+          cache-default = 4000000;
+        };
+      };
+
       direnv = {
         enable = true;
         nix-direnv.enable = true;
