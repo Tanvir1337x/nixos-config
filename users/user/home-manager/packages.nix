@@ -93,29 +93,38 @@ in {
       androguard # CLI/LIB: Reverse engineering and pentesting for Android applications
       apksigner # CLI: Command line tool to sign and verify Android APKs
       ghost # CLI: An Android post-exploitation framework that exploits the Android Debug Bridge to remotely access an Android device
+      anbox # GUI: Android in a box
+      genymotion # GUI: Fast and easy Android emulation
+      waydroid # GUI: Container-based approach to boot a full Android system on a regular GNU/Linux system
       */
-      # anbox # GUI: Android in a box
-      # genymotion # GUI: Fast and easy Android emulation
-      # waydroid # GUI: Container-based approach to boot a full Android system on a regular GNU/Linux system
       # End of Android
 
       # Cloud Storage Clients
-      # megasync # Tray: MEGA Cloud Drive client.
-      # onedrivegui # GUI: OneDrive client with multi-account support.
-      # maestral-gui # GUI: GUI for Maestral, an open-source Dropbox client.
-      # cozy-drive # GUI: Cozy Cloud synchronization tool.
+      /*
+      megasync # Tray: MEGA Cloud Drive client.
+      onedrivegui # GUI: OneDrive client with multi-account support.
+      maestral-gui # GUI: GUI for Maestral, an open-source Dropbox client.
+      cozy-drive # GUI: Cozy Cloud synchronization tool.
+      */
       # End of Cloud Storage Clients
 
       # TeX/LaTeX
-      # lyx # GUI: WYSIWYM frontend for LaTeX and DocBook.
+      /*
+      lyx # GUI: WYSIWYM frontend for LaTeX and DocBook.
+      */
       # End of TeX/LaTeX
 
       # Python Development
-      # python3Full # CLI: Python 3 interpreter (full version).
+      /*
+      python3Full # CLI: Python 3 interpreter (full version).
+      spyder # GUI: The Scientific Python Development Environment.
+      */
       # End of Python Development
 
       # Kubernetes
-      # kubernetes-helm # CLI: Package manager for Kubernetes.
+      /*
+      kubernetes-helm # CLI: Package manager for Kubernetes.
+      */
       # End of Kubernetes
 
       # JavaScript Development
@@ -138,7 +147,15 @@ in {
       # End of File Sharing
 
       # Shells
-      # nushellFull # CLI: Modern shell written in Rust.
+      /*
+      nushellFull # CLI: Modern shell written in Rust.
+      */
+      #- Shell Plugins
+      #-- Fish Shell
+      /*
+      oh-my-fish # CLI: Framework for the Fish shell.
+      */
+      # End of Shell Plugins
       # End of Shells
 
       # Command-Line Utilities
@@ -209,10 +226,6 @@ in {
       genact # CLI: Nonsense activity generator.
       */
       # End of Fun/Novelty Tools
-
-      # Shell Plugins
-      # oh-my-fish # CLI: Framework for the Fish shell.
-      # End of Shell Plugins
 
       # Nix Tools
       nixd # Daemon: Nix language server.
@@ -311,6 +324,7 @@ in {
       /*
       freecad # GUI: Open-source 3D CAD/MCAD/CAx/CAE/PLM modeler.
       openscad # GUI: 3D parametric model compiler.
+      openscad-unstable # GUI: Unstable version of OpenSCAD.
       */
       # End of CAD Software
 
@@ -335,7 +349,12 @@ in {
       # End of Virtualization Tools
 
       # Cryptocurrency
-      # monero-gui # GUI: Monero GUI wallet.
+      /*
+      monero-gui # GUI: Monero GUI wallet.
+      electrum # GUI: Lightweight Bitcoin wallet.
+      electrum-ltc # GUI: Lightweight Litecoin Client.
+      electrum-grs # GUI: Lightweight Groestlcoin wallet.
+      */
       # End of Cryptocurrency
 
       # System Cleaners
@@ -354,7 +373,7 @@ in {
       stockfish # Engine: Strong open-source chess engine.
       fairymax # Engine: Chess engine supporting fairy pieces.
       #- End of Chess Engines
-      # libsForQt5.knights # GUI: Chess game for KDE.
+      libsForQt5.knights # GUI: Chess game for KDE.
       */
       # End of Games
 
@@ -407,7 +426,7 @@ in {
       */
       # End of Torrent Clients and Tools
 
-      # YouTube/Spotify Downloaders
+      # YouTube/Spotify/SoundCloud Downloaders
       /*
       yt-dlp # CLI: Fork of youtube-dl with additional features.
       tartube-yt-dlp # GUI: GUI frontend for youtube-dl and yt-dlp.
@@ -415,6 +434,7 @@ in {
       yt-dlg # GUI: Cross-platform GUI for youtube-dl.
       ytmdl # CLI: CLI tool to download music from YouTube.
       spotdl # CLI: Spotify downloader.
+      scdl # CLI: SoundCloud downloader.
       */
       # End of YouTube/Spotify Downloaders
 
@@ -442,8 +462,8 @@ in {
       */
       #- Discord
       #-- Discord Clients
-      vesktop # GUI: Alternate Discord client by Vencord with built-in features.
       /*
+      vesktop # GUI: Alternate Discord client by Vencord with built-in features.
       discord # GUI: Official Discord client.
       armcord # GUI: Lightweight Discord client.
       ripcord # GUI: Proprietary client for Discord and Slack.
@@ -452,11 +472,13 @@ in {
       */
       #-- End of Discord Clients
       #-- Discord Miscellaneous
-      # premid # CLI: Shows web activity as playing status on Discord.
+      /*
+      premid # CLI: Shows web activity as playing status on Discord.
+      */
       #-- End of Discord Miscellaneous
       #- Matrix Clients
-      element-desktop # GUI: Popular Matrix client.
       /*
+      element-desktop # GUI: Popular Matrix client.
       fluffychat # GUI: Matrix client with a focus on simplicity.
       nheko # GUI: Desktop client for the Matrix protocol.
       cinny-desktop # GUI: Matrix client for desktop.
@@ -515,10 +537,12 @@ in {
       lollypop # GUI: Modern music player for GNOME.
       rhythmbox # GUI: Music player for GNOME.
       exaile # GUI: Music player with a simple interface.
-      # tauon # GUI: Music player with a futuristic interface.
       audacious # GUI: Lightweight and versatile audio player.
       audacious-plugins # Plugin: Plugins for Audacious.
+      /*
+      tauon # GUI: Music player with a futuristic interface.
       mpvc # CLI: MPC-like control interface for mpv.
+      */
       /*
       libsForQt5.vvave # GUI: Multi-platform media player.
       */
@@ -540,13 +564,15 @@ in {
       */
       #- End of Media Tools
       #- VLC Plugins
+      /*
       vlc-bittorrent # Plugin: BitTorrent plugin for VLC.
+      */
       #- End of VLC Plugins
       # End of Media Players and Tools
 
       # Entertainment
-      spotify # GUI: Spotify web music player.
       /*
+      spotify # GUI: Spotify web music player.
       nuclear # GUI: Music streaming app similar to Spotify.
       mov-cli # CLI: Browse and watch movies from the command-line.
       lrby # GUI: Browser and wallet for LBRY.
@@ -622,6 +648,11 @@ in {
       /*
       kitty # GUI: GPU-accelerated terminal emulator.
       alacritty # GUI: GPU-accelerated terminal emulator.
+      wezterm # GUI: GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust.
+      warp-terminal # GUI: The modern intelligent terminal.
+      xfce.xfce4-terminal # GUI: Modern terminal emulator for the Xfce desktop.
+      mate.mate-terminal # GUI: Terminal emulator for MATE.
+      lxterminal # GUI: Standard terminal emulator of LXDE.
       */
       # End of Terminal Emulators
 
