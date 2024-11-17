@@ -17,6 +17,7 @@ in {
     users.user = _: {
       xdg.configFile = {
         "kitty/kitty.conf".enable = false;
+        "picom/picom.conf".enable = false;
       };
 
       home = {
