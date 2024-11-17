@@ -77,6 +77,7 @@ in {
 
       kitty = {
         enable = true;
+        # Note: `xdg.configFile."kitty/kitty.conf".enable = false;` has been set temporarily in hm settings.nix
         shellIntegration = {
           # https://sw.kovidgoyal.net/kitty/shell-integration
           mode = "no-rc"; # no-rc is always implied
