@@ -512,23 +512,23 @@ in {
       gthumb # GUI: Image browser and viewer for GNOME.
       eog # GUI: GNOME image viewer.
       pix # GUI: Image viewer from Linux Mint.
-      xviewer # GUI: Image viewer from Linux Mint.
-      loupe # GUI: Simple image viewer written in GTK4 and Rust.
-      feh # CLI: Lightweight image viewer.
-      meh # GUI: Minimal image viewer using raw XLib.
-      oculante # GUI: Minimalistic cross-platform image viewer.
-      nsxiv # GUI: Suckless X image viewer.
-      nomacs # GUI: Qt-based image viewer.
-      fim # CLI: Lightweight, customizable image viewer.
-      emulsion # GUI: Fast and minimalistic image viewer.
       pineapple-pictures # GUI: Lightweight image viewer.
       /*
+      loupe # GUI: Simple image viewer written in GTK4 and Rust.
+      xviewer # GUI: Image viewer from Linux Mint.
+      oculante # GUI: Minimalistic cross-platform image viewer.
+      feh # CLI: Lightweight image viewer.
+      meh # GUI: Minimal image viewer using raw XLib.
       image-roll # GUI: GTK image viewer with basic image manipulation tools.
       libsForQt5.gwenview # GUI: KDE image viewer.
+      nsxiv # GUI: Suckless X image viewer.
+      nomacs # GUI: Qt-based image viewer.
       napari # GUI: Fast, interactive, multi-dimensional image viewer.
       digikam # GUI: Photo management program.
       shotwell # GUI: Photo organizer for GNOME.
       darktable # GUI: Virtual lighttable and darkroom for photographers.
+      fim # CLI: Lightweight, customizable image viewer.
+      emulsion # GUI: Fast and minimalistic image viewer.
       */
       #- End of Image Viewers
       #- Image Tools
