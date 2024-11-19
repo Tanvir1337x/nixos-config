@@ -204,8 +204,8 @@
 
         # Outgoing requests
         outgoing = {
-          request_timeout = 3.0; # Timeout in seconds for requests
-          max_request_timeout = 5.8; # Maximum timeout in seconds for requests
+          request_timeout = 8.0; # Timeout in seconds for requests
+          max_request_timeout = 15.5; # Maximum timeout in seconds for requests
           keepalive_expiry = 10.0; # in seconds
           pool_connections = 10;
           pool_maxsize = 5;
