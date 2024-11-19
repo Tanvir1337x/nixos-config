@@ -308,7 +308,7 @@
           "wikivoyage".disabled = false;
           #- Without further subgrouping
           "ask".disabled = false;
-          "cloudflareai".disabled = false;
+          "cloudflareai".disabled = true;
           "crowdview".disabled = false;
           "curlie".disabled = false;
           "currency".disabled = false;
@@ -323,10 +323,10 @@
           "wikipedia".disabled = false;
           "wolframalpha".disabled = false;
           "yacy".disabled = false;
-          "yep".disabled = false;
+          "yep".disabled = true;
           "bpb".disabled = false;
           "tagesschau".disabled = false;
-          "wikimini".disabled = false;
+          "wikimini".disabled = true;
 
           # Images
           #- Web
