@@ -16,5 +16,9 @@ _: {
   #- freedesktop-sdk https://flathub.org/repo/flathub.flatpakrepo
 
   # Flatpak
-  services.flatpak.enable = true;
+  services.flatpak.enable = false;
+
+  # Must have apps:
+  # - com.github.tchx84.Flatseal
+  # - io.github.giantpinkrobots.flatsweep
 }
