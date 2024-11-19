@@ -275,11 +275,11 @@
         engines = lib.mapAttrsToList (name: value: {inherit name;} // value) {
           # General
           #- Translate
-          "dictzone".disabled = true;
-          "libretranslate".disabled = true;
-          "lingva".disabled = true;
-          "mozhi".disabled = true;
-          "mymemory translated".disabled = true;
+          "dictzone".disabled = false;
+          "libretranslate".disabled = false;
+          "lingva".disabled = false;
+          "mozhi".disabled = false;
+          "mymemory translated".disabled = false;
           #- Web
           "bing".disabled = false;
           "bing".weight = 6.0;
@@ -289,257 +289,257 @@
           "duckduckgo".weight = 8.0;
           "google".disabled = false;
           "google".weight = 10.0;
-          "mojeek".disabled = true;
-          "presearch".disabled = true;
-          "presearch videos".disabled = true;
-          "qwant".disabled = true;
-          "startpage".disabled = true;
-          "wiby".disabled = true;
-          "yahoo".disabled = true;
-          "seznam".disabled = true;
-          "goo".disabled = true;
-          "naver".disabled = true;
+          "mojeek".disabled = false;
+          "presearch".disabled = false;
+          "presearch videos".disabled = false;
+          "qwant".disabled = false;
+          "startpage".disabled = false;
+          "wiby".disabled = false;
+          "yahoo".disabled = false;
+          "seznam".disabled = false;
+          "goo".disabled = false;
+          "naver".disabled = false;
           #- Wikimedia
-          "wikibooks".disabled = true;
-          "wikiquote".disabled = true;
-          "wikisource".disabled = true;
-          "wikispecies".disabled = true;
-          "wikiversity".disabled = true;
-          "wikivoyage".disabled = true;
+          "wikibooks".disabled = false;
+          "wikiquote".disabled = false;
+          "wikisource".disabled = false;
+          "wikispecies".disabled = false;
+          "wikiversity".disabled = false;
+          "wikivoyage".disabled = false;
           #- Without further subgrouping
-          "ask".disabled = true;
-          "cloudflareai".disabled = true;
-          "crowdview".disabled = true;
-          "curlie".disabled = true;
-          "currency".disabled = true;
-          "ddg definitions".disabled = true;
-          "encyclosearch".disabled = true;
-          "mwmbl".disabled = true;
-          "right dao".disabled = true;
-          "searchmysite".disabled = true;
-          "stract".disabled = true;
-          "tineye".disabled = true;
-          "wikidata".disabled = true;
-          "wikipedia".disabled = true;
-          "wolframalpha".disabled = true;
-          "yacy".disabled = true;
-          "yep".disabled = true;
-          "bpb".disabled = true;
-          "tagesschau".disabled = true;
-          "wikimini".disabled = true;
+          "ask".disabled = false;
+          "cloudflareai".disabled = false;
+          "crowdview".disabled = false;
+          "curlie".disabled = false;
+          "currency".disabled = false;
+          "ddg definitions".disabled = false;
+          "encyclosearch".disabled = false;
+          "mwmbl".disabled = false;
+          "right dao".disabled = false;
+          "searchmysite".disabled = false;
+          "stract".disabled = false;
+          "tineye".disabled = false;
+          "wikidata".disabled = false;
+          "wikipedia".disabled = false;
+          "wolframalpha".disabled = false;
+          "yacy".disabled = false;
+          "yep".disabled = false;
+          "bpb".disabled = false;
+          "tagesschau".disabled = false;
+          "wikimini".disabled = false;
 
           # Images
           #- Web
-          "bing images".disabled = true;
-          "brave.images".disabled = true;
-          "duckduckgo images".disabled = true;
-          "google images".disabled = true;
-          "mojeek images".disabled = true;
-          "presearch images".disabled = true;
-          "qwant images".disabled = true;
+          "bing images".disabled = false;
+          "brave.images".disabled = false;
+          "duckduckgo images".disabled = false;
+          "google images".disabled = false;
+          "mojeek images".disabled = false;
+          "presearch images".disabled = false;
+          "qwant images".disabled = false;
           #- Without further subgrouping
-          "1x".disabled = true;
-          "artic".disabled = true;
-          "deviantart".disabled = true;
-          "findthatmeme".disabled = true;
-          "flickr".disabled = true;
-          "frinkiac".disabled = true;
-          "imgur".disabled = true;
-          "library of congress".disabled = true;
-          "material icons".disabled = true;
-          "openverse".disabled = true;
-          "pinterest".disabled = true;
-          "svgrepo".disabled = true;
-          "unsplash".disabled = true;
-          "wallhaven".disabled = true;
-          "wikicommons.images".disabled = true;
-          "yacy images".disabled = true;
-          "yep images".disabled = true;
-          "seekr images".disabled = true;
+          "1x".disabled = false;
+          "artic".disabled = false;
+          "deviantart".disabled = false;
+          "findthatmeme".disabled = false;
+          "flickr".disabled = false;
+          "frinkiac".disabled = false;
+          "imgur".disabled = false;
+          "library of congress".disabled = false;
+          "material icons".disabled = false;
+          "openverse".disabled = false;
+          "pinterest".disabled = false;
+          "svgrepo".disabled = false;
+          "unsplash".disabled = false;
+          "wallhaven".disabled = false;
+          "wikicommons.images".disabled = false;
+          "yacy images".disabled = false;
+          "yep images".disabled = false;
+          "seekr images".disabled = false;
 
           # Videos
           #- Web
-          "bing videos".disabled = true;
-          "brave.videos".disabled = true;
-          "duckduckgo videos".disabled = true;
-          "google videos".disabled = true;
-          "qwant videos".disabled = true;
+          "bing videos".disabled = false;
+          "brave.videos".disabled = false;
+          "duckduckgo videos".disabled = false;
+          "google videos".disabled = false;
+          "qwant videos".disabled = false;
           #- Without further subgrouping
-          "bilibili".disabled = true;
-          "dailymotion".disabled = true;
-          "google play movies".disabled = true;
-          "invidious".disabled = true;
-          "livespace".disabled = true;
-          "media.ccc.de".disabled = true;
-          "odysee".disabled = true;
-          "peertube".disabled = true;
-          "piped".disabled = true;
-          "rumble".disabled = true;
-          "sepiasearch".disabled = true;
-          "vimeo".disabled = true;
-          "wikicommons.videos".disabled = true;
-          "youtube".disabled = true;
-          "mediathekviewweb".disabled = true;
-          "seekr videos".disabled = true;
-          "ina".disabled = true;
+          "bilibili".disabled = false;
+          "dailymotion".disabled = false;
+          "google play movies".disabled = false;
+          "invidious".disabled = false;
+          "livespace".disabled = false;
+          "media.ccc.de".disabled = false;
+          "odysee".disabled = false;
+          "peertube".disabled = false;
+          "piped".disabled = false;
+          "rumble".disabled = false;
+          "sepiasearch".disabled = false;
+          "vimeo".disabled = false;
+          "wikicommons.videos".disabled = false;
+          "youtube".disabled = false;
+          "mediathekviewweb".disabled = false;
+          "seekr videos".disabled = false;
+          "ina".disabled = false;
 
           # News
           #- Web
-          "duckduckgo news".disabled = true;
-          "mojeek news".disabled = true;
-          "presearch news".disabled = true;
+          "duckduckgo news".disabled = false;
+          "mojeek news".disabled = false;
+          "presearch news".disabled = false;
           #- Wikimedia
-          "wikinews".disabled = true;
+          "wikinews".disabled = false;
           #- Without further subgrouping
-          "bing news".disabled = true;
-          "brave.news".disabled = true;
-          "google news".disabled = true;
-          "qwant news".disabled = true;
-          "yahoo news".disabled = true;
-          "yep news".disabled = true;
-          # "tagesschau".disabled = true;
-          "seekr news".disabled = true;
+          "bing news".disabled = false;
+          "brave.news".disabled = false;
+          "google news".disabled = false;
+          "qwant news".disabled = false;
+          "yahoo news".disabled = false;
+          "yep news".disabled = false;
+          # "tagesschau".disabled = false;
+          "seekr news".disabled = false;
 
           # Map
-          "apple maps".disabled = true;
-          "openstreetmap".disabled = true;
-          "photon".disabled = true;
+          "apple maps".disabled = false;
+          "openstreetmap".disabled = false;
+          "photon".disabled = false;
 
           # Music
           #- Lyrics
-          "genius".disabled = true;
+          "genius".disabled = false;
           #- Radio
-          "radio browser".disabled = true;
+          "radio browser".disabled = false;
           #- Without further subgrouping
-          "bandcamp".disabled = true;
-          "deezer".disabled = true;
-          # "invidious".disabled = true;
-          "mixcloud".disabled = true;
-          "piped.music".disabled = true;
-          "soundcloud".disabled = true;
-          "wikicommons.audio".disabled = true;
-          # "youtube".disabled = true;
+          "bandcamp".disabled = false;
+          "deezer".disabled = false;
+          # "invidious".disabled = false;
+          "mixcloud".disabled = false;
+          "piped.music".disabled = false;
+          "soundcloud".disabled = false;
+          "wikicommons.audio".disabled = false;
+          # "youtube".disabled = false;
 
           # IT
           #- Packages
-          "alpine linux packages".disabled = true;
-          "crates.io".disabled = true;
-          "docker hub".disabled = true;
-          "hex".disabled = true;
-          "hoogle".disabled = true;
-          "lib.rs".disabled = true;
-          "metacpan".disabled = true;
-          "npm".disabled = true;
-          "packagist".disabled = true;
-          "pkg.go.dev".disabled = true;
-          "pub.dev".disabled = true;
-          "pypi".disabled = true;
-          "rubygems".disabled = true;
-          "voidlinux".disabled = true;
+          "alpine linux packages".disabled = false;
+          "crates.io".disabled = false;
+          "docker hub".disabled = false;
+          "hex".disabled = false;
+          "hoogle".disabled = false;
+          "lib.rs".disabled = false;
+          "metacpan".disabled = false;
+          "npm".disabled = false;
+          "packagist".disabled = false;
+          "pkg.go.dev".disabled = false;
+          "pub.dev".disabled = false;
+          "pypi".disabled = false;
+          "rubygems".disabled = false;
+          "voidlinux".disabled = false;
           #- Q&A
-          "askubuntu".disabled = true;
-          "caddy.community".disabled = true;
-          "discuss.python".disabled = true;
-          "pi-hole.community".disabled = true;
-          "stackoverflow".disabled = true;
-          "superuser".disabled = true;
+          "askubuntu".disabled = false;
+          "caddy.community".disabled = false;
+          "discuss.python".disabled = false;
+          "pi-hole.community".disabled = false;
+          "stackoverflow".disabled = false;
+          "superuser".disabled = false;
           #- Repos
-          "bitbucket".disabled = true;
-          "codeberg".disabled = true;
-          "gitea.com".disabled = true;
-          "github".disabled = true;
-          "gitlab".disabled = true;
-          "sourcehut".disabled = true;
+          "bitbucket".disabled = false;
+          "codeberg".disabled = false;
+          "gitea.com".disabled = false;
+          "github".disabled = false;
+          "gitlab".disabled = false;
+          "sourcehut".disabled = false;
           #- Software Wikis
-          "arch linux wiki".disabled = true;
-          "free software directory".disabled = true;
-          "gentoo".disabled = true;
+          "arch linux wiki".disabled = false;
+          "free software directory".disabled = false;
+          "gentoo".disabled = false;
           #- Without further subgrouping
-          "anaconda".disabled = true;
-          "cppreference".disabled = true;
-          "habrahabr".disabled = true;
-          "hackernews".disabled = true;
-          "lobste.rs".disabled = true;
-          "mankier".disabled = true;
-          "mdn".disabled = true;
-          "searchcode code".disabled = true;
+          "anaconda".disabled = false;
+          "cppreference".disabled = false;
+          "habrahabr".disabled = false;
+          "hackernews".disabled = false;
+          "lobste.rs".disabled = false;
+          "mankier".disabled = false;
+          "mdn".disabled = false;
+          "searchcode code".disabled = false;
 
           # Science
           #- Scientific publications
-          "arxiv".disabled = true;
-          "crossref".disabled = true;
-          "google scholar".disabled = true;
-          "internetarchivescholar".disabled = true;
-          "pubmed".disabled = true;
-          "semantic scholar".disabled = true;
+          "arxiv".disabled = false;
+          "crossref".disabled = false;
+          "google scholar".disabled = false;
+          "internetarchivescholar".disabled = false;
+          "pubmed".disabled = false;
+          "semantic scholar".disabled = false;
           #- Wikimedia
-          # "wikispecies".disabled = true;
+          # "wikispecies".disabled = false;
           #- Without further subgrouping
-          "openairedatasets".disabled = true;
-          "openairepublications".disabled = true;
-          "pdbe".disabled = true;
+          "openairedatasets".disabled = false;
+          "openairepublications".disabled = false;
+          "pdbe".disabled = false;
 
           # Files
           #- Apps
-          "apk mirror".disabled = true;
-          "apple app store".disabled = true;
-          "fdroid".disabled = true;
-          "google play apps".disabled = true;
+          "apk mirror".disabled = false;
+          "apple app store".disabled = false;
+          "fdroid".disabled = false;
+          "google play apps".disabled = false;
           # Without further subgrouping
-          "1337x".disabled = true;
-          "annas archive".disabled = true;
-          "bt4g".disabled = true;
-          "btdigg".disabled = true;
-          "kickass".disabled = true;
-          "library genesis".disabled = true;
-          "nyaa".disabled = true;
-          "openrepos".disabled = true;
-          "piratebay".disabled = true;
-          "solidtorrents".disabled = true;
-          "tokyotoshokan".disabled = true;
-          "wikicommons.files".disabled = true;
-          "z-library".disabled = true;
+          "1337x".disabled = false;
+          "annas archive".disabled = false;
+          "bt4g".disabled = false;
+          "btdigg".disabled = false;
+          "kickass".disabled = false;
+          "library genesis".disabled = false;
+          "nyaa".disabled = false;
+          "openrepos".disabled = false;
+          "piratebay".disabled = false;
+          "solidtorrents".disabled = false;
+          "tokyotoshokan".disabled = false;
+          "wikicommons.files".disabled = false;
+          "z-library".disabled = false;
 
           # Social Media
-          "9gag".disabled = true;
-          "lemmy comments".disabled = true;
-          "lemmy communities".disabled = true;
-          "lemmy posts".disabled = true;
-          "lemmy users".disabled = true;
-          "mastodon hashtags".disabled = true;
-          "mastodon users".disabled = true;
-          "reddit".disabled = true;
-          "tootfinder".disabled = true;
+          "9gag".disabled = false;
+          "lemmy comments".disabled = false;
+          "lemmy communities".disabled = false;
+          "lemmy posts".disabled = false;
+          "lemmy users".disabled = false;
+          "mastodon hashtags".disabled = false;
+          "mastodon users".disabled = false;
+          "reddit".disabled = false;
+          "tootfinder".disabled = false;
 
           # Other
           #- Dictionaries
-          "etymonline".disabled = true;
-          "wiktionary".disabled = true;
-          "wordnik".disabled = true;
-          "duden".disabled = true;
-          "woxikon.de synonyme".disabled = true;
-          "jisho".disabled = true;
-          "sjp.pwn".disabled = true;
+          "etymonline".disabled = false;
+          "wiktionary".disabled = false;
+          "wordnik".disabled = false;
+          "duden".disabled = false;
+          "woxikon.de synonyme".disabled = false;
+          "jisho".disabled = false;
+          "sjp.pwn".disabled = false;
           #- Movies
-          "imdb".disabled = true;
-          "rottentomatoes".disabled = true;
-          "tmdb".disabled = true;
-          "moviepilot".disabled = true;
+          "imdb".disabled = false;
+          "rottentomatoes".disabled = false;
+          "tmdb".disabled = false;
+          "moviepilot".disabled = false;
           #- Shopping
-          "geizhals".disabled = true;
+          "geizhals".disabled = false;
           #- Weather
-          "duckduckgo weather".disabled = true;
-          "openmeteo".disabled = true;
-          "wttr.in".disabled = true;
+          "duckduckgo weather".disabled = false;
+          "openmeteo".disabled = false;
+          "wttr.in".disabled = false;
           #- Without further subgrouping
-          "emojipedia".disabled = true;
-          "erowid".disabled = true;
-          "fyyd".disabled = true;
-          "goodreads".disabled = true;
-          "podcastindex".disabled = true;
-          "yummly".disabled = true;
-          "chefkoch".disabled = true;
-          "destatis".disabled = true;
+          "emojipedia".disabled = false;
+          "erowid".disabled = false;
+          "fyyd".disabled = false;
+          "goodreads".disabled = false;
+          "podcastindex".disabled = false;
+          "yummly".disabled = false;
+          "chefkoch".disabled = false;
+          "destatis".disabled = false;
         };
       };
 
