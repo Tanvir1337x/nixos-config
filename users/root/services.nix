@@ -272,6 +272,7 @@
         # 1: Standard weight
         # Weight > 1: Will give more importance to the search engine
         # Weight < 1: Will give less importance to the search engine
+        # TODO: Setup yandex web and image search, perplexity, phind, kagi, searchcivitai, ecosia, saucenao, swisscows
         engines = lib.mapAttrsToList (name: value: {inherit name;} // value) {
           # General
           #- Translate

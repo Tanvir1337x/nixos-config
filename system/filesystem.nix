@@ -22,7 +22,7 @@
       # "ext4"
       # "exfat"
       "tmpfs"
-      "ntfs" #- <https://wiki.nixos.org/wiki/NTFS>
+      # "ntfs" #- <https://wiki.nixos.org/wiki/NTFS>
       # "bcachefs" #- <https://wiki.nixos.org/wiki/Bcachefs>
       # "zfs" #- <https://wiki.nixos.org/wiki/ZFS>
     ];
