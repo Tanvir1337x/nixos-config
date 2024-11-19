@@ -290,8 +290,12 @@ in {
         */
       };
 
+      /*
+      As of 19/11/2024
+      It requires package ‘cctools-1010.6’ to build which is not available on the x86_64-unknown-linux-gnu
+      */
       neovide = {
-        enable = true;
+        enable = false;
         package = pkgs.neovide;
         settings = {
           vsync = true;
