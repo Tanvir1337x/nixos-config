@@ -281,10 +281,13 @@
           "mozhi".disabled = true;
           "mymemory translated".disabled = true;
           #- Web
-          "bing".disabled = true;
-          "brave".disabled = true;
-          "duckduckgo".disabled = true;
-          "google".disabled = true;
+          "bing".disabled = false;
+          "bing".weight = 6.0;
+          "brave".disabled = false;
+          "brave".weight = 9.5;
+          "duckduckgo".disabled = false;
+          "duckduckgo".weight = 8.0;
+          "google".disabled = false;
           "google".weight = 10.0;
           "mojeek".disabled = true;
           "presearch".disabled = true;
