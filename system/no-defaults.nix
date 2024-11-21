@@ -18,5 +18,7 @@
     sounds.enable = false;
     menus.enable = true;
     autostart.enable = true;
+    # portal.enable = true;
+    terminal-exec.enable = true;
   };
 }
