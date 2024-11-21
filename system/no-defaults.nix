@@ -4,11 +4,11 @@
   environment.defaultPackages = lib.mkForce [];
 
   documentation = {
-    enable = true;
-    nixos.enable = true;
-    man.enable = true;
-    doc.enable = true;
-    info.enable = true;
+    enable = false;
+    nixos.enable = false;
+    man.enable = false;
+    doc.enable = false;
+    info.enable = false;
     dev.enable = false;
   };
 
