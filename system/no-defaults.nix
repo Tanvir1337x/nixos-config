@@ -1,4 +1,4 @@
-# Rip Out Default Packages
+# Rip Out Default System Packages
 {lib, ...}: {
   # Get rid of default packages for minimalism
   environment.defaultPackages = lib.mkForce [];

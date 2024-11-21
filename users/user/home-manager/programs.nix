@@ -326,6 +326,9 @@ in {
         };
       };
 
+      # TODO: Setup mangohud
+      # mangohud.enable = true;
+
       gpg.enable = true;
       lazygit.enable = true;
       gitui.enable = true;
