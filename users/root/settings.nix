@@ -1,5 +1,9 @@
 # Settings Configuration
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   environment.etc."issue".text = "Welcome to NixOS!\n";
 
   # Note: Don't forget to set a password with ‘passwd’
@@ -8,6 +12,15 @@
     initialPassword = "root";
     shell = pkgs.zsh;
   };
+
+  # Creates a file (/etc/current-system-packages) with list of all installed packages with their respective versions
+  # cat/bat /etc/current-system-packages
+  environment.etc."current-system-packages".text = let
+    packages = builtins.map (p: "${p.name}") config.environment.systemPackages;
+    sortedUnique = builtins.sort builtins.lessThan (pkgs.lib.lists.unique packages);
+    formatted = builtins.concatStringsSep "\n" sortedUnique;
+  in
+    formatted;
 
   environment.variables = {
     # Telemetry
