@@ -15,7 +15,7 @@
   xdg = {
     icons.enable = true;
     mime.enable = true;
-    sounds.enable = true;
+    sounds.enable = false;
     menus.enable = true;
     autostart.enable = true;
   };

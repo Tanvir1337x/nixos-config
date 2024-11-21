@@ -441,6 +441,7 @@ in {
       # Networking Tools
       /*
       httrack # CLI: Offline browser and website mirroring utility.
+      katana # CLI: Next-generation crawling and spidering framework.
       dnsrecon # CLI: DNS enumeration script.
       dig # CLI: DNS lookup utility.
       sniffnet # GUI: Cross-platform network traffic monitor.
