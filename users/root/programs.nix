@@ -78,6 +78,11 @@
       '';
     };
 
+    nano = {
+      enable = false;
+      syntaxHighlight = true;
+    };
+
     adb.enable = true;
 
     # kdeconnect.enable = true;
