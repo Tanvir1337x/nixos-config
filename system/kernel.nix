@@ -10,21 +10,24 @@
     # consoleLogLevel = 4;
 
     kernelParams = [
-      "quiet"
-      "iommu=pt"
-      "mitigations=off"
-      "nowatchdog"
-      # "splash"
-      "logo.nologo"
-      # "split_lock_detect=off"
-      # "rd.udev.log_level=4"
+      "quiet" # Reduces boot output messages for a cleaner boot screen
+      "iommu=pt" # Enables IOMMU in passthrough mode for better virtualization support
+      "mitigations=off" # Disables CPU vulnerability mitigations for improved performance at the cost of security
+      "nowatchdog" # Disables kernel watchdog timers, preventing potential resets due to perceived hangs
+      "pcie_aspm=off" # Disables Active State Power Management (ASPM) for PCIe devices
+      "logo.nologo" # Disables the display of the kernel logo during boot
+      /*
+      "splash" # Enables a splash screen during boot
+      "split_lock_detect=off" # Disables detection of split lock operations
+      "rd.udev.log_level=4" # Sets the udev log level to 4
+      */
     ];
 
     blacklistedKernelModules = [
-      "ucsi_ccg"
-      "i915"
-      "amdgpu"
-      "radeon"
+      "ucsi_ccg" # USB Type-C UCSI driver
+      "i915" # Intel integrated graphics driver
+      "amdgpu" # AMD GPU driver
+      "radeon" # Older AMD Radeon GPU driver
     ];
 
     # Recommended by steam to improve proton performance

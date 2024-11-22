@@ -9,6 +9,8 @@ _: {
     # Issue with DNS resolution (/etc/resolv.conf)
     resolvconf.dnsExtensionMechanism = false;
 
+    enableIPv6 = true;
+
     networkmanager = {
       enable = true;
       # <https://wiki.nixos.org/wiki/Wpa_supplicant>
