@@ -8,7 +8,9 @@
     userControlled.enable = true;
   };
 
+  /*
   environment.systemPackages = with pkgs; [
     wpa_supplicant_gui # gui: Qt-based GUI for wpa_supplicant
   ];
+  */
 }
