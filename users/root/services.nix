@@ -129,6 +129,29 @@
       lidSwitch = "suspend-then-hibernate";
     };
 
+    smartd = {
+      enable = true;
+      autodetect = true;
+      devices = [
+        {
+          device = "/dev/sda";
+          options = "-d ata";
+        }
+        {
+          device = "/dev/sdb";
+          options = "-d ata";
+        }
+        {
+          device = "/dev/sdc";
+          options = "-d ata";
+        }
+        {
+          device = "/dev/sdd";
+          options = "-d ata";
+        }
+      ];
+    };
+
     nginx = {
       enable = true;
       recommendedOptimisation = true;
