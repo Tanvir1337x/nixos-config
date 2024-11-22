@@ -134,6 +134,7 @@
       autodetect = true;
       notifications.systembus-notify.enable = true;
 
+      /*
       devices = [
         {
           device = "/dev/sda";
@@ -151,7 +152,11 @@
           device = "/dev/sdd";
           options = "-d ata";
         }
+        {
+          device = "/dev/nvme0";
+        }
       ];
+      */
     };
 
     nginx = {
