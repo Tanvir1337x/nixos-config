@@ -132,6 +132,8 @@
     smartd = {
       enable = true;
       autodetect = true;
+      notifications.systembus-notify.enable = true;
+
       devices = [
         {
           device = "/dev/sda";
