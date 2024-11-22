@@ -167,7 +167,7 @@ in {
       };
 
       nushell = {
-        enable = true;
+        enable = false;
       };
 
       starship = {
