@@ -18,7 +18,7 @@ in {
       };
 
       chromium = {
-        enable = true;
+        enable = false;
       };
 
       atuin = {
