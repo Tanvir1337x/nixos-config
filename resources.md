@@ -150,4 +150,4 @@ musnix https://github.com/musnix/musnix/archive/master.tar.gz
 
 - [devshell](https://github.com/numtide/devshell) - Per project developer environments.
 
-Discover more on my [starred repositories page](https://github.com/stars/TanvirOnGH/lists/nix-nixos)!
+Discover more on my [starred repositories page](https://github.com/stars/Tanvir1337x/lists/nix-nixos)!
