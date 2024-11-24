@@ -2,7 +2,7 @@
 
 This repository contains a list of security incidents that have been reported in the wild. The incidents are categorized by type and include information about the affected software, the CVEs, and the solution or mitigation steps. Tracking security incidents is important for security researchers, developers, and users to stay informed about the latest vulnerabilities and take necessary actions to protect their systems.
 
-## 1. Universal Local Privilege Escalation ([#3](https://github.com/TanvirOnGH/nixos-config/issues/3))
+## 1. Universal Local Privilege Escalation ([#3](https://github.com/Tanvir1337x/nixos-config/issues/3))
 
 ### 1. CVEs
 
@@ -44,7 +44,7 @@ A use-after-free vulnerability in the Linux kernel's `netfilter: nf_tables` comp
 3. [ubuntu.com/security/CVE-2024-1086](https://ubuntu.com/security/CVE-2024-1086)
 4. [CVE Details for CVE-2024-1086](https://www.cvedetails.com/cve/CVE-2024-1086/)
 
-## 2. Backdoor in Upstream xz/liblzma ([#4](https://github.com/TanvirOnGH/nixos-config/issues/4))
+## 2. Backdoor in Upstream xz/liblzma ([#4](https://github.com/Tanvir1337x/nixos-config/issues/4))
 
 ### 2. CVEs
 
@@ -75,7 +75,7 @@ Backdoor in upstream xz/liblzma leading to SSH server compromise.
 7. [NixOS Issue #300055 - Comment](https://github.com/NixOS/nixpkgs/issues/300055#issuecomment-2027690942)
 8. [Gist by thesamesam](https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27)
 
-## 3. Nvidia 535.154.05 is Affected by Serious CVEs ([#6](https://github.com/TanvirOnGH/nixos-config/issues/6))
+## 3. Nvidia 535.154.05 is Affected by Serious CVEs ([#6](https://github.com/Tanvir1337x/nixos-config/issues/6))
 
 ### 3. CVEs
 
@@ -143,7 +143,7 @@ in
 9. [NVD CVE-2024-0094](https://nvd.nist.gov/vuln/detail/CVE-2024-0094)
 10. [NVD CVE-2024-0086](https://nvd.nist.gov/vuln/detail/CVE-2024-0086)
 
-## 4. Remote Unauthenticated Code Execution Vulnerability in OpenSSH Server ([#7](https://github.com/TanvirOnGH/nixos-config/issues/7))
+## 4. Remote Unauthenticated Code Execution Vulnerability in OpenSSH Server ([#7](https://github.com/Tanvir1337x/nixos-config/issues/7))
 
 ## 4. CVEs
 
@@ -190,7 +190,7 @@ Note: It makes you vulnerable to a denial of service attack.
 6. [Recorded Future CVE Database](https://www.recordedfuture.com/vulnerability-database/CVE-2024-6387)
 7. [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2024-6387)
 
-## 5. Critical Use-After-Free Vulnerability in Firefox and Thunderbird ([#16](https://github.com/TanvirOnGH/nixos-config/issues/16))
+## 5. Critical Use-After-Free Vulnerability in Firefox and Thunderbird ([#16](https://github.com/Tanvir1337x/nixos-config/issues/16))
 
 ### 5. CVEs
 
