@@ -321,14 +321,14 @@
           "google".disabled = false;
           "google".weight = 10.0;
           "mojeek".disabled = false;
-          "presearch".disabled = false;
-          "presearch videos".disabled = false;
+          "presearch".disabled = true;
+          "presearch videos".disabled = true;
           "qwant".disabled = false;
           "startpage".disabled = false;
-          "wiby".disabled = false;
+          "wiby".disabled = true;
           "yahoo".disabled = false;
-          "seznam".disabled = false;
-          "goo".disabled = false;
+          "seznam".disabled = true;
+          "goo".disabled = true;
           "naver".disabled = false;
           #- Wikimedia
           "wikibooks".disabled = false;
@@ -348,14 +348,14 @@
           "mwmbl".disabled = false;
           "right dao".disabled = false;
           "searchmysite".disabled = false;
-          "stract".disabled = false;
+          "stract".disabled = true;
           "tineye".disabled = false;
           "wikidata".disabled = false;
           "wikipedia".disabled = false;
-          "wolframalpha".disabled = false;
-          "yacy".disabled = false;
+          "wolframalpha".disabled = true;
+          "yacy".disabled = true;
           "yep".disabled = true;
-          "bpb".disabled = false;
+          "bpb".disabled = true;
           "tagesschau".disabled = false;
           "wikimini".disabled = true;
 
@@ -366,7 +366,7 @@
           "duckduckgo images".disabled = false;
           "google images".disabled = false;
           "mojeek images".disabled = false;
-          "presearch images".disabled = false;
+          "presearch images".disabled = true;
           "qwant images".disabled = false;
           #- Without further subgrouping
           "1x".disabled = false;
@@ -384,7 +384,7 @@
           "unsplash".disabled = false;
           "wallhaven".disabled = false;
           "wikicommons.images".disabled = false;
-          "yacy images".disabled = false;
+          "yacy images".disabled = true;
           "yep images".disabled = false;
           "seekr images".disabled = false;
 
@@ -418,7 +418,7 @@
           #- Web
           "duckduckgo news".disabled = false;
           "mojeek news".disabled = false;
-          "presearch news".disabled = false;
+          "presearch news".disabled = true;
           #- Wikimedia
           "wikinews".disabled = false;
           #- Without further subgrouping
