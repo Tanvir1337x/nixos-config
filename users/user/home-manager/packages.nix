@@ -15,8 +15,8 @@ in {
   home-manager.users.user = {pkgs, ...}: {
     home.packages = with pkgs; [
       # Code editors
-      code-cursor # GUI: AI-powered code editor built on vscode
       /*
+      code-cursor # GUI: AI-powered code editor built on vscode
       neovide # GUI: Neovim GUI with enhanced features like animations and ligatures.
       emacs # CLI: The extensible, customizable GNU text editor.
       vim # CLI: The most popular clone of the VI editor.
