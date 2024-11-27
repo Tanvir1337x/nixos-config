@@ -345,6 +345,7 @@ in {
       docker-ls # CLI: Tools for browsing and manipulating Docker registries.
       docker-gc # CLI: Docker garbage collection tool.
       docker-sync # CLI: Synchronizes code for development in Docker containers.
+      dive # cli: Tool for exploring each layer in a docker image
       */
       # End of Virtualization Tools
 
@@ -624,7 +625,6 @@ in {
       # Document Viewers
       evince # GUI: GNOME document viewer.
       mate.atril # GUI: Multi-page document viewer for MATE.
-      /*
       libsForQt5.okular # GUI: KDE document viewer.
       zathura # GUI: Highly customizable PDF viewer.
       llpp # GUI: MuPDF-based PDF pager written in OCaml.
@@ -635,7 +635,6 @@ in {
       foliate # GUI: Simple and modern GTK ebook reader.
       koreader # GUI: Ebook reader supporting various formats.
       xreader # GUI: Document viewer for PDF, Postscript, and other formats.
-      */
       # End of Document Viewers
 
       # File Managers
