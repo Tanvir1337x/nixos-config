@@ -29,13 +29,13 @@
         "libvirtd"
         "adbusers"
         "aria2"
+        "docker"
         # "nginx"
         # "dialout"
         # "boinc"
         # config.services.kubo.group
         # "libvirt"
         # "vboxusers"
-        # "docker"
         # "wireshark"
       ];
     };

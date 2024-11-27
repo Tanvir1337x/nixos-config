@@ -91,7 +91,7 @@
 
     # <https://wiki.nixos.org/wiki/Docker>
     docker = {
-      enable = false;
+      enable = true;
 
       # Deprecated, use hardware.nvidia-container-toolkit.enable instead
       enableNvidia = false;
