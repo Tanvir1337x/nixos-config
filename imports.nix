@@ -64,6 +64,7 @@
 
     # Packages/Programs/Services
     ./users/root/settings.nix
+    ./users/root/misc.nix
     ./users/root/admin.nix
     ./users/root/packages.nix
     ./users/root/programs.nix
