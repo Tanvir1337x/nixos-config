@@ -176,8 +176,16 @@
               port = 80;
             }
           ];
+
           locations."/" = {
             proxyPass = "http://127.0.0.1:9999";
+          };
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
           };
         };
 
@@ -189,8 +197,16 @@
               port = 80;
             }
           ];
+
           locations."/" = {
             proxyPass = "http://127.0.0.1:5600";
+          };
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
           };
         };
 
@@ -204,6 +220,13 @@
           ];
           locations."/" = {
             proxyPass = "http://127.0.0.1:9117";
+          };
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
           };
         };
       };
