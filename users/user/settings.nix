@@ -44,6 +44,7 @@
       vboxusers.members = ["user"];
       docker.members = ["user"];
       searx.members = ["nginx"];
+      nginx.members = ["acme"];
     };
   };
 
