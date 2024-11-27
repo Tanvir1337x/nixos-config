@@ -9,6 +9,14 @@
         accelProfile = "adaptive";
         naturalScrolling = false;
       };
+
+      touchpad = {
+        disableWhileTyping = true;
+        accelProfile = "adaptive";
+        naturalScrolling = true;
+        horizontalScrolling = true;
+        tapping = true;
+      };
     };
 
     xserver = {
