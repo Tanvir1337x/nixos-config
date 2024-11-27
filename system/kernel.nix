@@ -60,14 +60,12 @@
         patch = null;
         # Drop the CONFIG_ prefix from the kernel configuration names
         # For Xanmod kernel
+        # CAUTION: Don't include newlines in extraConfig. It breaks the configuration file generation.
         extraConfig = ''
           WERROR y
-
           DEFAULT_HOSTNAME Cookie
-
           MNATIVE_AMD y
           CC_OPTIMIZE_FOR_PERFORMANCE y
-
           KERNEL_ZSTD y
           MODULE_COMPRESS_NONE n
           MODULE_COMPRESS_GZIP n
@@ -76,7 +74,6 @@
           ZSWAP_COMPRESSOR_DEFAULT_ZSTD y
           HIBERNATION_COMP_LZO n
           HIBERNATION_COMP_LZ4 y
-
           HZ_100 n
           HZ_250 n
           HZ_300 n
@@ -87,30 +84,27 @@
           CPU_FREQ_DEFAULT_GOV_PERFORMANCE y
           CPU_FREQ_STAT y
           X86_AMD_PSTATE y
-
           SCHED_CORE n
           PREEMPT y
           PREEMPT_VOLUNTARY n
           PREEMPT_DYNAMIC y
-
           TCP_CONG_BBR y
           DEFAULT_BBR y
           DEFAULT_TCP_CONG bbr
-
           RCU_EXPERT y
           RCU_BOOST y
           RCU_BOOST_DELAY 0
           RCU_EXP_KTHREAD y
-
           SCHEDSTATS y
         '';
-        /*
-        ZEN_INTERACTIVE y
-        SCHED_CLASS_EXT y
-        SCHED_ALT y
-        SCHED_PDS y
-        */
       }
+      # For Zen
+      /*
+      ZEN_INTERACTIVE y
+      SCHED_CLASS_EXT y
+      SCHED_ALT y
+      SCHED_PDS y
+      */
     ];
 
     # Register AppImage files as a binary type to binfmt_misc
