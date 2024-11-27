@@ -16,7 +16,7 @@ _: {
   #- freedesktop-sdk https://flathub.org/repo/flathub.flatpakrepo
 
   # Flatpak
-  services.flatpak.enable = false;
+  services.flatpak.enable = true;
 
   # Must have apps:
   # - com.github.tchx84.Flatseal
