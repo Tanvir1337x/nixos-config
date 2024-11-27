@@ -17,7 +17,6 @@
   };
 
   hardware.graphics = {
-    enable = true;
     # driSupport = true; # <https://nixos.org/manual/nixos/unstable/index.html#sec-gpu-accel>
     # enable32Bit = true; # 32-bit drivers for 32-bit applications (such as Wine)
     extraPackages = with pkgs; [
