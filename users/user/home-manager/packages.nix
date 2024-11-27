@@ -593,7 +593,6 @@ in {
       # Compression and Archiving Tools
       mate.engrampa # GUI: Archive manager for MATE.
       lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
-      /*
       libsForQt5.ark # GUI: KDE archive manager.
       xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
       archiver # GUI: Create and extract archives, compress and decompress files.
@@ -620,7 +619,6 @@ in {
       libarchive-qt # GUI: A Qt based archiving solution with libarchive backend.
       xar # CLI: Extensible archiver.
       peazip # GUI: Cross-platform file and archive manager.
-      */
       # End of Compression and Archiving Tools
 
       # Document Viewers
