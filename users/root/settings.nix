@@ -14,7 +14,7 @@
   };
 
   # Creates a file (/etc/current-system-packages) with list of all installed packages with their respective versions
-  # cat/bat /etc/current-system-packages
+  # `cat /etc/current-system-packages` or `bat /etc/current-system-packages`
   environment.etc."current-system-packages".text = let
     packages = builtins.map (p: "${p.name}") config.environment.systemPackages;
     sortedUnique = builtins.sort builtins.lessThan (pkgs.lib.lists.unique packages);

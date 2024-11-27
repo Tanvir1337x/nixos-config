@@ -21,7 +21,7 @@ environment.etc."current-system-packages".text = let
     formatted;
 ```
 
-This creates a file (`/etc/current-system-packages`) with list of all installed packages with their respective versions. You can then view it easily like: `cat/bat /etc/current-system-packages`.
+This creates a file (`/etc/current-system-packages`) with list of all installed packages with their respective versions. You can then view it easily like: `cat /etc/current-system-packages` or `bat /etc/current-system-packages`.
 
 ## Home-Manager
 
