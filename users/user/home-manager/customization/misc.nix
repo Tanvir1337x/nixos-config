@@ -31,7 +31,7 @@ in {
       "Xft.antialias" = 1;
       "Xft.hinting" = 1;
       "Xft.autohint" = 0;
-      "Xft.hintstyle" = "hintmedium";
+      "Xft.hintstyle" = "hintfull";
       # "Xft.rgba" = "rgb";
     };
   };

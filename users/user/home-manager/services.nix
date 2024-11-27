@@ -17,7 +17,7 @@ in {
           # Font
           "Xft/Antialias" = 1;
           "Xft/Hinting" = 1;
-          "Xft/HintStyle" = "hintmedium";
+          "Xft/HintStyle" = "hintfull";
           # "Xft/RGBA" = "rgb";
 
           # Theme
