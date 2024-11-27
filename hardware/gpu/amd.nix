@@ -5,8 +5,18 @@
   services.xserver.videoDrivers = ["amdgpu"];
 
   # HIP
-  systemd.tmpfiles.rules = [
-    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.hip}"
+  # <https://wiki.nixos.org/wiki/AMD_GPU#HIP>
+  systemd.tmpfiles.rules = let
+    rocmEnv = pkgs.symlinkJoin {
+      name = "rocm-combined";
+      paths = with pkgs.rocmPackages; [
+        rocblas
+        hipblas
+        clr
+      ];
+    };
+  in [
+    "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
   ];
 
   hardware.graphics.extraPackages = with pkgs; [
