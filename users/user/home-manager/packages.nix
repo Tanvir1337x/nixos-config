@@ -206,12 +206,16 @@ in {
       */
       # End of Command-Line Utilities
 
-      # Secrets Scanning
-      /*
+      # Scanners
+      #- Secret scanners
       trufflehog # CLI: Finds and verifies secrets in code and files.
       gitleaks # CLI: Scans Git repositories for secrets.
-      */
-      # End of Secrets Scanning
+      # End of Secret scanners
+      #- Vulnerability scanners
+      vulnix # CLI: NixOS vulnerability scanner.
+      grype # CLI: Vulnerability scanner for container images and filesystems.
+      # End of vulnerability scanners
+      # End of Scanners
 
       # Fun/Novelty Tools
       /*
@@ -243,7 +247,6 @@ in {
       nix-prefetch # CLI: Prefetches package sources.
       nix-prefetch-github # CLI: Prefetches sources from GitHub.
       nix-universal-prefetch # CLI: Uses Nixpkgs fetchers to determine hashes.
-      vulnix # CLI: NixOS vulnerability scanner.
       nix-index # CLI: Files database for Nixpkgs.
       */
       # End of Nix Tools
