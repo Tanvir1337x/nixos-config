@@ -4,6 +4,25 @@
   # amdgpu is the open source driver for AMD GPUs
   services.xserver.videoDrivers = ["amdgpu"];
 
+  hardware.amdgpu = {
+    # Vulkan
+    amdvlk = {
+      enable = true;
+      supportExperimental.enable = true;
+      package = pkgs.amdvlk;
+
+      support32Bit = {
+        enable = false;
+        package = pkgs.driversi686Linux.amdvlk;
+      };
+    };
+
+    # Load amdgpu kernelModule in stage 1.
+    # fixes lower resolution in boot screen during initramfs phase
+    initrd.enable = true;
+    legacySupport.enable = false;
+  };
+
   # HIP
   # <https://wiki.nixos.org/wiki/AMD_GPU#HIP>
   systemd.tmpfiles.rules = let
@@ -25,8 +44,8 @@
     rocmPackages.clr.icd
 
     # Vulkan
-    amdvlk
-    driversi686Linux.amdvlk
+    # amdvlk
+    # driversi686Linux.amdvlk
   ];
 
   # LACT (Linux AMDGPU Controller)
