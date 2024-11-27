@@ -15,8 +15,8 @@ in {
   home-manager.users.user = {pkgs, ...}: {
     home.packages = with pkgs; [
       # Code editors
-      /*
       code-cursor # GUI: AI-powered code editor built on vscode
+      /*
       neovide # GUI: Neovim GUI with enhanced features like animations and ligatures.
       emacs # CLI: The extensible, customizable GNU text editor.
       vim # CLI: The most popular clone of the VI editor.
@@ -47,12 +47,12 @@ in {
       wakatime # CLI: Tracks time spent on projects.
       gitkraken # GUI: Popular Git client with a user-friendly interface.
       just # CLI: Saves and runs project-specific commands.
-      /*
       github-desktop # GUI: GUI for managing Git repositories and interacting with GitHub.
-      act # CLI: Run your GitHub Actions locally.
       meld # GUI: Visual diff and merge tool.
-      serie # CLI: Displays a rich Git commit graph in your terminal.
       code2prompt # CLI: Converts codebases into LLM prompts with source tree, templating, and token counting.
+      /*
+      act # CLI: Run your GitHub Actions locally.
+      serie # CLI: Displays a rich Git commit graph in your terminal.
       github-copilot-cli # CLI: Command-line interface for GitHub Copilot.
       shellharden # CLI: Corrective bash syntax highlighter.
       processing # GUI: Language and IDE for electronic arts and visual programming.
