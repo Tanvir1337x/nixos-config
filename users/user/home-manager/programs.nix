@@ -295,7 +295,7 @@ in {
       It requires package ‘cctools-1010.6’ to build which is not available on the x86_64-unknown-linux-gnu
       */
       neovide = {
-        enable = false;
+        enable = true;
         package = pkgs.neovide;
         settings = {
           vsync = true;
