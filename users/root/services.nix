@@ -159,6 +159,7 @@
       */
     };
 
+    # <https://wiki.nixos.org/wiki/Nginx>
     nginx = {
       enable = true;
       recommendedOptimisation = true;
@@ -169,12 +170,26 @@
       recommendedBrotliSettings = true;
       virtualHosts = {
         # SearXNG Instance
+        # TODO: Enable HTTPS support for SearXNG
         "searxng.local" = {
+          # enableACME = true;
+          # forceSSL = true;
+          # sslCertificate = "/home/user/certs/self-signed.crt";
+          # sslCertificateKey = "/home/user/certs/self-signed.key";
+
           listen = [
             {
               addr = "127.0.0.1";
               port = 80;
+              # ssl = false;
             }
+            /*
+            {
+              addr = "127.0.0.1";
+              port = 443;
+              ssl = true;
+            }
+            */
           ];
 
           locations."/" = {
@@ -187,6 +202,13 @@
               return 200 "User-agent: *\nDisallow: /";
             '';
           };
+
+          /*
+          extraConfig = ''
+            "proxy_ssl_server_name on;"
+            "proxy_pass_header Authorization;"
+          '';
+          */
         };
 
         # ActivityWatch Instance

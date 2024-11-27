@@ -1,3 +1,4 @@
+# Git Overlay Configuration
 {pkgs, ...}: {
   # pkgs.git-with-gui
   nixpkgs.overlays = [

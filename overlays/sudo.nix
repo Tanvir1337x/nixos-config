@@ -1,3 +1,4 @@
+# Sudo Overlay Configuration
 _: {
   nixpkgs.overlays = [
     (prev: {

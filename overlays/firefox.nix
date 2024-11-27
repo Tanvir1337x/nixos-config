@@ -1,3 +1,4 @@
+# Firefox Overlay Configuration
 # <https://wiki.nixos.org/wiki/Firefox>
 {pkgs, ...}: {
   # Firefox Nightly

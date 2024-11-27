@@ -1,3 +1,4 @@
+# FFmpeg Overlay Configuration
 _: {
   nixpkgs.overlays = [
     (_self: super: {

@@ -1,3 +1,4 @@
+# Discord Overlay Configuration
 # <https://wiki.nixos.org/wiki/Discord>
 _: {
   nixpkgs.overlays = let

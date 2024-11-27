@@ -1,3 +1,4 @@
+# CK's MuQSS Process/CPU Scheduler, Overlay Configuration
 # <https://wiki.nixos.org/wiki/Linux_kernel#Custom_configuration>
 {
   pkgs,
