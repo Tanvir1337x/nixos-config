@@ -567,6 +567,7 @@
           "erowid".disabled = false;
           "fyyd".disabled = false;
           "goodreads".disabled = false;
+          "openlibrary".disabled = false;
           "podcastindex".disabled = false;
           "yummly".disabled = false;
           "chefkoch".disabled = false;
