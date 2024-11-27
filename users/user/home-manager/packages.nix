@@ -15,8 +15,8 @@ in {
   home-manager.users.user = {pkgs, ...}: {
     home.packages = with pkgs; [
       # Code editors
-      code-cursor # GUI: AI-powered code editor built on vscode
       /*
+      code-cursor # GUI: AI-powered code editor built on vscode
       neovide # GUI: Neovim GUI with enhanced features like animations and ligatures.
       emacs # CLI: The extensible, customizable GNU text editor.
       vim # CLI: The most popular clone of the VI editor.
@@ -75,10 +75,10 @@ in {
       # End of Development Tools
 
       # Android
+      /*
       gnirehtet # CLI: Reverse tethering over adb for Android
       scrcpy # CLI: Display and control Android devices over USB or TCP/IP
       android-file-transfer # GUI: Reliable MTP client with minimalistic UI
-      /*
       agi # GUI: Android GPU Inspector by Google
       aemu # UTIL: Android emulation utilities library
       android-studio-full # GUI: Official IDE for Android development (Stable channel)
@@ -93,29 +93,38 @@ in {
       androguard # CLI/LIB: Reverse engineering and pentesting for Android applications
       apksigner # CLI: Command line tool to sign and verify Android APKs
       ghost # CLI: An Android post-exploitation framework that exploits the Android Debug Bridge to remotely access an Android device
+      anbox # GUI: Android in a box
+      genymotion # GUI: Fast and easy Android emulation
+      waydroid # GUI: Container-based approach to boot a full Android system on a regular GNU/Linux system
       */
-      # anbox # GUI: Android in a box
-      # genymotion # GUI: Fast and easy Android emulation
-      # waydroid # GUI: Container-based approach to boot a full Android system on a regular GNU/Linux system
       # End of Android
 
       # Cloud Storage Clients
-      # megasync # Tray: MEGA Cloud Drive client.
-      # onedrivegui # GUI: OneDrive client with multi-account support.
-      # maestral-gui # GUI: GUI for Maestral, an open-source Dropbox client.
-      # cozy-drive # GUI: Cozy Cloud synchronization tool.
+      /*
+      megasync # Tray: MEGA Cloud Drive client.
+      onedrivegui # GUI: OneDrive client with multi-account support.
+      maestral-gui # GUI: GUI for Maestral, an open-source Dropbox client.
+      cozy-drive # GUI: Cozy Cloud synchronization tool.
+      */
       # End of Cloud Storage Clients
 
       # TeX/LaTeX
-      # lyx # GUI: WYSIWYM frontend for LaTeX and DocBook.
+      /*
+      lyx # GUI: WYSIWYM frontend for LaTeX and DocBook.
+      */
       # End of TeX/LaTeX
 
       # Python Development
-      # python3Full # CLI: Python 3 interpreter (full version).
+      /*
+      python3Full # CLI: Python 3 interpreter (full version).
+      spyder # GUI: The Scientific Python Development Environment.
+      */
       # End of Python Development
 
       # Kubernetes
-      # kubernetes-helm # CLI: Package manager for Kubernetes.
+      /*
+      kubernetes-helm # CLI: Package manager for Kubernetes.
+      */
       # End of Kubernetes
 
       # JavaScript Development
@@ -138,24 +147,32 @@ in {
       # End of File Sharing
 
       # Shells
-      # nushellFull # CLI: Modern shell written in Rust.
+      /*
+      nushellFull # CLI: Modern shell written in Rust.
+      */
+      #- Shell Plugins
+      #-- Fish Shell
+      /*
+      oh-my-fish # CLI: Framework for the Fish shell.
+      */
+      # End of Shell Plugins
       # End of Shells
 
       # Command-Line Utilities
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       bat # CLI: Cat clone with syntax highlighting and Git integration.
-      # exa # CLI: Modern replacement for 'ls' written in Rust.
-      # eza # CLI: Modern, maintained replacement for 'ls'.
       grc # CLI: Generic text colorizer.
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
       mcfly # CLI: Enhanced Ctrl-R for smarter history search.
       skim # CLI: Command-line fuzzy finder written in Rust.
       ripgrep # CLI: Fast and powerful search tool.
-      rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       fzf # CLI: Command-line fuzzy finder written in Go.
       zoxide # CLI: Fast 'cd' command that learns your habits.
       /*
+      rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
+      exa # CLI: Modern replacement for 'ls' written in Rust.
+      eza # CLI: Modern, maintained replacement for 'ls'.
       navi # CLI: Interactive cheatsheet tool for the command-line.
       progress # CLI: Shows the progress of coreutils programs.
       gping # CLI: Ping with a graphical representation.
@@ -209,10 +226,6 @@ in {
       genact # CLI: Nonsense activity generator.
       */
       # End of Fun/Novelty Tools
-
-      # Shell Plugins
-      # oh-my-fish # CLI: Framework for the Fish shell.
-      # End of Shell Plugins
 
       # Nix Tools
       nixd # Daemon: Nix language server.
@@ -311,6 +324,7 @@ in {
       /*
       freecad # GUI: Open-source 3D CAD/MCAD/CAx/CAE/PLM modeler.
       openscad # GUI: 3D parametric model compiler.
+      openscad-unstable # GUI: Unstable version of OpenSCAD.
       */
       # End of CAD Software
 
@@ -335,7 +349,12 @@ in {
       # End of Virtualization Tools
 
       # Cryptocurrency
-      # monero-gui # GUI: Monero GUI wallet.
+      /*
+      monero-gui # GUI: Monero GUI wallet.
+      electrum # GUI: Lightweight Bitcoin wallet.
+      electrum-ltc # GUI: Lightweight Litecoin Client.
+      electrum-grs # GUI: Lightweight Groestlcoin wallet.
+      */
       # End of Cryptocurrency
 
       # System Cleaners
@@ -354,7 +373,7 @@ in {
       stockfish # Engine: Strong open-source chess engine.
       fairymax # Engine: Chess engine supporting fairy pieces.
       #- End of Chess Engines
-      # libsForQt5.knights # GUI: Chess game for KDE.
+      libsForQt5.knights # GUI: Chess game for KDE.
       */
       # End of Games
 
@@ -407,7 +426,7 @@ in {
       */
       # End of Torrent Clients and Tools
 
-      # YouTube/Spotify Downloaders
+      # YouTube/Spotify/SoundCloud Downloaders
       /*
       yt-dlp # CLI: Fork of youtube-dl with additional features.
       tartube-yt-dlp # GUI: GUI frontend for youtube-dl and yt-dlp.
@@ -415,12 +434,14 @@ in {
       yt-dlg # GUI: Cross-platform GUI for youtube-dl.
       ytmdl # CLI: CLI tool to download music from YouTube.
       spotdl # CLI: Spotify downloader.
+      scdl # CLI: SoundCloud downloader.
       */
       # End of YouTube/Spotify Downloaders
 
       # Networking Tools
       /*
       httrack # CLI: Offline browser and website mirroring utility.
+      katana # CLI: Next-generation crawling and spidering framework.
       dnsrecon # CLI: DNS enumeration script.
       dig # CLI: DNS lookup utility.
       sniffnet # GUI: Cross-platform network traffic monitor.
@@ -442,8 +463,8 @@ in {
       */
       #- Discord
       #-- Discord Clients
-      vesktop # GUI: Alternate Discord client by Vencord with built-in features.
       /*
+      vesktop # GUI: Alternate Discord client by Vencord with built-in features.
       discord # GUI: Official Discord client.
       armcord # GUI: Lightweight Discord client.
       ripcord # GUI: Proprietary client for Discord and Slack.
@@ -452,11 +473,13 @@ in {
       */
       #-- End of Discord Clients
       #-- Discord Miscellaneous
-      # premid # CLI: Shows web activity as playing status on Discord.
+      /*
+      premid # CLI: Shows web activity as playing status on Discord.
+      */
       #-- End of Discord Miscellaneous
       #- Matrix Clients
-      element-desktop # GUI: Popular Matrix client.
       /*
+      element-desktop # GUI: Popular Matrix client.
       fluffychat # GUI: Matrix client with a focus on simplicity.
       nheko # GUI: Desktop client for the Matrix protocol.
       cinny-desktop # GUI: Matrix client for desktop.
@@ -481,44 +504,48 @@ in {
 
       # Media Players and Tools
       #- Video Players
-      vlc # GUI: Versatile media player.
+      /*
       mpv # CLI: Powerful media player.
+      vlc # GUI: Versatile media player.
+      */
       #- End of Video Players
       #- Image Viewers
       gthumb # GUI: Image browser and viewer for GNOME.
       eog # GUI: GNOME image viewer.
       pix # GUI: Image viewer from Linux Mint.
-      xviewer # GUI: Image viewer from Linux Mint.
-      loupe # GUI: Simple image viewer written in GTK4 and Rust.
-      feh # CLI: Lightweight image viewer.
-      meh # GUI: Minimal image viewer using raw XLib.
-      oculante # GUI: Minimalistic cross-platform image viewer.
-      nsxiv # GUI: Suckless X image viewer.
-      nomacs # GUI: Qt-based image viewer.
-      fim # CLI: Lightweight, customizable image viewer.
-      emulsion # GUI: Fast and minimalistic image viewer.
       pineapple-pictures # GUI: Lightweight image viewer.
       /*
+      loupe # GUI: Simple image viewer written in GTK4 and Rust.
+      xviewer # GUI: Image viewer from Linux Mint.
+      oculante # GUI: Minimalistic cross-platform image viewer.
+      feh # CLI: Lightweight image viewer.
+      meh # GUI: Minimal image viewer using raw XLib.
       image-roll # GUI: GTK image viewer with basic image manipulation tools.
       libsForQt5.gwenview # GUI: KDE image viewer.
+      nsxiv # GUI: Suckless X image viewer.
+      nomacs # GUI: Qt-based image viewer.
       napari # GUI: Fast, interactive, multi-dimensional image viewer.
       digikam # GUI: Photo management program.
       shotwell # GUI: Photo organizer for GNOME.
       darktable # GUI: Virtual lighttable and darkroom for photographers.
+      fim # CLI: Lightweight, customizable image viewer.
+      emulsion # GUI: Fast and minimalistic image viewer.
       */
       #- End of Image Viewers
       #- Image Tools
       imagemagickBig # CLI: Suite for creating, editing, and converting images.
       #- End of Image Tools
       #- Audio Players
+      audacious # GUI: Lightweight and versatile audio player.
+      audacious-plugins # Plugin: Plugins for Audacious.
+      /*
       amberol # GUI: Small and simple audio player.
       lollypop # GUI: Modern music player for GNOME.
       rhythmbox # GUI: Music player for GNOME.
-      exaile # GUI: Music player with a simple interface.
-      # tauon # GUI: Music player with a futuristic interface.
-      audacious # GUI: Lightweight and versatile audio player.
-      audacious-plugins # Plugin: Plugins for Audacious.
+      tauon # GUI: Music player with a futuristic interface.
       mpvc # CLI: MPC-like control interface for mpv.
+      exaile # GUI: Music player with a simple interface.
+      */
       /*
       libsForQt5.vvave # GUI: Multi-platform media player.
       */
@@ -532,7 +559,7 @@ in {
       # pasystray # Tray: PulseAudio system tray icon.
       #- End of Audio Controllers
       #- Media Tools
-      ffmpeg_7-full # CLI: Complete solution for recording, converting, and streaming audio and video.
+      ffmpeg-full # CLI: Complete solution for recording, converting, and streaming audio and video.
       /*
       mediainfo # CLI: Provides technical and tag information about media files.
       exiftool # CLI: Tool for reading, writing, and editing EXIF metadata.
@@ -540,13 +567,15 @@ in {
       */
       #- End of Media Tools
       #- VLC Plugins
+      /*
       vlc-bittorrent # Plugin: BitTorrent plugin for VLC.
+      */
       #- End of VLC Plugins
       # End of Media Players and Tools
 
       # Entertainment
-      spotify # GUI: Spotify web music player.
       /*
+      spotify # GUI: Spotify web music player.
       nuclear # GUI: Music streaming app similar to Spotify.
       mov-cli # CLI: Browse and watch movies from the command-line.
       lrby # GUI: Browser and wallet for LBRY.
@@ -562,8 +591,13 @@ in {
       # End of PipeWire Tools
 
       # Compression and Archiving Tools
-      file-roller # GUI: Archive manager from GNOME.
+      mate.engrampa # GUI: Archive manager for MATE.
+      lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
+      /*
+      libsForQt5.ark # GUI: KDE archive manager.
+      xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
       archiver # GUI: Create and extract archives, compress and decompress files.
+      file-roller # GUI: Archive manager from GNOME.
       brotli # CLI: Generic-purpose lossless compression algorithm and tool.
       lz4 # CLI: Extremely fast compression algorithm.
       zip # CLI: Compressor/archiver for ZIP files.
@@ -580,28 +614,26 @@ in {
       unzip # CLI: Extraction utility for ZIP archives.
       p7zip # CLI: 7z archiver with additional codecs and improvements.
       plzip # CLI: Parallel lzlib-based data compressor.
-      # peazip # GUI: Cross-platform file and archive manager.
       snzip # CLI: Snappy-based compression/decompression tool.
       crabz # CLI: Rust-based parallel compression tool like pigz.
       rar # CLI: Utility for RAR archives.
-      libsForQt5.ark # GUI: KDE archive manager.
-      mate.engrampa # GUI: Archive manager for MATE.
-      lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
-      xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
-      # xar # CLI: Extensible archiver.
+      libarchive-qt # GUI: A Qt based archiving solution with libarchive backend.
+      xar # CLI: Extensible archiver.
+      peazip # GUI: Cross-platform file and archive manager.
+      */
       # End of Compression and Archiving Tools
 
       # Document Viewers
-      # librum # GUI: Ebook reader focused on simplicity and enjoyment.
-      libsForQt5.okular # GUI: KDE document viewer.
       evince # GUI: GNOME document viewer.
-      llpp # GUI: MuPDF-based PDF pager written in OCaml.
       mate.atril # GUI: Multi-page document viewer for MATE.
-      mupdf # GUI: Lightweight PDF, XPS, and ebook viewer.
-      zathura # GUI: Highly customizable PDF viewer.
       /*
+      libsForQt5.okular # GUI: KDE document viewer.
+      zathura # GUI: Highly customizable PDF viewer.
+      llpp # GUI: MuPDF-based PDF pager written in OCaml.
+      mupdf # GUI: Lightweight PDF, XPS, and ebook viewer.
       qpdfview # GUI: Tabbed PDF viewer.
       calibre # GUI: Comprehensive ebook management software.
+      librum # GUI: Ebook reader focused on simplicity and enjoyment.
       foliate # GUI: Simple and modern GTK ebook reader.
       koreader # GUI: Ebook reader supporting various formats.
       xreader # GUI: Document viewer for PDF, Postscript, and other formats.
@@ -619,17 +651,24 @@ in {
       # End of File Managers
 
       # Terminal Emulators
+      /*
       kitty # GUI: GPU-accelerated terminal emulator.
-      # alacritty # GUI: GPU-accelerated terminal emulator.
+      alacritty # GUI: GPU-accelerated terminal emulator.
+      wezterm # GUI: GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust.
+      warp-terminal # GUI: The modern intelligent terminal.
+      xfce.xfce4-terminal # GUI: Modern terminal emulator for the Xfce desktop.
+      mate.mate-terminal # GUI: Terminal emulator for MATE.
+      lxterminal # GUI: Standard terminal emulator of LXDE.
+      */
       # End of Terminal Emulators
 
       # Application Launchers and Menus
-      # bemenu # GUI: Dynamic menu inspired by dmenu.
-      #- X11 Launchers
-      # rofi # GUI: Window switcher, run dialog, and dmenu replacement for X11.
-      # dmenu # GUI: Generic, customizable menu for X11.
-      #- Wayland Launchers
       /*
+      bemenu # GUI: Dynamic menu inspired by dmenu.
+      #- X11 Launchers
+      rofi # GUI: Window switcher, run dialog, and dmenu replacement for X11.
+      dmenu # GUI: Generic, customizable menu for X11.
+      #- Wayland Launchers
       rofi-wayland # GUI: Rofi for Wayland.
       */
       # End of Application Launchers and Menus
@@ -675,7 +714,10 @@ in {
       # End of IRC Clients
 
       # RSS/Atom Feed Readers
-      # liferea # GUI: GTK-based RSS/Atom feed reader.
+      /*
+      liferea # GUI: GTK-based RSS/Atom feed reader.
+      gnome-feeds # GUI: RSS/Atom feed reader for GNOME.
+      */
       # End of RSS/Atom Feed Readers
 
       # Fractal Engines
@@ -748,12 +790,12 @@ in {
       # End of Audio and Video Editors
 
       # Desktop Customization Tools
-      # flashfocus # Daemon: Adds focus animations to tiling window managers.
       /*
+      flashfocus # Daemon: Adds focus animations to tiling window managers.
       #- Wallpaper Managers
       nitrogen # GUI: Wallpaper browser and setter for X11.
-      # hyprpaper # GUI: Wayland wallpaper utility.
-      # swww # CLI: Animated wallpaper daemon for Wayland.
+      hyprpaper # GUI: Wayland wallpaper utility.
+      swww # CLI: Animated wallpaper daemon for Wayland.
       #- End of Wallpaper Managers
       themix-gui # GUI: Theme designer with plugin support.
       lxappearance # GUI: Configures themes and fonts for GTK applications.
@@ -766,8 +808,10 @@ in {
       # End of Desktop Customization Tools
 
       # Network Management
-      # networkmanagerapplet # GUI/Tray: NetworkManager applet for GNOME.
-      # nm-tray # GUI/Tray: Simple NetworkManager frontend written in Qt.
+      /*
+      networkmanagerapplet # GUI/Tray: NetworkManager applet for GNOME.
+      nm-tray # GUI/Tray: Simple NetworkManager frontend written in Qt.
+      */
       # End of Network Management
 
       # Tor Tools
@@ -782,6 +826,11 @@ in {
 
       # Password Managers
       keepassxc # GUI: Offline password manager.
+      /*
+      bitwarden-desktop # GUI: Secure and free password manager for all of your devices.
+      bitwarden-cli # CLI: Command-line interface for Bitwarden.
+      proton-pass # GUI: Desktop application for Proton Pass
+      */
       # End of Password Managers
 
       # Status Bars
@@ -791,8 +840,12 @@ in {
       # End of Status Bars
 
       # Compositors
-      # picom # Daemon: Compositing manager for X servers.
       picom-pijulius # Daemon: Picom fork with extensive animation support.
+      /*
+      picom # Daemon: Compositing manager for X servers.
+      fastcompmgr # Daemon: Fast compositor for X11
+      neocomp # Daemon: Fork of Compton, a compositor for X11
+      */
       # End of Compositors
 
       # Notification Daemons
@@ -816,8 +869,8 @@ in {
       # End of Font Management
 
       # Screenshot Tools
-      flameshot # GUI: Feature-rich screenshot tool.
       /*
+      flameshot # GUI: Feature-rich screenshot tool.
       scrot # CLI: Command-line screenshot utility.
       maim # CLI: Command-line screenshot utility.
       shotgun # CLI: Minimal X screenshot utility.
@@ -898,7 +951,7 @@ in {
 
       # Scientific Software
       /*
-      # mathematica-cuda # GUI: Wolfram Mathematica with CUDA support.
+      mathematica-cuda # GUI: Wolfram Mathematica with CUDA support.
       octaveFull # GUI: Scientific programming language.
       scilab-bin # GUI: Numerical computation software (Matlab-like).
       gnuplot # GUI: Command-line graphing utility.
@@ -940,10 +993,12 @@ in {
 
       # Color Pickers
       #- Wayland Color Pickers
-      # hyprpicker # CLI: Wayland color picker.
-      #- X11 Color Pickers
-      # gcolor2 # GUI: Simple GTK color selector.
       /*
+      hyprpicker # CLI: Wayland color picker.
+      */
+      #- X11 Color Pickers
+      /*
+      gcolor2 # GUI: Simple GTK color selector.
       gcolor3 # GUI: Color selector.
       gpick # GUI: Advanced color picker.
       libsForQt5.kcolorchooser # GUI: KDE color chooser.
@@ -967,15 +1022,17 @@ in {
       webp-pixbuf-loader # Lib: WebP thumbnail support.
       poppler # Lib: PDF thumbnail support.
       ffmpegthumbnailer # Lib: Video thumbnail support.
-      libgsf # Lib: ODF thumbnail support.
       gnome-epub-thumbnailer # Lib: EPub and MOBI thumbnail support.
+      /*
+      libgsf # Lib: ODF thumbnail support.
       f3d # Lib: 3D file thumbnail support (glTF, stl, step, ply, obj, fbx).
-      # mcomix # Lib: Comic book thumbnail support (cbz, cbr).
+      mcomix # Lib: Comic book thumbnail support (cbz, cbr).
+      */
       # End of Tumbler Thumbnailers
 
       # VPN Clients
-      protonvpn-cli_2 # CLI: ProtonVPN command-line client using OpenVPN.
       /*
+      protonvpn-cli_2 # CLI: ProtonVPN command-line client using OpenVPN.
       protonvpn-gui # GUI: ProtonVPN client.
       protonvpn-cli # CLI: ProtonVPN command-line client.
       */
@@ -999,7 +1056,19 @@ in {
       */
       # End of Miscellaneous Tools and Applications
 
+      # Libraries
+      #- <https://wiki.nixos.org/wiki/FAQ/I_installed_a_library_but_my_compiler_is_not_finding_it._Why%3F>
+      #- <https://discourse.nixos.org/t/how-to-install-openssl-to-compile-against/1249>
+      /*
+      openssl # Lib+CLI: Cryptographic library and tools.
+      */
+      # End of Libraries
+
       # Essential System Utilities
+      nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
+      i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
+      /*
+      nvitop # CLI: NVIDIA GPU process viewer.
       resources # GUI: System resource monitor.
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
       # gnome-usage # GUI: System resource usage viewer.
@@ -1009,20 +1078,15 @@ in {
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
       # xsettingsd # CLI: Provides settings to X11 applications.
       # xfce.xfce4-taskmanager # GUI: XFCE task manager.
-      nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
-      nvitop # CLI: NVIDIA GPU process viewer.
-      i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
       # tree # CLI: Displays directory structure as a tree.
       # smartmontools # CLI: Hard drive health monitoring tools.
       # nvme-cli # CLI: NVM-Express user space tools.
       # lm_sensors # CLI: Hardware sensor reading tools.
       # linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
-      #- <https://wiki.nixos.org/wiki/FAQ/I_installed_a_library_but_my_compiler_is_not_finding_it._Why%3F>
-      #- <https://discourse.nixos.org/t/how-to-install-openssl-to-compile-against/1249>
-      # openssl # Lib+CLI: Cryptographic library and tools.
+      */
       #- jq - JSON Processor
-      # jq # CLI: Command-line JSON processor.
       /*
+      jq # CLI: Command-line JSON processor.
       jqp # CLI: TUI playground for jq.
       ijq # CLI: Interactive wrapper for jq.
       */
@@ -1104,7 +1168,9 @@ in {
       # End of Firewall
 
       # Network Diagnostics
-      # ooniprobe-cli # CLI: Network interference probe.
+      /*
+      ooniprobe-cli # CLI: Network interference probe.
+      */
       # End of Network Diagnostics
 
       # Gaming and Windows Compatibility
@@ -1120,11 +1186,11 @@ in {
       wine-wayland # CLI: Wine with experimental Wayland support.
       wine-staging # CLI: Wine with staging patches.
       winetricks # GUI: Installs DLLs and components for Wine.
-      #bottles # GUI: Wine prefix manager.
+      bottles # GUI: Wine prefix manager.
       #- Proton
       protontricks # CLI: Runs Winetricks commands for Proton games.
       protonup-qt # GUI: Manages Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris.
-      # Misc Gaming Tools
+      #- Misc Gaming Tools
       lutris # GUI: Open-source gaming platform for Linux.
       */
       # End of Gaming and Windows Compatibility

@@ -7,6 +7,8 @@
 {
   # N.B. : Paths in nix expressions are always relative the file which defines them
   imports = [
+    ./home-manager/no-defaults.nix
+
     ./home-manager/settings.nix
     ./home-manager/programs.nix
     ./home-manager/services.nix

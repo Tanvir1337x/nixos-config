@@ -9,7 +9,7 @@
     # Linux Containers (LXC), which provides tools for creating and managing system
     # or application containers
     lxc = {
-      enable = true;
+      # enable = false;
       package = pkgs.lxc;
 
       # LXCFS is a FUSE filesystem for LXC
@@ -69,7 +69,7 @@
     };
 
     #- Xen currently does not support EFI boot
-    # xen.enable = true;
+    xen.enable = false;
 
     # <https://wiki.nixos.org/wiki/VirtualBox>
     virtualbox = {
@@ -87,11 +87,11 @@
     # <https://wiki.nixos.org/wiki/WayDroid>
     # Wayland Only
     # Running on X11 (use weston package in X11 session): <https://github.com/waydroid/waydroid/issues/195#issuecomment-953926526>
-    waydroid.enable = false;
+    waydroid.enable = true;
 
     # <https://wiki.nixos.org/wiki/Docker>
     docker = {
-      enable = true;
+      enable = false;
 
       # Deprecated, use hardware.nvidia-container-toolkit.enable instead
       enableNvidia = false;

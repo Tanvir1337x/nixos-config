@@ -5,6 +5,13 @@
 _: {
   nixpkgs.overlays = [
     (self: super: {
+      /*
+      mpv = super.mpv-unwrapped.override {
+        vapoursynthSupport = true;
+        youtubeSupport = true;
+      }
+      */
+
       mpv = super.mpv.override {
         scripts = with self.mpvScripts; [
           uosc # Userscript: Feature-rich minimalist proximity-based UI

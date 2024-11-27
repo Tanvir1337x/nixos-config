@@ -3,7 +3,7 @@
 {pkgs, ...}: {
   hardware.pulseaudio = {
     enable = true;
-    support32Bit = true;
+    support32Bit = false;
     package = pkgs.pulseaudioFull;
   };
 

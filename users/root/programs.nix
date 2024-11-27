@@ -78,6 +78,11 @@
       '';
     };
 
+    nano = {
+      enable = false;
+      syntaxHighlight = true;
+    };
+
     adb.enable = true;
 
     # kdeconnect.enable = true;
@@ -90,7 +95,7 @@
     openvpn3.enable = false;
 
     atop = {
-      enable = true;
+      enable = false;
       atopgpu.enable = true;
     };
 

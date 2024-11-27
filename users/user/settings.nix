@@ -28,6 +28,8 @@
         "kvm"
         "libvirtd"
         "adbusers"
+        "aria2"
+        # "nginx"
         # "dialout"
         # "boinc"
         # config.services.kubo.group
@@ -41,6 +43,7 @@
     extraGroups = {
       vboxusers.members = ["user"];
       docker.members = ["user"];
+      searx.members = ["nginx"];
     };
   };
 

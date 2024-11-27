@@ -6,7 +6,11 @@ in {
     (import "${home-manager}/nixos")
   ];
 
-  home-manager.users.user = {pkgs, ...}: {
+  home-manager.users.user = {
+    pkgs,
+    lib,
+    ...
+  }: {
     programs = {
       firefox = {
         enable = true;
@@ -14,7 +18,7 @@ in {
       };
 
       chromium = {
-        enable = true;
+        enable = false;
       };
 
       atuin = {
@@ -71,6 +75,87 @@ in {
         package = pkgs.vscode.fhs; # gui: vscode with fhs-3.0 environment (chroot)
       };
 
+      kitty = {
+        enable = true;
+        # Note: `xdg.configFile."kitty/kitty.conf".enable = false;` has been set temporarily in hm settings.nix
+        shellIntegration = {
+          # https://sw.kovidgoyal.net/kitty/shell-integration
+          mode = "no-rc"; # no-rc is always implied
+          enableBashIntegration = true;
+          enableZshIntegration = true;
+          enableFishIntegration = true;
+        };
+      };
+
+      mpv = {
+        enable = true;
+        defaultProfiles = ["gpu-hq"];
+        # Values adapted from: <https://github.com/Tsubajashi/mpv-settings/blob/master/mpv_linux.conf>
+        config = {
+          profile = "gpu-hq";
+          hwdec = "auto-copy"; # enable hardware decoding, defaults to 'no'
+          vo = "gpu-next";
+          keep-open = true;
+          fs = false; # Don't start in fullscreen mode by default
+          gpu-context = "auto";
+          ytdl-format = "bestvideo[height<=1080]+bestaudio/best[height<=1080]"; # 1080p Max
+          cache = true;
+          force-window = true;
+
+          dither-depth = "auto";
+
+          volume = 100;
+          volume-max = 125;
+          # audio-stream-silence = true; # fix audio popping on random seek | Breaks certain player behavior
+          audio-file-auto = "fuzzy"; # external audio doesn't has to match the file name exactly to autoload
+          audio-pitch-correction = true; # automatically insert scaletempo when playing with higher speed
+
+          subs-fallback = "default";
+          alang = "en,eng";
+          slang = "en,eng";
+          vlang = "en,eng";
+
+          screenshot-format = "png";
+          screenshot-png-compression = 5; # Range is 0 to 10
+          screenshot-tag-colorspace = true;
+          screenshot-high-bit-depth = true; # Same output bitdepth as the video
+          screenshot-directory = "/home/user/media/pictures/screenshots/";
+
+          hr-seek-framedrop = false;
+
+          deband = true;
+          deband-iterations = 4;
+          deband-threshold = 35;
+          deband-range = 16;
+          deband-grain = 4;
+
+          # video-sync = "display-resample";
+          # interpolation = true;
+          # tscale = "sphinx";
+
+          # SDR
+          # tone-mapping = "bt.2446a";
+
+          # HDR
+          # target-colorspace-hint = true;
+
+          deinterlace = false; # Global reset of deinterlacing to off
+
+          # osc = false;
+          # border = false;
+          # msg-color = true;
+          # msg-module = false;
+        };
+
+        /*
+        scriptOpts = {
+          thumbfast = {
+            hwdec = false;
+          };
+        };
+        */
+      };
+
       direnv = {
         enable = true;
         nix-direnv.enable = true;
@@ -82,7 +167,7 @@ in {
       };
 
       nushell = {
-        enable = true;
+        enable = false;
       };
 
       starship = {
@@ -145,8 +230,8 @@ in {
           embed-info-json = true;
           embed-metadata = true;
           compat-options = "no-certifi";
-          # downloader = lib.getExe pkgs.aria2;
-          # downloader-args = "aria2c:'-c -x8 -s8 -k1M'";
+          downloader = lib.getExe pkgs.aria2;
+          downloader-args = "aria2c:'-c -x8 -s8 -k1M'";
           # sponsorblock-mark = "all";
         };
 
@@ -205,8 +290,12 @@ in {
         */
       };
 
+      /*
+      As of 19/11/2024
+      It requires package ‘cctools-1010.6’ to build which is not available on the x86_64-unknown-linux-gnu
+      */
       neovide = {
-        enable = true;
+        enable = false;
         package = pkgs.neovide;
         settings = {
           vsync = true;
@@ -236,6 +325,9 @@ in {
           saveundo = true; # Save the undo history (even after closing a file)
         };
       };
+
+      # TODO: Setup mangohud
+      # mangohud.enable = true;
 
       gpg.enable = true;
       lazygit.enable = true;
@@ -297,6 +389,10 @@ in {
       };
 
       gh-dash.enable = true;
+
+      spotify-player = {
+        enable = false;
+      };
     };
   };
 }
