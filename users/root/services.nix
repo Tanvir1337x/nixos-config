@@ -86,7 +86,7 @@
     };
     */
 
-    # <https://github.com/nix-community/nur-combined/blob/master/repos/xddxdd/pkgs/uncategorized/flaresolverr/default.nix>
+    # <https://github.com/nix-community/nur-combined/blob/master/repos/xddxdd/pkgs/uncategorized/flaresolverr-21hsmw/default.nix>
     /*
     flaresolverr = {
       after = ["network.target"];
@@ -102,7 +102,7 @@
         Restart = "always";
         RestartSec = 5;
         TimeoutStopSec = 30;
-        ExecStart = "${pkgs.nur.repos.xddxdd.flaresolverr}/bin/flaresolverr";
+        ExecStart = "${pkgs.nur.repos.xddxdd.flaresolverr-21hsmw}/bin/flaresolverr";
       };
       wantedBy = ["multi-user.target"];
     };
@@ -688,6 +688,12 @@
       enable = true;
       port = 8191;
       # openFirewall = true;
+      # Use flaresolverr-21hsmw temporarily as the original package is broken
+      # Tracking: <https://github.com/NixOS/nixpkgs/issues/332776>,
+      # <https://github.com/FlareSolverr/FlareSolverr/issues/1318>
+      # and <https://github.com/NixOS/nixpkgs/pull/353885>
+      # TODO: Switch back to the original package once upstream fixes the issue
+      package = pkgs.nur.repos.xddxdd.flaresolverr-21hsmw;
     };
 
     # USB Automounting
