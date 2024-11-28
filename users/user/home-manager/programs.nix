@@ -17,6 +17,29 @@ in {
         # package = pkgs.firefox-beta;
       };
 
+      librewolf = {
+        enable = true;
+        # <https://librewolf.net/docs/settings>
+        settings = {
+          "identity.fxaccounts.enabled" = true;
+          "browser.sessionstore.resume_from_crash" = true;
+          "privacy.resistFingerprinting.letterboxing" = false;
+
+          "webgl.disabled" = false;
+
+          "middlemouse.paste" = true;
+          "general.autoScroll" = true;
+
+          "privacy.clearOnShutdown.history" = false;
+          "privacy.clearOnShutdown.downloads" = false;
+
+          "browser.safebrowsing.downloads.enabled" = true;
+          "browser.safebrowsing.malware.enabled" = true;
+          "browser.safebrowsing.phishing.enabled" = true;
+          "browser.safebrowsing.blockedURIs.enabled" = true;
+        };
+      };
+
       chromium = {
         enable = true;
         package = pkgs.ungoogled-chromium;
