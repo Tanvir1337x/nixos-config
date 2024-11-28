@@ -260,11 +260,11 @@ in {
       # End of Documentation Browsers
 
       # Web Browsers
-      /*
       tor-browser # GUI: Privacy-focused browser using the Tor network.
       brave # GUI: Privacy-oriented browser.
-      librewolf # GUI: Firefox fork focused on privacy, security, and freedom.
       mullvad-browser # GUI: Privacy-focused browser from The Tor Project and Mullvad.
+      /*
+      librewolf # GUI: Firefox fork focused on privacy, security, and freedom.
       yandex-browser # GUI: Yandex Web Browser.
       floorp # GUI: Firefox fork focused on the open web.
       vivaldi # GUI: Customizable web browser.
