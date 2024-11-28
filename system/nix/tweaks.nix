@@ -11,9 +11,9 @@ _: {
   nixpkgs.config = {
     # <https://wiki.nixos.org/wiki/FAQ/How_can_I_install_a_proprietary_or_unfree_package%3F#System-level_configuration_.28NixOS.29>
     allowUnfree = true;
-    allowBroken = true;
+    allowBroken = false;
     # Workaround for https://github.com/nix-community/home-manager/issues/2942
-    allowUnfreePredicate = _: true;
+    # allowUnfreePredicate = _: true;
   };
 
   # Enable flakes
