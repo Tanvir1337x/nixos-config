@@ -8,6 +8,7 @@
     # System
     ./system/no-defaults.nix
     ./system/nix/tweaks.nix
+    ./system/nix/repos.nix
     ./system/hardware.nix
     ./system/filesystem.nix
     ./system/kernel.nix
