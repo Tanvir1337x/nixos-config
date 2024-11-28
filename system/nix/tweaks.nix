@@ -15,6 +15,7 @@ _: {
     allowBroken = false;
     # Workaround for https://github.com/nix-community/home-manager/issues/2942
     allowUnfreePredicate = _: true;
+    allowInsecurePredicate = _: false;
     /*
     allowUnfreePredicate = pkg:
       builtins.elem (lib.getName pkg) [
@@ -22,6 +23,8 @@ _: {
       ];
     */
     allowUnsupportedSystem = false;
+    # allowlistedLicenses = with lib.licenses; [ amd ];
+    # blocklistedLicenses = with lib.licenses; [ wtfpl ];
   };
 
   # Enable flakes
