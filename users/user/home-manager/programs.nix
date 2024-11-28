@@ -22,6 +22,11 @@ in {
         package = pkgs.ungoogled-chromium;
       };
 
+      floorp = {
+        enable = true;
+        package = pkgs.floorp;
+      };
+
       atuin = {
         enable = true;
         enableFishIntegration = true;
