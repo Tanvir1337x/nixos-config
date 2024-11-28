@@ -18,7 +18,8 @@ in {
       };
 
       chromium = {
-        enable = false;
+        enable = true;
+        package = pkgs.ungoogled-chromium;
       };
 
       atuin = {
