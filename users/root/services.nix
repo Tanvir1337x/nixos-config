@@ -649,7 +649,6 @@
 
     teamviewer.enable = false;
     vnstat.enable = true;
-    fstrim.enable = false;
 
     /*
     atuin = {
@@ -711,6 +710,11 @@
       enable = true;
       interval = "monthly";
       fileSystems = ["/"];
+    };
+
+    fstrim = {
+      enable = true;
+      interval = "weekly";
     };
 
     # zfs.autoScrub.enable = true;
