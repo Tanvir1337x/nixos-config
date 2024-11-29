@@ -8,7 +8,6 @@ in {
 
   home-manager.users.user = _: {
     services = {
-      kdeconnect.enable = false;
       gnome-keyring.enable = true;
 
       xsettingsd = {
@@ -48,6 +47,12 @@ in {
             userColors = "picker, #00ff00, #000000, #ff2e00, #ff0069, #ff00aa, #a400ff, #0d00ff, #00e9ff, #00ffa5, #75baff";
           };
         };
+      };
+
+      kdeconnect = {
+        enable = true;
+        indicator = true;
+        package = pkgs.kdePackages.kdeconnect-kde;
       };
 
       easyeffects = {
