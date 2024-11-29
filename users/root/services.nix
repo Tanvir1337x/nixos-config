@@ -778,7 +778,7 @@
     tor = {
       enable = false;
       client.enable = true;
-      openFirewall = true;
+      openFirewall = false;
 
       relay = {
         enable = true;

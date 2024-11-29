@@ -1,6 +1,6 @@
 # Firewall Configuration
 #- <https://wiki.nixos.org/wiki/Firewall>
-_: {
+{lib, ...}: {
   # The default firewall uses iptables
   # To use the newer nftables instead it needs to be enabled
   # Causes problem with Docker
@@ -10,7 +10,7 @@ _: {
   # Check the rules: iptables -L -v -n
   # nftables: nft list ruleset
   networking.firewall = {
-    enable = false;
+    enable = lib.mkForce false;
     allowPing = false;
 
     # Warning: Firewall rules may be overwritten by Docker
