@@ -73,7 +73,7 @@
 
   environment.sessionVariables = {
     LIBVA_DRIVER_NAME = "nvidia";
-    VDPAU_DRIVER = "va_gl";
+    # VDPAU_DRIVER = "va_gl";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   };
 
