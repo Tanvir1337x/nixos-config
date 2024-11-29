@@ -1067,22 +1067,22 @@ in {
       # Essential System Utilities
       nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
       i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
+      linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
       /*
       nvitop # CLI: NVIDIA GPU process viewer.
       resources # GUI: System resource monitor.
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
-      # gnome-usage # GUI: System resource usage viewer.
-      # gnome-disk-utility # GUI: Disk management tool.
-      # wgetpaste # CLI: Command-line interface to pastebin services.
+      gnome-usage # GUI: System resource usage viewer.
+      gnome-disk-utility # GUI: Disk management tool.
+      wgetpaste # CLI: Command-line interface to pastebin services.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
-      # xsettingsd # CLI: Provides settings to X11 applications.
-      # xfce.xfce4-taskmanager # GUI: XFCE task manager.
-      # tree # CLI: Displays directory structure as a tree.
-      # smartmontools # CLI: Hard drive health monitoring tools.
-      # nvme-cli # CLI: NVM-Express user space tools.
-      # lm_sensors # CLI: Hardware sensor reading tools.
-      # linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
+      xsettingsd # CLI: Provides settings to X11 applications.
+      xfce.xfce4-taskmanager # GUI: XFCE task manager.
+      tree # CLI: Displays directory structure as a tree.
+      smartmontools # CLI: Hard drive health monitoring tools.
+      nvme-cli # CLI: NVM-Express user space tools.
+      lm_sensors # CLI: Hardware sensor reading tools.
       */
       #- jq - JSON Processor
       /*
