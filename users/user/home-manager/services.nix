@@ -9,6 +9,7 @@ in {
   home-manager.users.user = _: {
     services = {
       gnome-keyring.enable = true;
+      blueman-applet.enable = true;
 
       xsettingsd = {
         enable = true;
