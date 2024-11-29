@@ -858,7 +858,7 @@
 
     mullvad-vpn.enable = false;
 
-    snowflake-proxy.enable = false;
+    snowflake-proxy.enable = true;
 
     # TODO: Setup sonarr, radarr, prowlarr, lidarr, readarr, bazarr, whisparr, exportarr, plex, kodi, ombi,
     # jellyseerr, overseerr
