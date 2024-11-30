@@ -485,12 +485,13 @@ in {
       */
       #-- End of Discord Miscellaneous
       #- Matrix Clients
-      /*
       element-desktop # GUI: Popular Matrix client.
-      fluffychat # GUI: Matrix client with a focus on simplicity.
+      libsForQt5.neochat # GUI: KDE Matrix client.
+      fractal # GUI: Matrix group messaging app.
       nheko # GUI: Desktop client for the Matrix protocol.
       cinny-desktop # GUI: Matrix client for desktop.
-      fractal # GUI: Matrix group messaging app.
+      fluffychat # GUI: Matrix client with a focus on simplicity.
+      /*
       element-desktop-wayland # GUI: Element with Wayland support.
       schildichat-desktop # GUI: Matrix client based on Element (removed from Nixpkgs due to security concerns).
       */
