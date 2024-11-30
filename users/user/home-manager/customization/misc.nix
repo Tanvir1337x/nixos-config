@@ -10,20 +10,18 @@ in {
     home = {
       pointerCursor = {
         gtk.enable = true;
-        package = pkgs.bibata-cursors;
-        # Easily find the exact names using lxappearance
-        name = "Bibata-Original-Classic";
-        size = 30;
+        package = pkgs.lyra-cursors;
+        name = "LyraF-cursors";
+        size = 40;
 
         x11 = {
           enable = true;
-          # Easily find the exact names using lxappearance
-          defaultCursor = "Bibata-Original-Classic";
+          defaultCursor = "LyraF-cursors";
         };
 
         hyprcursor = {
           enable = false;
-          size = 30;
+          size = 40;
         };
       };
     };

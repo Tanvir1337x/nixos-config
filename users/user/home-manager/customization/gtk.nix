@@ -12,26 +12,22 @@ in {
 
       theme = {
         package = pkgs.colloid-gtk-theme;
-        # Easily find the exact names using lxappearance
         name = "Colloid-Dark";
       };
 
       iconTheme = {
         package = pkgs.tela-icon-theme;
-        # Easily find the exact names using lxappearance
         name = "Tela-black-dark";
       };
 
       cursorTheme = {
-        package = pkgs.bibata-cursors;
-        # Easily find the exact names using lxappearance, fc-list
-        name = "Bibata-Original-Classic";
-        size = 30;
+        package = pkgs.lyra-cursors;
+        name = "LyraF-cursors";
+        size = 40;
       };
 
       font = {
         package = pkgs.fira-code;
-        # Easily find the exact names using lxappearance
         name = "Fira Code";
         size = 14;
       };
