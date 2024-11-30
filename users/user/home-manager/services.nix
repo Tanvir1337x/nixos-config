@@ -11,8 +11,9 @@ in {
       gnome-keyring.enable = true;
       blueman-applet.enable = true;
 
+      /*
       xsettingsd = {
-        enable = true;
+        enable = false;
         settings = {
           # Font
           "Xft/Antialias" = 1;
@@ -29,6 +30,7 @@ in {
           "Net/CursorBlink" = 1;
         };
       };
+      */
 
       flameshot = {
         enable = true;

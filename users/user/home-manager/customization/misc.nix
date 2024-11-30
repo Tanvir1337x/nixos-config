@@ -20,6 +20,11 @@ in {
           # Easily find the exact names using lxappearance
           defaultCursor = "Bibata-Original-Classic";
         };
+
+        hyprcursor = {
+          enable = false;
+          size = 30;
+        };
       };
     };
 
