@@ -263,13 +263,16 @@ in {
       tor-browser # GUI: Privacy-focused browser using the Tor network.
       brave # GUI: Privacy-oriented browser.
       mullvad-browser # GUI: Privacy-focused browser from The Tor Project and Mullvad.
+      vivaldi # GUI: Browser for our Friends, powerful and personal.
+      opera # GUI: Faster, safer and smarter web browser.
+      wavebox # GUI: Wavebox Productivity Browser.
+      microsoft-edge # GUI: Web browser from Microsoft.
       /*
+      arc-browser # GUI: Arc from The Browser Company.
       librewolf # GUI: Firefox fork focused on privacy, security, and freedom.
       yandex-browser # GUI: Yandex Web Browser.
+      yandex-browser-beta  # GUI: Yandex Web Browser (Beta Version).
       floorp # GUI: Firefox fork focused on the open web.
-      vivaldi # GUI: Customizable web browser.
-      microsoft-edge # GUI: Microsoft's web browser.
-      opera # GUI: Web browser with built-in features.
       ungoogled-chromium # GUI: Chromium without Google services dependencies.
       chromium # GUI: Open-source web browser from Google.
       */
