@@ -63,20 +63,9 @@
       fira-code-symbols
       material-icons
       font-awesome
-      (nerdfonts.override {
-        fonts = [
-          "Noto"
-          "FiraCode"
-          /*
-          "Inconsolata"
-          "Iosevka"
-          "JetBrainsMono"
-          "Monoid"
-          "Mononoki"
-          "Meslo" # Recommended by ohmyposh <https://ohmyposh.dev/docs/installation/fonts>
-          */
-        ];
-      })
+      nerd-fonts.noto
+      nerd-fonts.fira-code
+      # nerd-fonts.Meslo # Recommended by ohmyposh <https://ohmyposh.dev/docs/installation/fonts>
 
       # Misc
       /*
