@@ -33,7 +33,7 @@
 
     # Graphics
     ./hardware/gpu/nvidia.nix
-    # ./desktop/gui/graphics.nix
+    ./desktop/gui/graphics.nix
 
     # Networking
     ./hardware/network/internet.nix
