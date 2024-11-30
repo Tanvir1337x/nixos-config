@@ -408,7 +408,7 @@
           "ask".disabled = false;
           "cloudflareai".disabled = true;
           "crowdview".disabled = false;
-          "curlie".disabled = false;
+          "curlie".disabled = true;
           "currency".disabled = false;
           "ddg definitions".disabled = false;
           "encyclosearch".disabled = false;
