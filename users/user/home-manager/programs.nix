@@ -102,6 +102,21 @@ in {
         enableFishIntegration = true;
       };
 
+      fd = {
+        enable = true;
+        hidden = true;
+
+        extraOptions = [
+          "--no-ignore"
+          "--absolute-path"
+        ];
+
+        ignores = [
+          ".git/"
+          "*.bak"
+        ];
+      };
+
       thefuck = {
         enable = true;
         enableInstantMode = true; # Experimental as of 20/06/2024
