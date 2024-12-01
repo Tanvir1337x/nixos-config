@@ -16,21 +16,30 @@ in {
     home.packages = with pkgs; [
       # Code editors
       code-cursor # GUI: AI-powered code editor built on vscode
-      /*
-      neovide # GUI: Neovim GUI with enhanced features like animations and ligatures.
-      emacs # CLI: The extensible, customizable GNU text editor.
-      vim # CLI: The most popular clone of the VI editor.
-      neovim # CLI: A Vim fork focused on extensibility and agility.
+      pulsar # GUI: Community-led Hyper-Hackable Text Editor
+      pragtical # GUI: Practical and pragmatic code editor.
+      vscodium-fhs # GUI: VSCode without MS branding/telemetry/licensing; Wrapped variant of vscodium which launches in a FHS compatible environment. Should allow for easy usage of extensions without nix-specific modifications.
       lite-xl # GUI: Lightweight text editor written in Lua.
-      micro # CLI: Modern and intuitive terminal-based text editor.
       mate.pluma # GUI: Powerful text editor for the MATE desktop environment.
-      nano # CLI: Small, user-friendly console text editor.
+      xed-editor # GUI: Light weight text editor from Linux Mint.
       kibi # CLI: Text editor in ≤1024 lines of code, written in Rust.
       zed-editor # GUI: High-performance, collaborative code editor from the creators of Atom and Tree-sitter.
       ox # CLI: Independent Rust-based text editor.
       lapce # GUI: Lightning-fast and powerful code editor written in Rust.
-      helix # CLI: Post-modern text editor.
       amp # CLI: Modern text editor inspired by Vim.
+      xfce.mousepad # GUI: Simple text editor for Xfce.
+      mle # CLI: Small, flexible, terminal-based text editor.
+      your-editor # CLI: Your-editor (yed) is a small and simple terminal editor core that is meant to be extended through a powerful plugin architecture.
+      /*
+      kakoune # CLI: Vim inspired text editor.
+      helix # CLI: Post-modern text editor.
+      evil-helix # CLI: Post-modern modal text editor, with vim keybindings.
+      neovide # GUI: Neovim GUI with enhanced features like animations and ligatures.
+      emacs # CLI: The extensible, customizable GNU text editor.
+      vim # CLI: The most popular clone of the VI editor.
+      neovim # CLI: A Vim fork focused on extensibility and agility.
+      micro # CLI: Modern and intuitive terminal-based text editor.
+      nano # CLI: Small, user-friendly console text editor.
       */
       # End of Code editors
 
