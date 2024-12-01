@@ -351,10 +351,12 @@ in {
       # End of 3D Modeling and Animation
 
       # Virtualization Tools
+      distrobox # CLI: Wrapper around Podman or Docker for creating containers.
+      distrobox-tui # CLI: A TUI for DistroBox.
+      boxbuddy # GUI: Unofficial GUI for managing your Distroboxes, written with GTK4 + Libadwaita.
+      gnome-boxes # GUI: GNOME application for accessing virtual systems.
       /*
       lazydocker # TUI: Terminal UI for Docker and Docker Compose.
-      distrobox # CLI: Wrapper around Podman or Docker for creating containers.
-      gnome-boxes # GUI: GNOME application for accessing virtual systems.
       junest # CLI: Arch Linux distribution that runs on top of another without root.
       virt-manager # GUI: Graphical tool for managing virtual machines.
       docker-ls # CLI: Tools for browsing and manipulating Docker registries.
