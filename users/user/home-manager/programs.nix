@@ -94,6 +94,14 @@ in {
         enableFishIntegration = true;
       };
 
+      skim = {
+        enable = true;
+
+        enableBashIntegration = true;
+        enableZshIntegration = true;
+        enableFishIntegration = true;
+      };
+
       thefuck = {
         enable = true;
         enableInstantMode = true; # Experimental as of 20/06/2024

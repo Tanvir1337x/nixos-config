@@ -171,11 +171,11 @@ in {
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       grc # CLI: Generic text colorizer.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
-      skim # CLI: Command-line fuzzy finder written in Rust.
       fzf # CLI: Command-line fuzzy finder written in Go.
       /*
       zoxide # CLI: Fast 'cd' command that learns your habits.
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
+      skim # CLI: Command-line fuzzy finder written in Rust.
       bat # CLI: Cat clone with syntax highlighting and Git integration.
       ripgrep # CLI: Fast and powerful search tool.
       mcfly # CLI: Enhanced Ctrl-R for smarter history search.
