@@ -175,10 +175,10 @@ in {
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
       mcfly # CLI: Enhanced Ctrl-R for smarter history search.
       skim # CLI: Command-line fuzzy finder written in Rust.
-      ripgrep # CLI: Fast and powerful search tool.
       fzf # CLI: Command-line fuzzy finder written in Go.
       zoxide # CLI: Fast 'cd' command that learns your habits.
       /*
+      ripgrep # CLI: Fast and powerful search tool.
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       exa # CLI: Modern replacement for 'ls' written in Rust.
       eza # CLI: Modern, maintained replacement for 'ls'.
