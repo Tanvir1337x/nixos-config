@@ -59,6 +59,17 @@ in {
         package = pkgs.atuin;
       };
 
+      broot = {
+        enable = true;
+
+        enableBashIntegration = true;
+        enableZshIntegration = true;
+        enableFishIntegration = true;
+        enableNushellIntegration = true;
+
+        settings.modal = false;
+      };
+
       ripgrep = {
         enable = true;
         package = pkgs.ripgrep-all;
