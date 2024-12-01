@@ -411,9 +411,9 @@ in {
       # End of System Information Fetchers
 
       # Download Managers
-      /*
       wget # CLI: Tool for retrieving files using HTTP, HTTPS, and FTP.
       wget2 # CLI: Successor to GNU Wget.
+      /*
       curlFull # CLI: Command-line tool for transferring data with URL syntax.
       aria2 # CLI: Lightweight multi-protocol download utility.
       motrix # GUI: Feature-rich download manager.
@@ -1086,9 +1086,9 @@ in {
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
+      wgetpaste # CLI: Command-line interface to pastebin services.
       /*
       nvitop # CLI: NVIDIA GPU process viewer.
-      wgetpaste # CLI: Command-line interface to pastebin services.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
       xsettingsd # CLI: Provides settings to X11 applications.
