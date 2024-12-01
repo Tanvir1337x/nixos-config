@@ -9,10 +9,10 @@ _: {
       "https://nix-gaming.cachix.org"
       "https://cuda-maintainers.cachix.org"
       "https://nixpkgs-update.cachix.org"
+      "https://helix.cachix.org"
 
       # "https://hyprland.cachix.org"
       # "https://nixpkgs-wayland.cachix.org"
-      # "https://helix.cachix.org"
       # "https://catppuccin.cachix.org"
       # "https://pwndbg.cachix.org"
       # "https://numtide.cachix.org"
@@ -32,10 +32,10 @@ _: {
       "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="
       "cuda-maintainers.cachix.org-1:0dq3bujKpuEPMCX6U4WylrUDZ9JyUG0VpVZa7CNfq5E="
       "nixpkgs-update.cachix.org-1:6y6Z2JdoL3APdu6/+Iy8eZX2ajf09e4EE9SnxSML1W8="
+      "helix.cachix.org-1:ejp9KQpR1FBI2onstMQ34yogDm4OgU2ru6lIwPvuCVs="
 
       # "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
       # "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
-      # "helix.cachix.org-1:ejp9KQpR1FBI2onstMQ34yogDm4OgU2ru6lIwPvuCVs="
       # "catppuccin.cachix.org-1:noG/4HkbhJb+lUAdKrph6LaozJvAeEEZj4N732IysmU="
 
       # "pwndbg.cachix.org-1:HhtIpP7j73SnuzLgobqqa8LVTng5Qi36sQtNt79cD3k="
