@@ -572,8 +572,25 @@ in {
         plugins = with pkgs.kakounePlugins; [kakoune-lsp kak-fzf auto-pairs-kak];
       };
 
-      # TODO: Setup mangohud
-      # mangohud.enable = true;
+      mangohud = {
+        enable = true;
+        enableSessionWide = true;
+
+        # Using GOverlay to configure MangoHud
+        /*
+        settings = {
+          output_folder = "/home/user/mangohud/";
+          full = true;
+          fps-limit = 0; # 0 means unlimited unless VSynced
+        };
+        */
+
+        settingsPerApplication = {
+          mpv = {
+            no_display = true;
+          };
+        };
+      };
 
       gpg.enable = true;
       lazygit.enable = true;
