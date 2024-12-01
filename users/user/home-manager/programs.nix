@@ -356,6 +356,108 @@ in {
         };
       };
 
+      kakoune = {
+        enable = true;
+
+        config = {
+          colorScheme = "gruvbox-dark";
+          incrementalSearch = true;
+
+          autoReload = "ask";
+
+          numberLines = {
+            enable = true;
+            highlightCursor = true;
+            relative = true;
+          };
+
+          scrollOff = {
+            lines = 5;
+            columns = 10;
+          };
+
+          showMatching = true;
+
+          showWhitespace = {
+            enable = true;
+            lineFeed = "¬";
+            nonBreakingSpace = "⍽";
+            space = " ";
+            tab = "→";
+            tabStop = " ";
+          };
+
+          tabStop = 4;
+          indentWidth = 4;
+
+          ui = {
+            enableMouse = true;
+            assistant = "cat";
+            changeColors = true;
+            statusLine = "bottom";
+          };
+
+          hooks = [
+            {
+              group = "smarttab";
+              name = "InsertChar";
+              option = ''"\t"'';
+              commands = ''
+                try %{
+                  execute-keys -draft "h<a-h><a-k>\A\h+\z<ret><a-;>;%opt{indentwidth}@"
+                }'';
+            }
+            {
+              group = "smarttab";
+              name = "InsertDelete";
+              option = "' '";
+              commands = ''
+                try %{
+                  execute-keys -draft 'h<a-h><a-k>\A\h+\z<ret>i<space><esc><lt>'
+                }'';
+            }
+            {
+              group = "lsp";
+              name = "WinSetOption";
+              option = "filetype=(rust|go|c|cpp|nix)";
+              commands = ''
+                lsp-enable-window
+                lsp-inlay-diagnostics-enable global'';
+            }
+            {
+              group = "lsp";
+              name = "WinSetOption";
+              option = "filetype=(rust|go|c|cpp)";
+              commands = "hook window BufWritePre .* lsp-formatting-sync";
+            }
+            {
+              group = "rust";
+              name = "WinSetOption";
+              option = "filetype=rust";
+              commands = ''
+                set-option -add global lsp_server_configuration rust.clippy_preference="on"
+                hook window -group rust BufReload .* rust-analyzer-inlay-hints
+                hook window -group rust NormalIdle .* rust-analyzer-inlay-hints
+                hook window -group rust InsertIdle .* rust-analyzer-inlay-hints
+                hook -once -always window WinSetOption filetype=.* %{
+                  remove-hooks window rust-inlay-hints
+                }'';
+            }
+          ];
+
+          keyMappings = [
+            {
+              mode = "normal";
+              key = "K";
+              effect = ":lsp-hover<ret>";
+              docstring = "Show hover";
+            }
+          ];
+        };
+
+        plugins = with pkgs.kakounePlugins; [kakoune-lsp kak-fzf auto-pairs-kak];
+      };
+
       # TODO: Setup mangohud
       # mangohud.enable = true;
 
