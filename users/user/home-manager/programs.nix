@@ -331,6 +331,24 @@ in {
         };
       };
 
+      helix = {
+        enable = true;
+        package = pkgs.evil-helix;
+        ignores = ["!.gitignore"];
+
+        languages = {
+          language-server = {
+            nixd = {
+              command = "nixd";
+            };
+          };
+        };
+
+        settings = {
+          theme = "everforest_dark";
+        };
+      };
+
       micro = {
         enable = true;
         package = pkgs.micro-full;
