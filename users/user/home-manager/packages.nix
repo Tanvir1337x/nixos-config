@@ -245,12 +245,12 @@ in {
       alejandra # CLI: Nix code formatter.
       statix # CLI: Linter and code suggestion tool for Nix.
       deadnix # CLI: Finds and removes unused code in Nix files.
+      appimage-run # CLI: Runs AppImages on NixOS.
+      steam-run # CLI: Runs commands in the Steam FHS environment.
       /*
       nix-web # WEB: Web interface for the Nix store.
       nixfmt # CLI: Nix code formatter.
-      appimage-run # CLI: Runs AppImages on NixOS.
       # <https://github.com/NixOS/nixpkgs/issues/232640>
-      steam-run # CLI: Runs commands in the Steam FHS environment.
       niv # CLI: Dependency manager for Nix projects.
       nixpkgs-review # CLI: Reviews pull requests on the Nixpkgs repository.
       nix-prefetch # CLI: Prefetches package sources.
@@ -349,6 +349,10 @@ in {
       blender-hip # GUI: Blender with HIP support for AMD GPUs.
       */
       # End of 3D Modeling and Animation
+
+      # Sandboxing Tools
+      bubblewrap # CLI: Unprivileged sandboxing tool.
+      # End of Sandboxing Tools
 
       # Virtualization Tools
       distrobox # CLI: Wrapper around Podman or Docker for creating containers.
@@ -1219,6 +1223,11 @@ in {
       snow # CLI: Command-line wrapper for Nix.
       */
       # End of Experimental Nix Tools
+
+      # Misc Packages
+      fuse-overlayfs # Lib: FUSE implementation for overlayfs.
+      dwarfs # Lib: Fast high compression read-only file system.
+      # End of Misc Packages
     ];
   };
 }
