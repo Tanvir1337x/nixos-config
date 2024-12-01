@@ -2,7 +2,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # USER.hblock # cli: shell script for blocking ads, malware and tracking domains
-    # gparted # gui: partition manager for gnome
+    gparted # gui: partition manager for gnome
 
     # <https://wiki.nixos.org/wiki/Fish#System_wide>
     # fishPlugins.wakatime-fish # plugin: wakatime fish plugin
