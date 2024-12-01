@@ -292,7 +292,7 @@ in {
 
       emacs = {
         enable = true;
-        package = pkgs.emacs;
+        package = pkgs.emacs-gtk;
         extraPackages = epkgs: [
           epkgs.magit
           epkgs.zoxide
