@@ -1042,13 +1042,13 @@ in {
       # Tumbler Thumbnailers
       # Extend Tumbler's support for various file formats.
       # <https://wiki.archlinux.org/title/File_manager_functionality#Thumbnail_previews>
-      webp-pixbuf-loader # Lib: WebP thumbnail support.
-      poppler # Lib: PDF thumbnail support.
-      ffmpegthumbnailer # Lib: Video thumbnail support.
-      gnome-epub-thumbnailer # Lib: EPub and MOBI thumbnail support.
-      libgsf # Lib: ODF thumbnail support.
-      f3d # Lib: 3D file thumbnail support (glTF, stl, step, ply, obj, fbx).
-      mcomix # Lib: Comic book thumbnail support (cbz, cbr).
+      webp-pixbuf-loader # LIB: WebP thumbnail support.
+      poppler # LIB: PDF thumbnail support.
+      ffmpegthumbnailer # LIB: Video thumbnail support.
+      gnome-epub-thumbnailer # LIB: EPub and MOBI thumbnail support.
+      libgsf # LIB: ODF thumbnail support.
+      f3d # LIB: 3D file thumbnail support (glTF, stl, step, ply, obj, fbx).
+      mcomix # LIB: Comic book thumbnail support (cbz, cbr).
       # End of Tumbler Thumbnailers
 
       # VPN Clients
@@ -1081,7 +1081,7 @@ in {
       #- <https://wiki.nixos.org/wiki/FAQ/I_installed_a_library_but_my_compiler_is_not_finding_it._Why%3F>
       #- <https://discourse.nixos.org/t/how-to-install-openssl-to-compile-against/1249>
       /*
-      openssl # Lib+CLI: Cryptographic library and tools.
+      openssl # LIB+CLI: Cryptographic library and tools.
       */
       # End of Libraries
 
@@ -1212,6 +1212,7 @@ in {
       protonup-qt # GUI: Manages Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris.
       #- Misc Gaming Tools
       lutris # GUI: Open-source gaming platform for Linux.
+      mangohud # CLI: Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
       */
       # End of Gaming and Windows Compatibility
 
@@ -1225,8 +1226,9 @@ in {
       # End of Experimental Nix Tools
 
       # Misc Packages
-      fuse-overlayfs # Lib: FUSE implementation for overlayfs.
-      dwarfs # Lib: Fast high compression read-only file system.
+      goverlay # LIB: Opensource project that aims to create a Graphical UI to help manage Linux overlays.
+      fuse-overlayfs # LIB: FUSE implementation for overlayfs.
+      dwarfs # LIB: Fast high compression read-only file system.
       # End of Misc Packages
     ];
   };
