@@ -102,6 +102,19 @@ in {
         enableFishIntegration = true;
       };
 
+      fzf = {
+        enable = true;
+
+        tmux = {
+          enableShellIntegration = true;
+          shellIntegrationOptions = ["-d 60%"];
+        };
+
+        enableBashIntegration = true;
+        enableZshIntegration = true;
+        enableFishIntegration = true;
+      };
+
       fd = {
         enable = true;
         hidden = true;

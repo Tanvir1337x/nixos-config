@@ -171,7 +171,6 @@ in {
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       grc # CLI: Generic text colorizer.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
-      fzf # CLI: Command-line fuzzy finder written in Go.
       /*
       zoxide # CLI: Fast 'cd' command that learns your habits.
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
@@ -188,6 +187,7 @@ in {
       atuin # CLI: Shell history replacement with context recording and optional sync.
       glow # CLI: Renders Markdown on the CLI with styling.
       tealdeer # CLI: Very fast implementation of tldr in Rust.
+      fzf # CLI: Command-line fuzzy finder written in Go.
       cheat # CLI: Create and view interactive cheatsheets.
       imgcat # CLI: Displays images in the terminal.
       noti # CLI: Monitors a process and triggers a notification.
