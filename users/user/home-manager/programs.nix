@@ -333,6 +333,7 @@ in {
 
       micro = {
         enable = true;
+        package = pkgs.micro-full;
         settings = {
           # <https://github.com/zyedidia/micro/blob/master/runtime/help/colors.md>
           colorscheme = "atom-dark";
