@@ -1229,6 +1229,7 @@ in {
       goverlay # LIB: Opensource project that aims to create a Graphical UI to help manage Linux overlays.
       fuse-overlayfs # LIB: FUSE implementation for overlayfs.
       dwarfs # LIB: Fast high compression read-only file system.
+      zenity # GUI: Tool to display dialogs from the commandline and shell scripts.
       # End of Misc Packages
     ];
   };
