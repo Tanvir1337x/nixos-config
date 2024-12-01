@@ -1038,11 +1038,9 @@ in {
       poppler # Lib: PDF thumbnail support.
       ffmpegthumbnailer # Lib: Video thumbnail support.
       gnome-epub-thumbnailer # Lib: EPub and MOBI thumbnail support.
-      /*
       libgsf # Lib: ODF thumbnail support.
       f3d # Lib: 3D file thumbnail support (glTF, stl, step, ply, obj, fbx).
       mcomix # Lib: Comic book thumbnail support (cbz, cbr).
-      */
       # End of Tumbler Thumbnailers
 
       # VPN Clients
