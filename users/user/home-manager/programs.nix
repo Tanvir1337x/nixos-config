@@ -81,6 +81,19 @@ in {
         ];
       };
 
+      mcfly = {
+        enable = true;
+        enableLightTheme = false;
+        interfaceView = "BOTTOM";
+        fuzzySearchFactor = 2;
+        fzf.enable = true;
+        keyScheme = "vim";
+
+        enableBashIntegration = true;
+        enableZshIntegration = true;
+        enableFishIntegration = true;
+      };
+
       thefuck = {
         enable = true;
         enableInstantMode = true; # Experimental as of 20/06/2024

@@ -171,7 +171,6 @@ in {
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       grc # CLI: Generic text colorizer.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
-      mcfly # CLI: Enhanced Ctrl-R for smarter history search.
       skim # CLI: Command-line fuzzy finder written in Rust.
       fzf # CLI: Command-line fuzzy finder written in Go.
       /*
@@ -179,6 +178,7 @@ in {
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
       bat # CLI: Cat clone with syntax highlighting and Git integration.
       ripgrep # CLI: Fast and powerful search tool.
+      mcfly # CLI: Enhanced Ctrl-R for smarter history search.
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       exa # CLI: Modern replacement for 'ls' written in Rust.
       eza # CLI: Modern, maintained replacement for 'ls'.
@@ -988,7 +988,9 @@ in {
       # End of Mathematics Software
 
       # SQL Clients
-      # mysql-workbench # GUI: Visual MySQL database tool.
+      /*
+      mysql-workbench # GUI: Visual MySQL database tool.
+      */
       # End of SQL Clients
 
       # RSS Readers
