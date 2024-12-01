@@ -59,6 +59,17 @@ in {
         package = pkgs.atuin;
       };
 
+      ripgrep = {
+        enable = true;
+        package = pkgs.ripgrep-all;
+        arguments = [
+          "--smart-case"
+          "--hidden"
+          "--max-columns-preview"
+          "--colors=line:style:bold"
+        ];
+      };
+
       thefuck = {
         enable = true;
         enableInstantMode = true; # Experimental as of 20/06/2024
