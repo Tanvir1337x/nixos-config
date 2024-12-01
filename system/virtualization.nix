@@ -92,9 +92,6 @@
     # <https://wiki.nixos.org/wiki/Docker>
     docker = {
       enable = true;
-
-      # Deprecated, use hardware.nvidia-container-toolkit.enable instead
-      enableNvidia = false;
       storageDriver = "btrfs";
 
       # Extra packages to add to PATH for the docker daemon process
@@ -111,9 +108,6 @@
     podman = {
       enable = true;
 
-      # Deprecated, use hardware.nvidia-container-toolkit.enable instead
-      enableNvidia = false;
-
       # Extra packages to be installed in the Podman wrapper
       extraPackages = with pkgs; [
         podman-compose
@@ -125,8 +119,8 @@
         dates = "weekly";
       };
 
-      dockerSocket.enable = false;
-      dockerCompat = false;
+      # dockerSocket.enable = true;
+      # dockerCompat = true;
     };
   };
 

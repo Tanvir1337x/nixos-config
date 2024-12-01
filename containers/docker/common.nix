@@ -4,9 +4,6 @@ _: {
   virtualisation = {
     docker = {
       enable = true;
-
-      # Deprecated, use hardware.nvidia-container-toolkit.enable instead
-      # enableNvidia = true;
     };
 
     podman = {
