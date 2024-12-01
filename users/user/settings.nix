@@ -30,6 +30,7 @@
         "adbusers"
         "aria2"
         "docker"
+        "gamemode"
         # "nginx"
         # "dialout"
         # "boinc"
