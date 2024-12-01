@@ -47,7 +47,7 @@
     ];
 
     # Recommended by steam to improve proton performance
-    kernel.sysctl."vm.max_map_count" = 1048576;
+    # kernel.sysctl."vm.max_map_count" = 1048576;
 
     # To check kernel config: zcat /proc/config.gz
     # TODO: Disable debug and other unnecessary items to further optimize the kernel and reduce compile time
