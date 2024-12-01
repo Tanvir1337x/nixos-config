@@ -697,6 +697,7 @@ in {
       # End of Clipboard Managers
 
       # Lockscreen
+      i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
       /*
       betterlockscreen # GUI: Fast and visually appealing lockscreen with effects.
       */
@@ -1080,14 +1081,13 @@ in {
 
       # Essential System Utilities
       nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
-      i3lock-fancy-rapid # GUI: Fast and customizable lockscreen for i3wm.
       linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
-      /*
-      nvitop # CLI: NVIDIA GPU process viewer.
       resources # GUI: System resource monitor.
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
+      /*
+      nvitop # CLI: NVIDIA GPU process viewer.
       wgetpaste # CLI: Command-line interface to pastebin services.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
