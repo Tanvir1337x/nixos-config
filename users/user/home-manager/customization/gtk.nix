@@ -21,9 +21,9 @@ in {
       };
 
       cursorTheme = {
-        package = pkgs.lyra-cursors;
-        name = "LyraF-cursors";
-        size = 40;
+        package = pkgs.afterglow-cursors-recolored;
+        name = "Afterglow-Recolored-Catppuccin-Maroon";
+        size = 38;
       };
 
       font = {

@@ -10,18 +10,18 @@ in {
     home = {
       pointerCursor = {
         gtk.enable = true;
-        package = pkgs.lyra-cursors;
-        name = "LyraF-cursors";
-        size = 40;
+        package = pkgs.afterglow-cursors-recolored;
+        name = "Afterglow-Recolored-Catppuccin-Maroon";
+        size = 38;
 
         x11 = {
           enable = true;
-          defaultCursor = "LyraF-cursors";
+          defaultCursor = "Afterglow-Recolored-Catppuccin-Maroon";
         };
 
         hyprcursor = {
           enable = false;
-          size = 40;
+          size = 38;
         };
       };
     };

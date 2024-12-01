@@ -24,7 +24,7 @@ in {
           # Theme
           "Net/ThemeName" = "Colloid-Dark";
           "Net/IconThemeName" = "Tela-black-dark";
-          "Gtk/CursorThemeName" = "LyraF-cursors";
+          "Gtk/CursorThemeName" = "Afterglow-Recolored-Catppuccin-Maroon";
 
           # Misc
           "Net/CursorBlink" = 1;

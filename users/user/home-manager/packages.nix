@@ -804,6 +804,7 @@ in {
       themix-gui # GUI: Theme designer with plugin support.
       lxappearance # GUI: Configures themes and fonts for GTK applications.
       themechanger # GUI: Theme changing utility.
+      nwg-look # GUI: Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based Wayland environment.
       wpgtk # GUI: Wallpaper and colorscheme generator and manager.
       libsForQt5.qt5ct # GUI: Qt5 configuration tool.
       libsForQt5.qtstyleplugins # Plugin: Additional style plugins for Qt5.

@@ -73,7 +73,7 @@
     # EDITOR = "micro";
     # VISUAL = "micro";
 
-    # XCURSOR_THEME = "LyraF-cursors";
+    # XCURSOR_THEME = "Afterglow-Recolored-Catppuccin-Maroon";
     # XCURSOR_SIZE = "30";
 
     # QT_QPA_PLATFORM = "qt5ct";
