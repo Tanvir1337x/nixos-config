@@ -413,11 +413,11 @@ in {
       # Download Managers
       wget # CLI: Tool for retrieving files using HTTP, HTTPS, and FTP.
       wget2 # CLI: Successor to GNU Wget.
+      motrix # GUI: Feature-rich download manager.
+      uget # GUI: Download manager using GTK and libcurl.
       /*
       curlFull # CLI: Command-line tool for transferring data with URL syntax.
       aria2 # CLI: Lightweight multi-protocol download utility.
-      motrix # GUI: Feature-rich download manager.
-      uget # GUI: Download manager using GTK and libcurl.
       ariang # WEB: Web frontend for Aria2.
       uget-integrator # Plugin: Integrates uGet with web browsers.
       */
