@@ -1,6 +1,13 @@
 # Programs Configuration
 {pkgs, ...}: {
   programs = {
+    # <https://nixos.wiki/wiki/Gamemode>
+    gamemode = {
+      enable = true;
+      enableRenice = true;
+      settings.general.inhibit_screensaver = 0;
+    };
+
     partition-manager.enable = true;
 
     # Plotinus GTK 3 plugin
