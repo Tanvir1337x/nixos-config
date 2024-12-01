@@ -169,7 +169,6 @@ in {
 
       # Command-Line Utilities
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
-      bat # CLI: Cat clone with syntax highlighting and Git integration.
       grc # CLI: Generic text colorizer.
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
@@ -178,6 +177,7 @@ in {
       fzf # CLI: Command-line fuzzy finder written in Go.
       zoxide # CLI: Fast 'cd' command that learns your habits.
       /*
+      bat # CLI: Cat clone with syntax highlighting and Git integration.
       ripgrep # CLI: Fast and powerful search tool.
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       exa # CLI: Modern replacement for 'ls' written in Rust.

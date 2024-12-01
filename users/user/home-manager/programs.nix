@@ -91,6 +91,22 @@ in {
         enableIonIntegration = true;
       };
 
+      bat = {
+        enable = true;
+        config = {
+          theme = "TwoDark";
+        };
+
+        extraPackages = with pkgs.bat-extras; [
+          batgrep
+          batman
+          batpipe
+          batwatch
+          batdiff
+          prettybat
+        ];
+      };
+
       yazi = {
         enable = true;
         enableFishIntegration = true;
