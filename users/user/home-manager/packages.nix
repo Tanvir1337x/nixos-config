@@ -175,8 +175,8 @@ in {
       mcfly # CLI: Enhanced Ctrl-R for smarter history search.
       skim # CLI: Command-line fuzzy finder written in Rust.
       fzf # CLI: Command-line fuzzy finder written in Go.
-      zoxide # CLI: Fast 'cd' command that learns your habits.
       /*
+      zoxide # CLI: Fast 'cd' command that learns your habits.
       bat # CLI: Cat clone with syntax highlighting and Git integration.
       ripgrep # CLI: Fast and powerful search tool.
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.

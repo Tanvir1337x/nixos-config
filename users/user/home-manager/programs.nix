@@ -80,6 +80,15 @@ in {
         enableNushellIntegration = true;
       };
 
+      zoxide = {
+        enable = true;
+
+        enableBashIntegration = true;
+        enableZshIntegration = true;
+        enableFishIntegration = true;
+        enableNushellIntegration = true;
+      };
+
       eza = {
         enable = true;
         icons = "always";
