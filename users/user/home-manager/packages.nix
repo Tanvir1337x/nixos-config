@@ -521,9 +521,9 @@ in {
 
       # Media Players and Tools
       #- Video Players
+      vlc # GUI: Versatile media player.
       /*
       mpv # CLI: Powerful media player.
-      vlc # GUI: Versatile media player.
       */
       #- End of Video Players
       #- Image Viewers
@@ -591,9 +591,9 @@ in {
       # End of Media Players and Tools
 
       # Entertainment
-      /*
       spotify # GUI: Spotify web music player.
       nuclear # GUI: Music streaming app similar to Spotify.
+      /*
       mov-cli # CLI: Browse and watch movies from the command-line.
       lrby # GUI: Browser and wallet for LBRY.
       popcorntime # GUI: Streams movies and TV shows from torrents.
