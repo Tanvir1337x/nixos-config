@@ -78,7 +78,6 @@
   };
 
   hardware.graphics.extraPackages = with pkgs; [
-    vaapiVdpau
     nvidia-vaapi-driver
   ];
 }
