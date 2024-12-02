@@ -328,6 +328,11 @@ in {
       */
       # End of Password Cracking
 
+      # Data Recovery
+      testdisk # CLI: Data recovery utilities.
+      testdisk-qt # GUI: QT GUI for TestDisk.
+      # End of Data Recovery
+
       # Debuggers
       /*
       strace # CLI: System call tracer.
