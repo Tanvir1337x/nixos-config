@@ -26,6 +26,7 @@ _: {
       # Public DNS Servers
       "9.9.9.9" # Quad9 Primary
       "149.112.112.112" # Quad9 Secondary
+      /*
       "1.1.1.1" # Cloudflare Primary
       "1.0.0.1" # Cloudflare Secondary
       "76.76.19.19" # Alternate DNS Primary
@@ -36,6 +37,7 @@ _: {
       "2.56.220.2" # Gcore Secondary
       "94.140.14.14" # AdGuard Primary
       "94.140.15.15" # AdGuard Secondary
+      */
     ];
 
     extraHosts = ''
