@@ -25,7 +25,7 @@
       autorun = true;
       xkb.layout = "us";
       desktopManager.xterm.enable = false;
-      excludePackages = [pkgs.xterm];
+      excludePackages = with pkgs; [xterm];
 
       # Xorg system-wide without a Display Manager
       # <https://wiki.nixos.org/wiki/Using_X_without_a_Display_Manager#Setting_up_Xorg_system-wide_but_without_a_Display_Manager>

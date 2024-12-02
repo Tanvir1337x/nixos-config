@@ -2,5 +2,5 @@
 #- <https://wiki.nixos.org/wiki/Printing>
 {pkgs, ...}: {
   services.printing.enable = false;
-  services.printing.drivers = [pkgs.pantum-driver];
+  services.printing.drivers = with pkgs; [pantum-driver];
 }

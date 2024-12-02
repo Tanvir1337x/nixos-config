@@ -22,6 +22,7 @@ _: {
       };
     };
 
+    # /etc/resolv.conf
     nameservers = [
       # Public DNS Servers
       "9.9.9.9" # Quad9 Primary

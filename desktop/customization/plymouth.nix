@@ -3,6 +3,6 @@
   boot.plymouth = {
     enable = false;
     theme = "dna";
-    themePackages = [pkgs.adi1090x-plymouth-themes];
+    themePackages = with pkgs; [adi1090x-plymouth-themes];
   };
 }

@@ -4,7 +4,7 @@
   xdg.portal = {
     enable = true;
     #- NOTE: Not needed on gnome
-    # extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    # extraPortals = with pkgs; [xdg-desktop-portal-gtk];
 
     xdgOpenUsePortal = false;
 
