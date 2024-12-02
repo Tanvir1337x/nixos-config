@@ -23,7 +23,7 @@ _: {
       # iPXE must be recent enough to support https:// links
       netbootxyz.enable = true;
 
-      memtest86.enable = false;
+      memtest86.enable = true;
 
       rebootForBitlocker = false; # Experimental BitLocker support
     };
