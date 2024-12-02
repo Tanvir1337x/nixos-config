@@ -75,8 +75,8 @@
     ./users/user/home-manager.nix
 
     # Overlays
-    ./overlays/discord.nix
-    ./overlays/mpv.nix
+    # ./overlays/discord.nix
+    # ./overlays/mpv.nix
     # ./overlays/electron.nix
   ];
 }
