@@ -25,6 +25,8 @@ _: {
 
       memtest86.enable = true;
 
+      edk2-uefi-shell.enable = true;
+
       rebootForBitlocker = false; # Experimental BitLocker support
     };
 
