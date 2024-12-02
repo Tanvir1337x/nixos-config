@@ -686,7 +686,7 @@
     flaresolverr = {
       enable = true;
       port = 8191;
-      # openFirewall = true;
+      openFirewall = true;
       # Use flaresolverr-21hsmw temporarily as the original package is broken
       # Tracking: <https://github.com/NixOS/nixpkgs/issues/332776>,
       # <https://github.com/FlareSolverr/FlareSolverr/issues/1318>
@@ -778,7 +778,7 @@
     tor = {
       enable = false;
       client.enable = true;
-      openFirewall = false;
+      openFirewall = true;
 
       relay = {
         enable = true;
@@ -900,6 +900,40 @@
       locker = "${pkgs.i3lock-fancy-rapid}/bin/i3lock-fancy-rapid 5 5";
       notifier = "${pkgs.libnotify}/bin/notify-send 'Locking in 10 seconds'";
       # killer = "/run/current-system/systemd/bin/systemctl suspend";
+    };
+
+    # <https://wiki.nixos.org/wiki/VR#WiVRn>
+    wivrn = {
+      enable = false;
+      openFirewall = true;
+
+      # Write information to /etc/xdg/openxr/1/active_runtime.json, VR applications
+      # will automatically read this and work with WiVRn (Note: This does not currently
+      # apply for games run in Valve's Proton)
+      defaultRuntime = true;
+
+      # Run WiVRn as a systemd service on startup
+      autoStart = true;
+
+      # Config for WiVRn (https://github.com/WiVRn/WiVRn/blob/master/docs/configuration.md)
+      config = {
+        enable = true;
+        json = {
+          scale = 1.0; # 1.0x foveation scaling
+          bitrate = 100000000; # 100 Mb/s
+          encoders = [
+            {
+              encoder = "vaapi";
+              codec = "h265";
+              # 1.0 x 1.0 scaling
+              width = 1.0;
+              height = 1.0;
+              offset_x = 0.0;
+              offset_y = 0.0;
+            }
+          ];
+        };
+      };
     };
   };
 

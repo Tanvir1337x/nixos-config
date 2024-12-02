@@ -134,5 +134,10 @@
       enable = true;
       lfs.enable = true;
     };
+
+    envision = {
+      enable = false;
+      openFirewall = true;
+    };
   };
 }

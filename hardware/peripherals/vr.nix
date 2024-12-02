@@ -23,7 +23,5 @@ _: {
     # $ git clone https://gitlab.freedesktop.org/monado/utilities/hand-tracking-models
     # Disable hand tracking
     WMR_HANDTRACKING = "0";
-
-    # TODO: OpenComposite
   };
 }
