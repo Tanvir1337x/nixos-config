@@ -3,15 +3,15 @@
 # Find more:
 # <https://github.com/mpv-player/mpv/wiki/User-Scripts>
 # <https://github.com/stax76/awesome-mpv>
-_: {
+{pkgs, ...}: {
   nixpkgs.overlays = [
-    /*
     (super: {
       mpv = super.mpv-unwrapped.override {
+        lua = pkgs.luajit;
         vapoursynthSupport = true;
         youtubeSupport = true;
+        sixelSupport = true;
       };
     })
-    */
   ];
 }
