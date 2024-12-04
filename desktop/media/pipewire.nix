@@ -21,7 +21,7 @@ in {
 
     alsa = {
       enable = true;
-      support32Bit = false;
+      support32Bit = true;
     };
 
     lowLatency = {

@@ -12,7 +12,7 @@
       package = pkgs.amdvlk;
 
       support32Bit = {
-        enable = false;
+        enable = true;
         package = pkgs.driversi686Linux.amdvlk;
       };
     };

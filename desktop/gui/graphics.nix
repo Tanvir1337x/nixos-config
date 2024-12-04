@@ -4,6 +4,6 @@
 _: {
   hardware.graphics = {
     enable = true; # Don't have to enable manually as this option should be enabled by default by the corresponding modules
-    enable32Bit = false; # 32-bit drivers for 32-bit applications (such as Wine)
+    enable32Bit = true; # 32-bit drivers for 32-bit applications (such as Wine)
   };
 }
