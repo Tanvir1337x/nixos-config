@@ -648,7 +648,7 @@
     };
 
     # Keybase
-    keybase.enable = false;
+    keybase.enable = true;
     kbfs = {
       enable = false;
       enableRedirector = false;
