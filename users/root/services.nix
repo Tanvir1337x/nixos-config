@@ -670,9 +670,10 @@
     # IPFS
     #- <https://wiki.nixos.org/wiki/IPFS>
     kubo = {
-      enable = false;
+      enable = true;
       defaultMode = "online";
       startWhenNeeded = false;
+      emptyRepo = true;
       autoMount = true; # /ipfs and /ipns
       autoMigrate = true;
       enableGC = true; # Garbage collection
