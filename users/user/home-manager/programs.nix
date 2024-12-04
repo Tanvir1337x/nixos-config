@@ -217,27 +217,27 @@ in {
         defaultProfiles = ["gpu-hq"];
 
         scripts = with pkgs.mpvScripts; [
-          uosc # Userscript: Feature-rich minimalist proximity-based UI
-          thumbfast # Userscript: High-performance on-the-fly thumbnailer
-          seekTo # Userscript: For seeking to a specific position
-          webtorrent-mpv-hook # Userscript: Adds a hook that allows mpv to stream torrents
-          mpv-cheatsheet # Userscript: For looking up keyboard shortcuts
-          quality-menu # Userscript: Allows you to change youtube video quality (ytdl-format) on the fly
-          sponsorblock # Userscript: Skip sponsored segments of YouTube videos
-          reload # Userscript: Manual & automatic reloading of videos
-          autoload # Userscript: Automatically loads playlist entries before and after the currently played file
-          autocrop # Userscript: Uses the lavfi cropdetect filter to automatically insert a crop filter with appropriate parameters for the currently playing video
-          youtube-upnext # Userscript: Allows you to play 'up next'/recommended youtube videos
-          visualizer # Userscript: Various audio visualization
-          videoclip # Userscript: Easily create videoclips
-          # cutter: Usercript: Cut videos and concat them automatically
-          memo # Userscript: Recent files menu
-          # simple-mpv-webui # Userscript: Simple Web based user interface with controls
-          mpv-playlistmanager # Userscript: Create and manage playlists
-          # modernx-zydezu # Userscript: Zydezu fork of modernx - A Modern OSC UI replacement for MPV that retains the functionality of the default OSC
-          # modernx # Userscript: Modern OSC UI replacement for MPV that retains the functionality of the default OSC
-          # inhibit-gnome # Userscript: Prevents screen blanking in GNOME
-          autosubsync-mpv # Userscript: Automatically sync subtitles using the `n` button
+          uosc # SCRIPT: Feature-rich minimalist proximity-based UI.
+          thumbfast # SCRIPT: High-performance on-the-fly thumbnailer.
+          seekTo # SCRIPT: For seeking to a specific position.
+          webtorrent-mpv-hook # SCRIPT: Adds a hook that allows mpv to stream torrents.
+          mpv-cheatsheet # SCRIPT: For looking up keyboard shortcuts.
+          quality-menu # SCRIPT: Allows you to change youtube video quality (ytdl-format) on the fly.
+          sponsorblock # SCRIPT: Skip sponsored segments of YouTube videos.
+          reload # SCRIPT: Manual & automatic reloading of videos.
+          autoload # SCRIPT: Automatically loads playlist entries before and after the currently played file.
+          autocrop # SCRIPT: Uses the lavfi cropdetect filter to automatically insert a crop filter with appropriate parameters for the currently playing video.
+          youtube-upnext # SCRIPT: Allows you to play 'up next'/recommended youtube videos.
+          visualizer # SCRIPT: Various audio visualization.
+          videoclip # SCRIPT: Easily create videoclips.
+          # cutter # SCRIPT: Cut videos and concat them automatically.
+          memo # SCRIPT: Recent files menu.
+          # simple-mpv-webui # SCRIPT: Simple Web based user interface with controls.
+          mpv-playlistmanager # SCRIPT: Create and manage playlists.
+          # modernx-zydezu # SCRIPT: Zydezu fork of modernx - A Modern OSC UI replacement for MPV that retains the functionality of the default OSC.
+          # modernx # SCRIPT: Modern OSC UI replacement for MPV that retains the functionality of the default OSC.
+          # inhibit-gnome # SCRIPT: Prevents screen blanking in GNOME.
+          autosubsync-mpv # SCRIPT: Automatically sync subtitles using the `n` button.
         ];
 
         # Values adapted from: <https://github.com/Tsubajashi/mpv-settings/blob/master/mpv_linux.conf>
@@ -618,11 +618,44 @@ in {
       };
 
       obs-studio = {
-        enable = false;
+        enable = true;
         plugins = with pkgs.obs-studio-plugins; [
-          waveform # PLUGIN: Audio spectral analysis plugin for OBS
-          obs-vkcapture # PLUGIN: OBS Linux Vulkan/OpenGL game capture
-          obs-vintage-filter # PLUGIN: OBS Studio filter where the source can be set to be black & white or sepia
+          waveform # PLUGIN: Audio spectral analysis plugin for OBS.
+          obs-vkcapture # PLUGIN: OBS Linux Vulkan/OpenGL game capture.
+          obs-vintage-filter # PLUGIN: OBS Studio filter where the source can be set to be black & white or sepia.
+          obs-webkitgtk # PLUGIN: Yet another OBS Studio browser source.
+          obs-vertical-canvas # PLUGIN: Plugin for OBS Studio to add vertical canvas.
+          obs-vaapi # PLUGIN: OBS Studio VAAPI support via GStreamer.
+          obs-tuna # PLUGIN: Song information plugin for obs-studio.
+          # obs-transition-table # PLUGIN: Plugin for OBS Studio to add a Transition Table to the tools menu.
+          obs-text-pthread # PLUGIN: Rich text source plugin for OBS Studio.
+          obs-teleport # PLUGIN: OBS Studio plugin for an open NDI-like replacement.
+          obs-source-switcher # PLUGIN: Plugin for OBS Studio to switch between a list of sources.
+          obs-source-record # PLUGIN: OBS Studio plugin to make sources available to record via a filter.
+          obs-source-clone # PLUGIN: Plugin for OBS Studio to clone sources.
+          obs-shaderfilter # PLUGIN: OBS Studio filter for applying an arbitrary shader to a source.
+          obs-scale-to-sound # PLUGIN: OBS filter plugin that scales a source reactively to sound levels.
+          obs-rgb-levels-filter # PLUGIN: Simple OBS Studio filter to adjust RGB levels.
+          obs-replay-source # PLUGIN: Replay source for OBS studio.
+          obs-pipewire-audio-capture # PLUGIN: Audio device and application capture for OBS Studio using PipeWire.
+          obs-nvfbc # PLUGIN: OBS Studio source plugin for NVIDIA FBC API.
+          # obs-ndi # PLUGIN: Network A/V plugin for OBS Studio.
+          obs-mute-filter # PLUGIN: OBS Studio plugin to mute audio of a source
+          obs-multi-rtmp # PLUGIN: Multi-site simultaneous broadcast plugin for OBS Studio.
+          obs-move-transition # PLUGIN: Plugin for OBS Studio to move source to a new position during scene transition.
+          obs-livesplit-one # PLUGIN: OBS Studio plugin for adding LiveSplit One as a source.
+          # obs-hyperion # PLUGIN: OBS Studio plugin to connect to a Hyperion.ng server.
+          obs-gstreamer # PLUGIN: OBS Studio source, encoder and video filter plugin to use GStreamer elements/pipelines in OBS Studio.
+          obs-gradient-source # PLUGIN: Plugin for adding a gradient Source to OBS Studio.
+          obs-freeze-filter # PLUGIN: Plugin for OBS Studio to freeze a source using a filter.
+          obs-composite-blur # PLUGIN: Comprehensive blur plugin for OBS that provides several different blur algorithms, and proper compositing.
+          obs-command-source # PLUGIN: OBS Studio plugin that provides a dummy source to execute arbitrary commands when a scene is switched.
+          obs-backgroundremoval # PLUGIN: OBS plugin to replace the background in portrait images and video.
+          obs-3d-effect # PLUGIN: Plugin for OBS Studio adding 3D effect filter.
+          looking-glass-obs # PLUGIN: Plugin for OBS Studio for efficient capturing of looking-glass.
+          input-overlay # PLUGIN: Show keyboard, gamepad and mouse input on stream.
+          # droidcam-obs # PLUGIN: OBS Studio plugin for DroidCam.
+          advanced-scene-switcher # PLUGIN: Automated scene switcher for OBS Studio.
         ];
       };
 
@@ -670,18 +703,18 @@ in {
         };
 
         extensions = with pkgs; [
-          gh-eco # extension: Explore the ecosystem
-          gh-cal # extension: GitHub contributions calender terminal viewer
-          gh-dash # extension: Display a dashboard with pull requests and issues
-          gh-markdown-preview # extension: Preview Markdown looking like on GitHub
-          gh-copilot # extension: GitHub Copilot
-          gh-actions-cache # extension: Manage GitHub Actions caches
-          gh-screensaver # extension: Animated terminal screensavers
-          gh-notify # extension: Display GitHub notifications
-          gh-poi # extension: Safely clean up your local branches
-          gh-s # extension: Search github repositories interactively
-          gh-f # extension: GitHub CLI ultimate FZF extension
-          # gh-ost : extension: Triggerless online schema migration solution for MySQL
+          gh-eco # EXTENSION: Explore the ecosystem.
+          gh-cal # EXTENSION: GitHub contributions calender terminal viewer.
+          gh-dash # EXTENSION: Display a dashboard with pull requests and issues.
+          gh-markdown-preview # EXTENSION: Preview Markdown looking like on GitHub.
+          gh-copilot # EXTENSION: GitHub Copilot.
+          gh-actions-cache # EXTENSION: Manage GitHub Actions caches.
+          gh-screensaver # EXTENSION: Animated terminal screensavers.
+          gh-notify # EXTENSION: Display GitHub notifications.
+          gh-poi # EXTENSION: Safely clean up your local branches.
+          gh-s # EXTENSION: Search github repositories interactively.
+          gh-f # EXTENSION: GitHub CLI ultimate FZF extension.
+          # gh-ost : EXTENSION: Triggerless online schema migration solution for MySQL.
         ];
       };
 

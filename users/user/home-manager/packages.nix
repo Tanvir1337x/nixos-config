@@ -432,7 +432,7 @@ in {
       curlFull # CLI: Command-line tool for transferring data with URL syntax.
       aria2 # CLI: Lightweight multi-protocol download utility.
       ariang # WEB: Web frontend for Aria2.
-      uget-integrator # Plugin: Integrates uGet with web browsers.
+      uget-integrator # PLUGIN: Integrates uGet with web browsers.
       */
       # End of Download Managers
 
@@ -567,7 +567,7 @@ in {
       #- End of Image Tools
       #- Audio Players
       audacious # GUI: Lightweight and versatile audio player.
-      audacious-plugins # Plugin: Plugins for Audacious.
+      audacious-plugins # PLUGIN: Plugins for Audacious.
       /*
       amberol # GUI: Small and simple audio player.
       lollypop # GUI: Modern music player for GNOME.
@@ -598,7 +598,7 @@ in {
       #- End of Media Tools
       #- VLC Plugins
       /*
-      vlc-bittorrent # Plugin: BitTorrent plugin for VLC.
+      vlc-bittorrent # PLUGIN: BitTorrent plugin for VLC.
       */
       #- End of VLC Plugins
       # End of Media Players and Tools
@@ -669,7 +669,7 @@ in {
       # File Managers
       /*
       libsForQt5.dolphin # GUI: KDE file manager.
-      libsForQt5.dolphin-plugins # Plugin: Plugins for Dolphin.
+      libsForQt5.dolphin-plugins # PLUGIN: Plugins for Dolphin.
       krusader # GUI: Twin-panel file manager for KDE.
       spaceFM # GUI: Multi-panel tabbed file manager.
       pcmanfm # GUI: File manager with GTK interface.
@@ -757,12 +757,12 @@ in {
       #- OBS Studio
       /*
       obs-studio # GUI: Free and open-source software for video recording and live streaming.
-      obs-studio-plugins.obs-vaapi # Plugin: VAAPI support for OBS Studio.
-      obs-studio-plugins.obs-vkcapture # Plugin: Vulkan/OpenGL game capture for OBS Studio.
-      obs-studio-plugins.obs-gstreamer # Plugin: GStreamer plugin for OBS Studio.
-      obs-studio-plugins.input-overlay # Plugin: Shows keyboard, gamepad, and mouse input on stream.
-      obs-studio-plugins.obs-pipewire-audio-capture # Plugin: PipeWire audio capture for OBS Studio.
-      obs-studio-plugins.obs-nvfbc # Plugin: NVIDIA FBC API plugin for OBS Studio.
+      obs-studio-plugins.obs-vaapi # PLUGIN: VAAPI support for OBS Studio.
+      obs-studio-plugins.obs-vkcapture # PLUGIN: Vulkan/OpenGL game capture for OBS Studio.
+      obs-studio-plugins.obs-gstreamer # PLUGIN: GStreamer plugin for OBS Studio.
+      obs-studio-plugins.input-overlay # PLUGIN: Shows keyboard, gamepad, and mouse input on stream.
+      obs-studio-plugins.obs-pipewire-audio-capture # PLUGIN: PipeWire audio capture for OBS Studio.
+      obs-studio-plugins.obs-nvfbc # PLUGIN: NVIDIA FBC API plugin for OBS Studio.
       gpu-screen-recorder # CLI: GPU-accelerated screen recorder.
       gpu-screen-recorder-gtk # GUI: GUI for gpu-screen-recorder.
       */
@@ -802,16 +802,16 @@ in {
       /*
       krita # GUI: Free and open-source painting application.
       gimp-with-plugins # GUI: GNU Image Manipulation Program with plugin support.
-      gimpPlugins.gap # Plugin: GIMP Animation Package.
-      gimpPlugins.bimp # Plugin: Batch Image Manipulation Plugin for GIMP.
-      gimpPlugins.fourier # Plugin: Fourier transform plugin for GIMP.
-      gimpPlugins.gimplensfun # Plugin: Lens distortion correction plugin for GIMP.
-      gimpPlugins.farbfeld # Plugin: Farbfeld image format plugin for GIMP.
+      gimpPlugins.gap # PLUGIN: GIMP Animation Package.
+      gimpPlugins.bimp # PLUGIN: Batch Image Manipulation Plugin for GIMP.
+      gimpPlugins.fourier # PLUGIN: Fourier transform plugin for GIMP.
+      gimpPlugins.gimplensfun # PLUGIN: Lens distortion correction plugin for GIMP.
+      gimpPlugins.farbfeld # PLUGIN: Farbfeld image format plugin for GIMP.
       #- End of Image Editors
       #- Vector Graphics and Other Editors
       inkscape-with-extensions # GUI: Vector graphics editor with extension support.
-      inkscape-extensions.hexmap # Extension: Creates hex grids and brick patterns in Inkscape.
-      inkscape-extensions.applytransforms # Extension: Removes matrix transforms in Inkscape.
+      inkscape-extensions.hexmap # EXTENSION: Creates hex grids and brick patterns in Inkscape.
+      inkscape-extensions.applytransforms # EXTENSION: Removes matrix transforms in Inkscape.
       #- End of Vector Graphics and Other Editors
       */
       # End of Audio and Video Editors
@@ -830,7 +830,7 @@ in {
       nwg-look # GUI: Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based Wayland environment.
       wpgtk # GUI: Wallpaper and colorscheme generator and manager.
       libsForQt5.qt5ct # GUI: Qt5 configuration tool.
-      libsForQt5.qtstyleplugins # Plugin: Additional style plugins for Qt5.
+      libsForQt5.qtstyleplugins # PLUGIN: Additional style plugins for Qt5.
       libsForQt5.qtstyleplugin-kvantum # GUI: Qt5 theme engine and configuration tool.
       */
       # End of Desktop Customization Tools
