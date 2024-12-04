@@ -22,7 +22,7 @@
       enableZshIntegration = true;
     };
 
-    xonsh.enable = false;
+    xonsh.enable = true;
 
     # <https://wiki.nixos.org/wiki/Bash>
     bash = {
@@ -86,7 +86,6 @@
     };
 
     nano = {
-      enable = false;
       syntaxHighlight = true;
     };
 
