@@ -1,5 +1,9 @@
 # User's Settings Configuration
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   # Note: Removing a user does not remove its profile: <https://github.com/NixOS/nix/issues/4419>
   # Note: Don't forget to set a password with ‘passwd’
   users = {
@@ -34,7 +38,7 @@
         # "nginx"
         # "dialout"
         # "boinc"
-        # config.services.kubo.group
+        config.services.kubo.group
         # "libvirt"
         # "vboxusers"
         # "wireshark"
