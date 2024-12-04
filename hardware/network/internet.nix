@@ -53,6 +53,9 @@ _: {
 
       127.0.0.1 flaresolverr.local
       ::11 flaresolverr.local
+
+      127.0.0.1 ipfs.local
+      ::11 ipfs.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
