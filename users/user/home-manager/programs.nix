@@ -218,19 +218,25 @@ in {
 
         scripts = with pkgs.mpvScripts; [
           uosc # SCRIPT: Feature-rich minimalist proximity-based UI.
+          evafast # SCRIPT: Seeking and hybrid fastforwarding like VHS.
+          # thumbnail # SCRIPT: Lua script to show preview thumbnails in mpv's OSC seekbar.
+          # smartskip # SCRIPT: Automatically or manually skip opening, intro, outro, and preview
           thumbfast # SCRIPT: High-performance on-the-fly thumbnailer.
           seekTo # SCRIPT: For seeking to a specific position.
           webtorrent-mpv-hook # SCRIPT: Adds a hook that allows mpv to stream torrents.
           mpv-cheatsheet # SCRIPT: For looking up keyboard shortcuts.
           quality-menu # SCRIPT: Allows you to change youtube video quality (ytdl-format) on the fly.
-          sponsorblock # SCRIPT: Skip sponsored segments of YouTube videos.
           reload # SCRIPT: Manual & automatic reloading of videos.
           autoload # SCRIPT: Automatically loads playlist entries before and after the currently played file.
           autocrop # SCRIPT: Uses the lavfi cropdetect filter to automatically insert a crop filter with appropriate parameters for the currently playing video.
           youtube-upnext # SCRIPT: Allows you to play 'up next'/recommended youtube videos.
+          youtube-chat # SCRIPT: MPV script to overlay youtube chat on top of a video using yt-dlp.
+          sponsorblock # SCRIPT: Skip sponsored segments of YouTube videos.
+          # sponsorblock-minimal # SCRIPT: Skip sponsored segments of YouTube videos (minimal version).
           visualizer # SCRIPT: Various audio visualization.
           videoclip # SCRIPT: Easily create videoclips.
           # cutter # SCRIPT: Cut videos and concat them automatically.
+          # convert # SCRIPT: Convert parts of a video while you are watching it in mpv
           memo # SCRIPT: Recent files menu.
           # simple-mpv-webui # SCRIPT: Simple Web based user interface with controls.
           mpv-playlistmanager # SCRIPT: Create and manage playlists.
@@ -238,6 +244,13 @@ in {
           # modernx # SCRIPT: Modern OSC UI replacement for MPV that retains the functionality of the default OSC.
           # inhibit-gnome # SCRIPT: Prevents screen blanking in GNOME.
           autosubsync-mpv # SCRIPT: Automatically sync subtitles using the `n` button.
+          blacklistExtensions # SCRIPT: Automatically remove playlist entries based on their extension.
+          # mpv-discord # SCRIPT: Cross-platform Discord Rich Presence integration for mpv with no external dependencies.
+          manga-reader # SCRIPT: Manga reading script for mpv.
+          # occivink.crop # SCRIPT: Crop the current video in a visual manner.
+          mpv-notify-send # SCRIPT: Lua script for mpv to send notifications with notify-send.
+          webtorrent-mpv-hook # SCRIPT: Adds a hook that allows mpv to stream torrents.
+          # simple-mpv-webui # SCRIPT: Web based user interface with controls for the mpv mediaplayer.
         ];
 
         # Values adapted from: <https://github.com/Tsubajashi/mpv-settings/blob/master/mpv_linux.conf>
