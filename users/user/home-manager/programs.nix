@@ -315,6 +315,12 @@ in {
           thumbfast = {
             hwdec = false;
           };
+
+          osc = {
+            scalewindowed = 2.0;
+            vidscale = false;
+            visibility = "always";
+          };
         };
         */
       };
