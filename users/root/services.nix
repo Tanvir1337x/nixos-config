@@ -650,7 +650,7 @@
     # Keybase
     keybase.enable = true;
     kbfs = {
-      enable = false;
+      enable = true;
       enableRedirector = false;
       mountPoint = "%h/keybase";
       extraFlags = [
