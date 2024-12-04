@@ -1100,6 +1100,7 @@ in {
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
       wgetpaste # CLI: Command-line interface to pastebin services.
+      libnotify # LIBRARY/CLI: Sends desktop notifications.
       /*
       nvitop # CLI: NVIDIA GPU process viewer.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
@@ -1156,7 +1157,6 @@ in {
       psensor # GUI: Hardware temperature monitor.
       stress # CLI: Workload generator for POSIX systems.
       s-tui # CLI: Stress Terminal UI monitoring tool.
-      libnotify # CLI: Sends desktop notifications.
       gping # CLI: Graphical ping utility.
       cpu-x # GUI: CPU, motherboard, and system information tool.
       dua # CLI: Disk usage analyzer.
