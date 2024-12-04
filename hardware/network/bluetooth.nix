@@ -2,7 +2,7 @@
 #- <https://wiki.nixos.org/wiki/Bluetooth>
 _: {
   hardware.bluetooth = {
-    enable = false;
+    enable = true;
     powerOnBoot = false;
     hsphfpd.enable = false;
   };
