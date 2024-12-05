@@ -13,7 +13,7 @@
   boot = {
     kernelModules = ["nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" "i2c-nvidia_gpu"];
     blacklistedKernelModules = ["nouveau"];
-    # kernelParams = ["nvidia-drm.fbdev=1"];
+    # kernelParams = ["nvidia-drm.fbdev=0"];
 
     extraModprobeConfig = ''
       blacklist nouveau
