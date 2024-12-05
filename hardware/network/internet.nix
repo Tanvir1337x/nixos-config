@@ -56,6 +56,9 @@ _: {
 
       127.0.0.1 ipfs.local
       ::11 ipfs.local
+
+      127.0.0.1 uptimekuma.local
+      ::11 uptimekuma.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
