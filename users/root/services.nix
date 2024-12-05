@@ -287,6 +287,27 @@
             '';
           };
         };
+
+        # Netdata Instance
+        "netdata.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 80;
+            }
+          ];
+
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:9822";
+          };
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
+          };
+        };
       };
     };
 
