@@ -435,7 +435,7 @@ in {
 
         settings = {
           general = {
-            framerate = 240;
+            framerate = 100;
             bar_width = 1;
             bar_spacing = 1;
           };
