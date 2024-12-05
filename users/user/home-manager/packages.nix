@@ -566,21 +566,19 @@ in {
       #- Audio Players
       audacious # GUI: Lightweight and versatile audio player.
       audacious-plugins # PLUGIN: Plugins for Audacious.
-      /*
       amberol # GUI: Small and simple audio player.
       lollypop # GUI: Modern music player for GNOME.
       rhythmbox # GUI: Music player for GNOME.
       tauon # GUI: Music player with a futuristic interface.
       mpvc # CLI: MPC-like control interface for mpv.
       exaile # GUI: Music player with a simple interface.
-      */
       /*
       libsForQt5.vvave # GUI: Multi-platform media player.
       */
       #- End of Audio Players
       #- Audio Controllers
-      /*
       jamesdsp # GUI: Audio effect processor for PipeWire clients.
+      /*
       easyeffects # GUI: Audio effects for PipeWire applications.
       */
       pavucontrol # GUI: PulseAudio volume control.

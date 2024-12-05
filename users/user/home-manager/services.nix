@@ -61,6 +61,7 @@ in {
         enable = true;
         package = pkgs.easyeffects;
         # Community Presets: <https://github.com/wwmm/easyeffects/wiki/PulseEffects-Wiki#community-presets>
+        # <https://github-wiki-see.page/m/wwmm/easyeffects/wiki/Community-Presets>
         # preset = "Music";
       };
 
