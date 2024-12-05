@@ -219,6 +219,7 @@ in {
       #- Secret scanners
       trufflehog # CLI: Finds and verifies secrets in code and files.
       gitleaks # CLI: Scans Git repositories for secrets.
+      ripsecrets # CLI: Command-line tool to prevent committing secret keys into your source code.
       # End of Secret scanners
       #- Vulnerability scanners
       vulnix # CLI: NixOS vulnerability scanner.
@@ -319,14 +320,26 @@ in {
       # End of Reverse Engineering Tools
 
       # Password Cracking
-      /*
       cook-framework # CLI: An overpowered wordlist manager.
       hashcat # CLI: Advanced password recovery utility.
       hashcat-utils # CLI: Utilities for hashcat.
       john # CLI: John the Ripper password cracker.
       johnny # CLI: GUI for John the Ripper.
-      */
       # End of Password Cracking
+
+      # Networking Tools
+      /*
+      airgorah # GUI: GUI for Aircrack-ng; WiFi security auditing software mainly based on aircrack-ng tools suite.
+      wireshark # GUI: Powerful network protocol analyzer.
+      nmap # CLI: Free and open source utility for network discovery and security auditing.
+      traceroute # CLI: Tracks the route taken by packets over an IP network.
+      whois # CLI: Intelligent WHOIS client from Debian.
+      nikto # CLI: Web server scanner.
+      fping # CLI: Send ICMP echo probes to network hosts.
+      nettols # CLI: Set of tools for controlling the network subsystem in Linux.
+      netdiscover # CLI: Network address discovering tool, developed mainly for those wireless networks without dhcp server, it also works on hub/switched networks.
+      */
+      # End of Networking Tools
 
       # Data Recovery
       testdisk-qt # GUI: QT GUI for TestDisk.
@@ -437,6 +450,7 @@ in {
       # Torrent Clients and Tools
       qbittorrent # GUI: Feature-rich BitTorrent client. For plugins: <https://github.com/qbittorrent/search-plugins>
       /*
+      qBittorrent-Enhanced-Edition # GUI: qBittorrent with additional features (community enhancements).
       tribler # GUI: Decentralized P2P file sharing client.
       biglybt # GUI: BitTorrent client based on the Azureus that supports I2P darknet for privacy.
       bitcomet # GUI: Free BitTorrent download client.
@@ -475,6 +489,12 @@ in {
       */
       # End of Networking Tools
 
+      # Nim
+      /*
+      nph # CLI: Opinionated code formatter for Nim.
+      */
+      # End of Nim
+
       # Messaging and Chat Clients
       telegram-desktop # GUI: Official Telegram Desktop app.
       session-desktop # GUI: Onion routing based messenger.
@@ -497,6 +517,8 @@ in {
       ripcord # GUI: Proprietary client for Discord and Slack.
       betterdiscordctl # CLI: Utility for managing BetterDiscord.
       cordless # TUI: Discord terminal client.
+      equibop # GUI: Custom Discord App aiming to give you better performance and improve linux support.
+      tanvir.suncord # GUI: A fork of Vencord with many extra plugins included.
       */
       #-- End of Discord Clients
       #-- Discord Miscellaneous
@@ -578,6 +600,7 @@ in {
       #- End of Audio Players
       #- Audio Controllers
       jamesdsp # GUI: Audio effect processor for PipeWire clients.
+      coppwr # GUI: Low level control GUI for the PipeWire multimedia server.
       /*
       easyeffects # GUI: Audio effects for PipeWire applications.
       */
@@ -1063,9 +1086,9 @@ in {
       # End of VPN Clients
 
       # Miscellaneous Tools and Applications
+      hydrus # GUI: Image tagging and searching system.
       /*
       gallery-dl # CLI: Downloads image galleries from various websites.
-      hydrus # GUI: Image tagging and searching system.
       sonic-visualiser # GUI: Music audio analysis tool.
       qtchan # GUI: 4chan browser.
       gnome-podcasts # GUI: Podcast client for GNOME.
@@ -1233,6 +1256,9 @@ in {
       fuse-overlayfs # LIB: FUSE implementation for overlayfs.
       dwarfs # LIB: Fast high compression read-only file system.
       zenity # GUI: Tool to display dialogs from the commandline and shell scripts.
+      /*
+      kando # GUI/MENU: Cross-Platform Pie Menu.
+      */
       # End of Misc Packages
     ];
   };
