@@ -28,6 +28,7 @@
           # But I'm able to require and use the lgi library in my configuration
           # TODO: Investigate this issue
           lgi # Lua bindings to GObject-based libraries
+          ldoc # A Lua Documentation Tool
         ];
       };
     };
