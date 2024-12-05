@@ -190,12 +190,55 @@
           ];
 
           locations."/" = {
-            proxyPass = "http://127.0.0.1:5001";
+            proxyPass = "http://127.0.0.1:5001/webui/";
+            extraConfig = ''
+              proxy_http_version 1.1;
+              proxy_set_header Host $host;
+              proxy_set_header X-Real-IP $remote_addr;
+              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+              proxy_set_header Upgrade $http_upgrade;
+              proxy_set_header Connection "upgrade";
+              proxy_redirect off;
+            '';
+          };
+
+          locations."/api/v0/" = {
+            proxyPass = "http://127.0.0.1:5001/api/v0/";
+            extraConfig = ''
+              proxy_http_version 1.1;
+              proxy_set_header Host $host;
+              proxy_set_header X-Real-IP $remote_addr;
+              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+              proxy_set_header Upgrade $http_upgrade;
+              proxy_set_header Connection "upgrade";
+              proxy_redirect off;
+            '';
+          };
+
+          locations."/ipfs/" = {
+            proxyPass = "http://127.0.0.1:8080/ipfs/";
+            extraConfig = ''
+              proxy_http_version 1.1;
+              proxy_set_header Host $host;
+              proxy_set_header X-Real-IP $remote_addr;
+              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+              proxy_redirect off;
+            '';
+          };
+
+          locations."/ipns/" = {
+            proxyPass = "http://127.0.0.1:8080/ipns/";
+            extraConfig = ''
+              proxy_http_version 1.1;
+              proxy_set_header Host $host;
+              proxy_set_header X-Real-IP $remote_addr;
+              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+              proxy_redirect off;
+            '';
           };
 
           locations."/robots.txt" = {
             extraConfig = ''
-              rewrite ^/(.*)  $1;
               return 200 "User-agent: *\nDisallow: /";
             '';
           };
@@ -697,6 +740,7 @@
       emptyRepo = true;
       autoMount = true; # /ipfs and /ipns
       autoMigrate = true;
+      localDiscovery = false; # Disable as some hosting services will ban you if enabled
       enableGC = true; # Garbage collection
       settings.Addresses.API = "/ip4/127.0.0.1/tcp/5001"; # WebUI: <http://127.0.0.1:5001/webui>
       # Default data dir: /var/lib/ipfs/
@@ -745,10 +789,17 @@
     # https://wiki.nixos.org/wiki/SSH_public_key_authentication
     openssh = {
       enable = false;
+      allowSFTP = false;
       settings = {
         passwordAuthentication = true; # setting it to false requires public key authentication for better security
+        challengeResponseAuthentication = true;
         kbdInteractiveAuthentication = false;
         PermitRootLogin = "yes";
+        AllowTcpForwarding = "yes";
+        X11Forwarding = "yes";
+        AllowAgentForwarding = "yes";
+        AllowStreamLocalForwarding = "yes";
+        # AuthenticationMethods = "publickey";
       };
     };
 
