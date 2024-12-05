@@ -584,7 +584,7 @@ in {
       easyeffects # GUI: Audio effects for PipeWire applications.
       */
       pavucontrol # GUI: PulseAudio volume control.
-      # pasystray # Tray: PulseAudio system tray icon.
+      pasystray # Tray: PulseAudio system tray icon.
       #- End of Audio Controllers
       #- Media Tools
       ffmpeg-full # CLI: Complete solution for recording, converting, and streaming audio and video.
@@ -834,8 +834,8 @@ in {
       # End of Desktop Customization Tools
 
       # Network Management
-      /*
       networkmanagerapplet # GUI/Tray: NetworkManager applet for GNOME.
+      /*
       nm-tray # GUI/Tray: Simple NetworkManager frontend written in Qt.
       */
       # End of Network Management
