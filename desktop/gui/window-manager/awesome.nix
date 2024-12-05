@@ -20,7 +20,6 @@
 
         # Has no effect?
         # TODO: Investigate this issue
-        /*
         luaModules = with pkgs.luajitPackages; [
           luarocks # A package manager for Lua
           # Required for lgi library
@@ -30,7 +29,6 @@
           # TODO: Investigate this issue
           lgi # Lua bindings to GObject-based libraries
         ];
-        */
       };
     };
   };
