@@ -75,7 +75,6 @@
     ./users/user/home-manager.nix
 
     # Overlays
-    ./overlays/awesome.nix
     # ./overlays/discord.nix
     # ./overlays/mpv.nix
     # ./overlays/electron.nix

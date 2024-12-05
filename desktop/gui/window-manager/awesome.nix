@@ -7,7 +7,7 @@
         enable = true;
         noArgb = false;
 
-        package = pkgs.awesome-git.override {
+        package = pkgs.awesome.override {
           lua = pkgs.luajit;
           # lua = pkgs.luajit.withPackages (ps: with ps; [lgi]);
 
