@@ -23,7 +23,7 @@
 
     # Security
     # ./security/selinux.nix
-    # ./security/auditd.nix
+    ./security/auditd.nix
     ./security/firewall.nix
     ./security/antivirus.nix
 
