@@ -9,7 +9,6 @@ in {
   home-manager.users.user = _: {
     services = {
       gnome-keyring.enable = true;
-      blueman-applet.enable = true;
 
       /*
       xsettingsd = {
@@ -111,11 +110,15 @@ in {
         };
       };
 
-      # network-manager-applet.enable = true;
+      # Blueman Applet
+      blueman-applet.enable = false;
+
+      # Network Manager Applet
+      network-manager-applet.enable = false;
 
       # PulseAudio System Tray
       # Replacement for the deprecated padevchooser
-      # pasystray.enable = true;
+      pasystray.enable = false;
 
       # Compositor (X11)
       picom = {
