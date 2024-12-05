@@ -619,6 +619,15 @@
       runInUwsgi = false; # Disable as it's unnecessary for LAN or local-only use
     };
 
+    uptime-kuma = {
+      enable = true;
+      appriseSupport = true;
+
+      settings = {
+        PORT = "2120";
+      };
+    };
+
     teamviewer.enable = false;
     vnstat.enable = true;
 
