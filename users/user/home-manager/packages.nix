@@ -1244,7 +1244,9 @@ in {
       # End of Gaming and Windows Compatibility
 
       # Game Misc
+      /*
       factoriolab # WEBUI: Angular-based calculator for factory games like Factorio, Dyson Sphere Program, Satisfactory, Captain of Industry, Techtonica and Final Factory.
+      */
       # End of Game Misc
 
       # Experimental Nix Tools
