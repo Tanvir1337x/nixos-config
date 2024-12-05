@@ -59,6 +59,9 @@ _: {
 
       127.0.0.1 uptimekuma.local
       ::11 uptimekuma.local
+
+      127.0.0.1 stirlingpdf.local
+      ::11 stirlingpdf.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
