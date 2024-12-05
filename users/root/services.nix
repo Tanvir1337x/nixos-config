@@ -290,6 +290,30 @@
       };
     };
 
+    netdata = {
+      enable = true;
+      enableAnalyticsReporting = false;
+
+      config = {
+        global = {
+          "default port" = "9822";
+          "bind to" = "*";
+          "history" = "604800"; # 7 days
+          "error log" = "syslog";
+          "debug log" = "syslog";
+          "access log" = "syslog";
+        };
+      };
+
+      python = {
+        enable = true;
+        extraPackages = p: [
+          p.docker
+          p.dnspython
+        ];
+      };
+    };
+
     #- <https://wiki.nixos.org/wiki/SearXNG>
     # <https://docs.searxng.org>
     searx = {
