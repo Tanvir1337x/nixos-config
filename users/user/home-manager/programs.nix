@@ -430,6 +430,44 @@ in {
         };
       };
 
+      cava = {
+        enable = true;
+
+        settings = {
+          general = {
+            framerate = 240;
+            bar_width = 1;
+            bar_spacing = 1;
+          };
+
+          smoothing = {
+            integral = 100;
+            monstercat = 1;
+            waves = 0;
+            gravity = 300;
+          };
+
+          color = {
+            gradient = 1;
+            gradient_count = 4;
+            gradient_color_1 = "'#8DB8CD'";
+            gradient_color_2 = "'#73B4D3'";
+            gradient_color_3 = "'#C38F8F'";
+            gradient_color_4 = "'#CA8085'";
+          };
+
+          input = {
+            source = "auto";
+          };
+
+          output = {
+            method = "ncurses";
+            data_format = "ascii";
+            bit_format = "16bit";
+          };
+        };
+      };
+
       emacs = {
         enable = true;
         package = pkgs.emacs-gtk;
