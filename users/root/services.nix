@@ -191,6 +191,7 @@
 
           locations."/" = {
             proxyPass = "http://127.0.0.1:5001/webui/";
+
             extraConfig = ''
               proxy_http_version 1.1;
               proxy_set_header Host $host;
@@ -204,6 +205,7 @@
 
           locations."/api/v0/" = {
             proxyPass = "http://127.0.0.1:5001/api/v0/";
+
             extraConfig = ''
               proxy_http_version 1.1;
               proxy_set_header Host $host;
@@ -217,8 +219,8 @@
 
           locations."/ipfs/" = {
             proxyPass = "http://127.0.0.1:8080/ipfs/";
+
             extraConfig = ''
-              proxy_http_version 1.1;
               proxy_set_header Host $host;
               proxy_set_header X-Real-IP $remote_addr;
               proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -228,8 +230,8 @@
 
           locations."/ipns/" = {
             proxyPass = "http://127.0.0.1:8080/ipns/";
+
             extraConfig = ''
-              proxy_http_version 1.1;
               proxy_set_header Host $host;
               proxy_set_header X-Real-IP $remote_addr;
               proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -733,6 +735,7 @@
 
     # IPFS
     #- <https://wiki.nixos.org/wiki/IPFS>
+    # Default data dir: /var/lib/ipfs/
     kubo = {
       enable = true;
       defaultMode = "online";
@@ -742,8 +745,31 @@
       autoMigrate = true;
       localDiscovery = false; # Disable as some hosting services will ban you if enabled
       enableGC = true; # Garbage collection
-      settings.Addresses.API = "/ip4/127.0.0.1/tcp/5001"; # WebUI: <http://127.0.0.1:5001/webui>
-      # Default data dir: /var/lib/ipfs/
+
+      settings = {
+        Addresses.API = "/ip4/127.0.0.1/tcp/5001"; # WebUI: <http://127.0.0.1:5001/webui>
+        Addresses.Gateway = "/ip4/127.0.0.1/tcp/8080";
+
+        API = {
+          HTTPHeaders = {
+            "Access-Control-Allow-Origin" = [
+              # "http://127.0.0.1:5001"
+              # "http://localhost:3000"
+              # "http://ipfs.local"
+              # "https://webui.ipfs.io"
+              "*" # Allow all origins
+            ];
+
+            "Access-Control-Allow-Methods" = ["PUT" "POST"];
+            "Access-Control-Allow-Credentials" = ["true"];
+            /*
+            "Access-Control-Allow-Headers" = [
+              "Authorization"
+            ];
+            */
+          };
+        };
+      };
     };
 
     #- <https://wiki.nixos.org/wiki/Tor>
