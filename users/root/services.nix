@@ -383,7 +383,7 @@
           "curlie".disabled = true;
           "currency".disabled = false;
           "ddg definitions".disabled = false;
-          "encyclosearch".disabled = false;
+          "encyclosearch".disabled = true;
           "mwmbl".disabled = false;
           "right dao".disabled = false;
           "searchmysite".disabled = false;
