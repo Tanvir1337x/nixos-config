@@ -25,7 +25,7 @@
     # ./security/selinux.nix
     # ./security/auditd.nix
     ./security/firewall.nix
-    # ./security/antivirus.nix
+    ./security/antivirus.nix
 
     # Containers
     # ./containers/docker/flaresolverr.nix
