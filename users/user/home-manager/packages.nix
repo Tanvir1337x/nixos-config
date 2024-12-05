@@ -51,6 +51,7 @@ in {
       # End of AI/Machine Learning
 
       # Development Tools
+      # TODO: Setup Declarative and reproducible Jupyter environments - <https://github.com/tweag/jupyenv>
       shellcheck # CLI: Static analysis tool for shell scripts.
       shfmt # CLI: Shell script formatter.
       wakatime # CLI: Tracks time spent on projects.
@@ -595,9 +596,7 @@ in {
       tauon # GUI: Music player with a futuristic interface.
       mpvc # CLI: MPC-like control interface for mpv.
       exaile # GUI: Music player with a simple interface.
-      /*
       libsForQt5.vvave # GUI: Multi-platform media player.
-      */
       #- End of Audio Players
       #- Audio Controllers
       jamesdsp # GUI: Audio effect processor for PipeWire clients.
@@ -624,6 +623,7 @@ in {
       # End of Media Players and Tools
 
       # Entertainment
+      # TODO: Use https://github.com/Gerg-L/spicetify-nix to theme Spotify.
       spotify # GUI: Spotify web music player.
       nuclear # GUI: Music streaming app similar to Spotify.
       /*
@@ -1265,6 +1265,7 @@ in {
       zenity # GUI: Tool to display dialogs from the commandline and shell scripts.
       /*
       kando # GUI/MENU: Cross-Platform Pie Menu.
+      spicetify-cli # CLI: Command-line tool to customize Spotify client.
       */
       # End of Misc Packages
     ];

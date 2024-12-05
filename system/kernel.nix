@@ -3,6 +3,8 @@
 # Kernel Configuration
 {pkgs, ...}: {
   boot = {
+    # TODO: Switch to CachyOS kernel and the `sched-ext` patchset
+    # <https://github.com/chaotic-cx/nyx#using-linux-cachyos-with-sched-ext>
     # Search for `linuxKernel.kernels` in nixpkgs/package search
     # kernelPackages = pkgs.linuxPackages_latest; # https://www.kernel.org
     # kernelPackages = pkgs.linuxPackages_zen; # https://github.com/zen-kernel/zen-kernel
