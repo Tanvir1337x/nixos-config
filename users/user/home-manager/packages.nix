@@ -387,10 +387,8 @@ in {
       # End of Cryptocurrency
 
       # System Cleaners
-      /*
       bleachbit # GUI: System cleaner and disk space liberator.
       czkawka # GUI: App to remove unnecessary files.
-      */
       # End of System Cleaners
 
       # Games
@@ -407,9 +405,9 @@ in {
       # End of Games
 
       # Eye Candy
+      cavalcade # GUI: Python wrapper for C.A.V.A. utility with a GUI.
       /*
       cava # CLI: Console-based audio visualizer.
-      cavalcade # GUI: Python wrapper for C.A.V.A. utility with a GUI.
       */
       # End of Eye Candy
 
@@ -478,11 +476,11 @@ in {
       # End of Networking Tools
 
       # Messaging and Chat Clients
-      /*
       telegram-desktop # GUI: Official Telegram Desktop app.
       session-desktop # GUI: Onion routing based messenger.
-      revolt-desktop # GUI: Open-source chat platform.
       keybase-gui # GUI: Keybase GUI client.
+      /*
+      revolt-desktop # GUI: Open-source chat platform.
       slack # GUI: Desktop client for Slack.
       zulip # GUI: Desktop client for Zulip Chat.
       simplex-chat-desktop # GUI: Desktop app for SimpleX Chat.

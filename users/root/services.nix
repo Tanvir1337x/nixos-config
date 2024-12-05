@@ -738,6 +738,8 @@
       # tor = true; # Only use Tor for Tor network peers
       # torAlways = false; # Use Tor for every connections to hide your IP address (slower)
       # Default data dir: /var/lib/zeronet/
+      #- Issue: <https://github.com/NixOS/nixpkgs/pull/128976>
+      # settings =
     };
 
     # https://wiki.nixos.org/wiki/SSH_public_key_authentication
