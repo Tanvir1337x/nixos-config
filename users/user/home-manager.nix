@@ -18,5 +18,7 @@
     ./home-manager/customization/qt.nix
     ./home-manager/customization/xdg.nix
     ./home-manager/customization/misc.nix
+
+    # ./home-manager/window-manager/awesome.nix
   ];
 }
