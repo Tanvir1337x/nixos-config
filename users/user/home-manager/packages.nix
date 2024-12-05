@@ -330,6 +330,7 @@ in {
       # Networking Tools
       /*
       airgorah # GUI: GUI for Aircrack-ng; WiFi security auditing software mainly based on aircrack-ng tools suite.
+      aircrack-ng # CLI: WiFi security auditing tools suite.
       wireshark # GUI: Powerful network protocol analyzer.
       nmap # CLI: Free and open source utility for network discovery and security auditing.
       traceroute # CLI: Tracks the route taken by packets over an IP network.
@@ -1241,6 +1242,10 @@ in {
       mangohud # CLI: Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
       */
       # End of Gaming and Windows Compatibility
+
+      # Game Misc
+      factoriolab # WEBUI: Angular-based calculator for factory games like Factorio, Dyson Sphere Program, Satisfactory, Captain of Industry, Techtonica and Final Factory.
+      # End of Game Misc
 
       # Experimental Nix Tools
       /*
