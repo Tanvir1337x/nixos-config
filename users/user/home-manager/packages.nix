@@ -1263,6 +1263,7 @@ in {
       fuse-overlayfs # LIB: FUSE implementation for overlayfs.
       dwarfs # LIB: Fast high compression read-only file system.
       zenity # GUI: Tool to display dialogs from the commandline and shell scripts.
+      dmidecode # CLI: Tool that reads information about your system's hardware from the BIOS according to the SMBIOS/DMI standard.
       /*
       kando # GUI/MENU: Cross-Platform Pie Menu.
       spicetify-cli # CLI: Command-line tool to customize Spotify client.

@@ -27,6 +27,12 @@
     ];
     */
 
+    # Check current command line options: `cat /proc/cmdline` or `doas dmesg | grep "Kernel command line"`
+    # Check watchdog status: cat /proc/sys/kernel/watchdog
+    # For mitigation check: lscpu | grep "Vulnerability"
+    # For IOMMU check: dmesg | grep -e DMAR -e IOMMU
+    # For ASPM check: dmesg | grep -i aspm
+    # For Nvidia framebuffer check: dmesg | grep -i nvidia
     kernelParams = [
       "quiet" # Reduces boot output messages for a cleaner boot screen
       "iommu=pt" # Enables IOMMU in passthrough mode for better virtualization support
