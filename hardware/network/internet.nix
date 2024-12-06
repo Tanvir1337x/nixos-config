@@ -65,6 +65,9 @@ _: {
 
       127.0.0.1 netdata.local
       ::11 netdata.local
+
+      127.0.0.1 casa.local
+      ::11 casa.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
