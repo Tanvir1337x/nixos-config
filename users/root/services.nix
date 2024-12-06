@@ -913,8 +913,8 @@
       enable = false;
       #- <https://github.com/NixOS/nixpkgs/pull/173900>
       package = pkgs.zeronet-conservancy-git; # maintained community fork of zeronet
-      port = 7110; # default: 43110
-      fileserverPort = 7111; # default: 12261
+      # port = 7110; # default: 43110
+      # fileserverPort = 7111; # default: 26552
       tor = false; # Only use Tor for Tor network peers
       torAlways = false; # Use Tor for every connections to hide your IP address (slower)
       # settings =

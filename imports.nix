@@ -28,6 +28,8 @@
     ./security/antivirus.nix
 
     # Containers
+    # ./containers/docker/umbrel.nix
+    # ./containers/docker/casa.nix
     # ./containers/docker/flaresolverr.nix
     # ./containers/docker/element-web.nix
 
