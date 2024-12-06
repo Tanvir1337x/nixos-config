@@ -28,10 +28,11 @@
     ];
   };
 
+  # To Check stats: `zramctl`
   zramSwap = {
-    enable = false;
+    enable = true;
     algorithm = "zstd";
-    memoryPercent = 80;
+    memoryPercent = 80; # This refers to the uncompressed size, actual memory usage will be lower
     swapDevices = 1; # Recommended is 1
     priority = 10;
   };
