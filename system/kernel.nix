@@ -31,7 +31,7 @@
       "quiet" # Reduces boot output messages for a cleaner boot screen
       "iommu=pt" # Enables IOMMU in passthrough mode for better virtualization support
       "mitigations=off" # Disables CPU vulnerability mitigations for improved performance at the cost of security
-      "nowatchdog" # Disables kernel watchdog timers, preventing potential resets due to perceived hangs
+      # "nowatchdog" # Disables kernel watchdog timers, preventing potential resets due to perceived hangs
       "pcie_aspm=off" # Disables Active State Power Management (ASPM) for PCIe devices
       "logo.nologo" # Disables the display of the kernel logo during boot
 
