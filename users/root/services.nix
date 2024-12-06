@@ -350,6 +350,42 @@
             '';
           };
         };
+
+        # Cosmos Instance
+        "cosmos.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 80;
+            }
+            {
+              addr = "127.0.0.1";
+              port = 443;
+            }
+          ];
+
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:9343";
+          };
+
+          extraConfig = ''
+            proxy_http_version 1.1;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+            proxy_redirect off;
+          '';
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
+          };
+        };
       };
     };
 
