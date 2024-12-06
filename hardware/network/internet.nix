@@ -68,6 +68,9 @@ _: {
 
       127.0.0.1 casa.local
       ::11 casa.local
+
+      127.0.0.1 umbrel.local
+      ::11 umbrel.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
