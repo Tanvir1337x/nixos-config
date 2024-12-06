@@ -878,9 +878,11 @@
     };
 
     #- <https://wiki.nixos.org/wiki/Tor>
+    # Default Ports: 9050, 9063, 8118
     tor = {
       enable = false;
       client.enable = true;
+      torsocks.enable = true;
       openFirewall = true;
 
       relay = {
@@ -897,23 +899,24 @@
       /*
       UseBridges = true;
       ClientTransportPlugin = "obfs4 exec ${pkgs.obfs4}/bin/obfs4proxy";
-      Bridge = "obfs4 IP:ORPort [fingerprint]"
+      Bridge = "obfs4 IP:ORPort [fingerprint]";
       */
     };
 
     # Downloads dir: /var/lib/freenet/.local/share/freenet/./downloads
     freenet.enable = false; # WebUI: <http://localhost:8888>
 
+    # As of 06/12/2024 the service seems to be broken
+    # When visiting the WebUI, it's stuck on "Connecting...", "No peers found", "content.json download failed"
+    # Default data dir: /var/lib/zeronet/
     zeronet = {
       enable = false;
       #- <https://github.com/NixOS/nixpkgs/pull/173900>
-      package = pkgs.zeronet-conservancy; # maintained community fork of zeronet
-      # port = 7110; # default: 43110
-      # fileserverPort = 7111; # default: 12261
-      # tor = true; # Only use Tor for Tor network peers
-      # torAlways = false; # Use Tor for every connections to hide your IP address (slower)
-      # Default data dir: /var/lib/zeronet/
-      #- Issue: <https://github.com/NixOS/nixpkgs/pull/128976>
+      package = pkgs.zeronet-conservancy-git; # maintained community fork of zeronet
+      port = 7110; # default: 43110
+      fileserverPort = 7111; # default: 12261
+      tor = false; # Only use Tor for Tor network peers
+      torAlways = false; # Use Tor for every connections to hide your IP address (slower)
       # settings =
     };
 

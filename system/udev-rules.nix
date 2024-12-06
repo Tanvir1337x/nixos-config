@@ -1,6 +1,7 @@
 # Udev Rules Configuration
 _: {
   # To check: grep "" /sys/block/*/queue/scheduler
+  # Based on: <https://wiki.archlinux.org/title/Improving_performance#Changing_I/O_scheduler>
   services.udev = {
     # I/O Schedulers
     extraRules = ''
