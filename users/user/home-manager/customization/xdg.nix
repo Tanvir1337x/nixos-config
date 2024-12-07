@@ -28,9 +28,9 @@ in {
           "x-directory/normal-gnome-default-handler" = "thunar.desktop";
 
           # web
-          "x-scheme-handler/http" = "firefox.desktop";
-          "x-scheme-handler/https" = "firefox.desktop";
-          "x-scheme-handler/ftp" = "firefox.desktop";
+          "x-scheme-handler/http" = "firefox-esr.desktop";
+          "x-scheme-handler/https" = "firefox-esr.desktop";
+          "x-scheme-handler/ftp" = "firefox-esr.desktop";
 
           # mail
           "x-scheme-handler/mailto" = "thunderbird.desktop";
