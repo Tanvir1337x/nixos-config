@@ -70,6 +70,8 @@
 
     virt-manager.enable = true;
 
+    geary.enable = true;
+
     # <https://wiki.nixos.org/wiki/Appimage>
     appimage = {
       enable = true;
