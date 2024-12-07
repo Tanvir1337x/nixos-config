@@ -229,7 +229,6 @@ in {
       # End of Scanners
 
       # Fun/Novelty Tools
-      /*
       cmatrix # CLI: Simulates The Matrix "falling code" effect.
       figlet # CLI: Creates large letters from text.
       lolcat # CLI: Rainbow-colored 'cat'.
@@ -239,7 +238,6 @@ in {
       pokemonsay # CLI: Prints Pokémon in the CLI.
       cbonsai # CLI: Grows bonsai trees in your terminal.
       genact # CLI: Nonsense activity generator.
-      */
       # End of Fun/Novelty Tools
 
       # Nix Tools
