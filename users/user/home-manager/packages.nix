@@ -425,13 +425,11 @@ in {
       # End of Eye Candy
 
       # System Information Fetchers
-      /*
       onefetch # CLI: Displays Git repository summary.
       neofetch # CLI: Customizable system information script.
       cpufetch # CLI: Fetches CPU architecture information.
       ramfetch # CLI: Displays memory information.
       nur.repos.vanilla.fastfetch # CLI: Faster fork of Neofetch written in C.
-      */
       # End of System Information Fetchers
 
       # Download Managers
