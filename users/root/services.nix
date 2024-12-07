@@ -1020,7 +1020,7 @@
     zeronet = {
       enable = true;
       #- <https://github.com/NixOS/nixpkgs/pull/173900>
-      package = pkgs.zeronet-conservancy-legacy; # maintained community fork of zeronet
+      package = pkgs.zeronet-conservancy-past; # maintained community fork of zeronet
       # port = 7110; # default: 43110
       # fileserverPort = 7111; # default: 26552
       tor = false; # Only use Tor for Tor network peers
