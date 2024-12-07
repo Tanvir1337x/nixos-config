@@ -74,6 +74,9 @@ _: {
 
       127.0.0.1 cosmos.local
       ::11 cosmos.local
+
+      127.0.0.1 zeronet.local
+      ::11 zeronet.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
