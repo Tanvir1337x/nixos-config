@@ -563,11 +563,9 @@ in {
       eog # GUI: GNOME image viewer.
       pix # GUI: Image viewer from Linux Mint.
       pineapple-pictures # GUI: Lightweight image viewer.
-      /*
       loupe # GUI: Simple image viewer written in GTK4 and Rust.
       xviewer # GUI: Image viewer from Linux Mint.
       oculante # GUI: Minimalistic cross-platform image viewer.
-      feh # CLI: Lightweight image viewer.
       meh # GUI: Minimal image viewer using raw XLib.
       image-roll # GUI: GTK image viewer with basic image manipulation tools.
       libsForQt5.gwenview # GUI: KDE image viewer.
@@ -579,6 +577,8 @@ in {
       darktable # GUI: Virtual lighttable and darkroom for photographers.
       fim # CLI: Lightweight, customizable image viewer.
       emulsion # GUI: Fast and minimalistic image viewer.
+      /*
+      feh # CLI: Lightweight image viewer.
       */
       #- End of Image Viewers
       #- Image Tools
@@ -606,11 +606,9 @@ in {
       #- End of Audio Controllers
       #- Media Tools
       ffmpeg-full # CLI: Complete solution for recording, converting, and streaming audio and video.
-      /*
       mediainfo # CLI: Provides technical and tag information about media files.
       exiftool # CLI: Tool for reading, writing, and editing EXIF metadata.
       sox # CLI: Sample rate converter for audio.
-      */
       #- End of Media Tools
       #- VLC Plugins
       /*
