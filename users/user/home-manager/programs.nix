@@ -17,6 +17,25 @@ in {
         package = pkgs.firefox-esr;
       };
 
+      thunderbird = {
+        enable = true;
+        package = pkgs.thunderbird;
+
+        settings = {
+          "privacy.donottrackheader.enabled" = true;
+        };
+
+        profiles = {
+          "main" = {
+            isDefault = true;
+            settings = {
+              "calendar.alarms.playsound" = false;
+              "mail.spellcheck.inline" = false;
+            };
+          };
+        };
+      };
+
       librewolf = {
         enable = true;
         # <https://librewolf.net/docs/settings>
@@ -197,7 +216,7 @@ in {
         enable = true;
         # needed for rust lang server and rust-analyzer extension
         #- <https://wiki.nixos.org/wiki/Visual_Studio_Code#Use_VS_Code_extensions_without_additional_configuration>
-        package = pkgs.vscode.fhs; # gui: vscode with fhs-3.0 environment (chroot)
+        package = pkgs.vscode.fhs; # GUI: vscode with fhs-3.0 environment (chroot).
       };
 
       kitty = {
@@ -491,8 +510,8 @@ in {
 
         /*
         extraPackages = with pkgs; [
-          neovim-qt # gui: Neovim client library and GUI, in Qt5
-          neovim-gtk # gui: Gtk ui for neovim
+          neovim-qt # GUI: Neovim client library and GUI, in Qt5
+          neovim-gtk # GUI: Gtk ui for neovim
         ];
         */
       };

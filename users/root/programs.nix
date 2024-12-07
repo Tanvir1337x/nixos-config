@@ -110,12 +110,12 @@
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
-        thunar-volman # plugin: providing automatic management of removable drives and media
-        thunar-archive-plugin # plugin: providing file context menus for archives
-        thunar-media-tags-plugin # plugin: providing tagging and renaming features for media files
-        thunar-dropbox-plugin # plugin: adds context-menu items for Dropbox to Thunar
-        tumbler # plugin: providing thumbnailing and metadata extraction for various file types
-        catfish # gui: Handy file search tool
+        thunar-volman # PLUGIN: Provides automatic management of removable drives and media.
+        thunar-archive-plugin # PLUGIN: Provides file context menus for archives.
+        thunar-media-tags-plugin # PLUGIN: Provides tagging and renaming features for media files.
+        thunar-dropbox-plugin # PLUGIN: Adds context-menu items for Dropbox to Thunar.
+        tumbler # PLUGIN: Provides thumbnailing and metadata extraction for various file types.
+        catfish # GUI: Handy file search tool.
       ];
     };
 

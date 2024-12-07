@@ -96,7 +96,7 @@
 
       # Extra packages to add to PATH for the docker daemon process
       extraPackages = with pkgs; [
-        docker-compose # plugin: Docker CLI plugin to define and run multi-container applications with Docker
+        docker-compose # PLUGIN: Docker CLI plugin to define and run multi-container applications with Docker.
       ];
 
       autoPrune = {

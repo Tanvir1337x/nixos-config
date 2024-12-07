@@ -10,7 +10,7 @@ _: {
 
   /*
   environment.systemPackages = with pkgs; [
-    wpa_supplicant_gui # gui: Qt-based GUI for wpa_supplicant
+    wpa_supplicant_gui # GUI: Qt-based GUI for wpa_supplicant.
   ];
   */
 }

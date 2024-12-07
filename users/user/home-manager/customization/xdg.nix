@@ -19,6 +19,7 @@ in {
       mime.enable = true;
       mimeApps.enable = true;
 
+      # cat /home/user/.config/mimeapps.list
       mimeApps = {
         defaultApplications = {
           # folders
