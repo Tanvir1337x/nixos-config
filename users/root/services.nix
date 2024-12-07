@@ -1025,10 +1025,10 @@
       # fileserverPort = 7111; # default: 26552
       tor = false; # Only use Tor for Tor network peers
       torAlways = false; # Use Tor for every connections to hide your IP address (slower)
-      # settings = {
-      #  global.ui_ip = "*";
-      #  global.ui_host = "*";
-      # };
+      settings = {
+        # global.ui_ip = "zeronet.local";
+        global.ui_host = "zeronet.local";
+      };
     };
 
     # https://wiki.nixos.org/wiki/SSH_public_key_authentication
