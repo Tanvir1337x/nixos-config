@@ -113,8 +113,8 @@
         thunar-volman # plugin: providing automatic management of removable drives and media
         thunar-archive-plugin # plugin: providing file context menus for archives
         thunar-media-tags-plugin # plugin: providing tagging and renaming features for media files
-        # thunar-dropbox-plugin # plugin: adds context-menu items for Dropbox to Thunar
-        # tumbler # plugin: providing thumbnailing and metadata extraction for various file types
+        thunar-dropbox-plugin # plugin: adds context-menu items for Dropbox to Thunar
+        tumbler # plugin: providing thumbnailing and metadata extraction for various file types
         catfish # gui: Handy file search tool
       ];
     };
