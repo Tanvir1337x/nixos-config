@@ -85,27 +85,27 @@ in {
       # End of Development Tools
 
       # Android
+      gnirehtet # CLI: Reverse tethering over adb for Android.
+      scrcpy # CLI: Display and control Android devices over USB or TCP/IP.
+      android-file-transfer # GUI: Reliable MTP client with minimalistic UI.
+      trueseeing # CLI: Non-decompiling Android vulnerability scanner.
       /*
-      gnirehtet # CLI: Reverse tethering over adb for Android
-      scrcpy # CLI: Display and control Android devices over USB or TCP/IP
-      android-file-transfer # GUI: Reliable MTP client with minimalistic UI
-      agi # GUI: Android GPU Inspector by Google
-      aemu # UTIL: Android emulation utilities library
-      android-studio-full # GUI: Official IDE for Android development (Stable channel)
-      androidStudioPackages.dev # GUI: Android Studio development packages (Dev channel)
-      androidStudioPackages.canary # GUI: Android Studio development packages (Canary channel)
-      androidStudioPackages.beta # GUI: Android Studio development packages (Beta channel)
-      android-studio-tools # CLI: Command-line tools for Android Studio
-      android-studio-for-platform # GUI: The Official IDE for Android platform development
-      universal-android-debloater # GUI: Tool to debloat non-rooted Android devices
-      trueseeing # CLI: Non-decompiling Android vulnerability scanner
-      apktool # CLI: Tool for reverse engineering Android apk files
-      androguard # CLI/LIB: Reverse engineering and pentesting for Android applications
-      apksigner # CLI: Command line tool to sign and verify Android APKs
-      ghost # CLI: An Android post-exploitation framework that exploits the Android Debug Bridge to remotely access an Android device
-      anbox # GUI: Android in a box
-      genymotion # GUI: Fast and easy Android emulation
-      waydroid # GUI: Container-based approach to boot a full Android system on a regular GNU/Linux system
+      agi # GUI: Android GPU Inspector by Google.
+      aemu # UTIL: Android emulation utilities library.
+      android-studio-full # GUI: Official IDE for Android development (Stable channel).
+      androidStudioPackages.dev # GUI: Android Studio development packages (Dev channel).
+      androidStudioPackages.canary # GUI: Android Studio development packages (Canary channel).
+      androidStudioPackages.beta # GUI: Android Studio development packages (Beta channel).
+      android-studio-tools # CLI: Command-line tools for Android Studio.
+      android-studio-for-platform # GUI: The Official IDE for Android platform development.
+      universal-android-debloater # GUI: Tool to debloat non-rooted Android devices.
+      apktool # CLI: Tool for reverse engineering Android apk files.
+      androguard # CLI/LIB: Reverse engineering and pentesting for Android applications.
+      apksigner # CLI: Command line tool to sign and verify Android APKs.
+      ghost # CLI: An Android post-exploitation framework that exploits the Android Debug Bridge to remotely access an Android device.
+      anbox # GUI: Android in a box.
+      genymotion # GUI: Fast and easy Android emulation.
+      waydroid # GUI: Container-based approach to boot a full Android system on a regular GNU/Linux system.
       */
       # End of Android
 
@@ -295,13 +295,13 @@ in {
       # End of P2P File Sharing
 
       # Email Clients
-      /*
-      betterbird # GUI: Enhanced version of Mozilla Thunderbird.
-      thunderbird # GUI: Full-featured email client from Mozilla.
       electron-mail # GUI: Electron-based ProtonMail client.
       tutanota-desktop # GUI: Electron-based Tutanota client.
       claws-mail # GUI: User-friendly, lightweight email client.
+      /*
+      thunderbird # GUI: Full-featured email client from Mozilla.
       geary # GUI: Email client for GNOME 3.
+      betterbird # GUI: Enhanced version of Mozilla Thunderbird (Removed as there were insufficient maintainer resources to keep up with security updates).
       */
       # End of Email Clients
 
