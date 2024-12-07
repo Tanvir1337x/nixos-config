@@ -12,6 +12,14 @@
     # Disable as it slows down the boot time
     services.NetworkManager-wait-online.enable = false;
 
+    /*
+    services = {
+      zeronet = {
+        serviceConfig.ExecStart = "${config.services.zeronet.package}/bin/zeronet --ui_host '*' --config_file ${config.services.zeronet.configFile}";
+      };
+    };
+    */
+
     user.services = {
       polkit-kde-authentication-agent-1 = {
         description = "polkit-kde-authentication-agent-1";

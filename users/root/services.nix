@@ -386,6 +386,36 @@
             '';
           };
         };
+
+        # Zeronet (zeronet-conservancy) Instance
+        "zeronet.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 80;
+            }
+          ];
+
+          # <https://zeronet.readthedocs.io/en/latest/faq/#how-to-configure-nginx-reverse-proxy-for-zeronet>
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:43110";
+
+            extraConfig = ''
+              proxy_http_version 1.1;
+              proxy_set_header Host $host;
+              proxy_read_timeout 1h;
+              proxy_set_header Upgrade $http_upgrade;
+              proxy_set_header Connection "upgrade";
+            '';
+          };
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
+          };
+        };
       };
     };
 
@@ -995,7 +1025,10 @@
       # fileserverPort = 7111; # default: 26552
       tor = false; # Only use Tor for Tor network peers
       torAlways = false; # Use Tor for every connections to hide your IP address (slower)
-      # settings =
+      # settings = {
+      #  global.ui_ip = "*";
+      #  global.ui_host = "*";
+      # };
     };
 
     # https://wiki.nixos.org/wiki/SSH_public_key_authentication
