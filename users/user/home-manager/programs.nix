@@ -195,6 +195,58 @@ in {
         ];
       };
 
+      feh = {
+        enable = true;
+        package = pkgs.feh;
+
+        themes = {
+          booth = [
+            "--full-screen"
+            "--hide-pointer"
+            "--slideshow-delay"
+            "20"
+          ];
+
+          feh = [
+            "--image-bg"
+            "black"
+          ];
+
+          imagemap = [
+            "-rVq"
+            "--thumb-width"
+            "40"
+            "--thumb-height"
+            "30"
+            "--index-info"
+            "%n\\n%wx%h"
+          ];
+
+          present = [
+            "--full-screen"
+            "--sort"
+            "name"
+            "--hide-pointer"
+          ];
+
+          webcam = [
+            "--multiwindow"
+            "--reload"
+            "20"
+          ];
+        };
+
+        buttons = {
+          zoom_in = 4;
+          zoom_out = "C-4";
+        };
+
+        keybindings = {
+          zoom_in = "plus";
+          zoom_out = "minus";
+        };
+      };
+
       yazi = {
         enable = true;
         enableFishIntegration = true;
