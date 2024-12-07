@@ -119,6 +119,11 @@
       ];
     };
 
+    localsend = {
+      enable = false;
+      openFirewall = true;
+    };
+
     # Required by thunar if xfce is not used as desktop environment
     # preference changes are discarded otherwise
     # <https://wiki.nixos.org/wiki/Thunar#Configuration>

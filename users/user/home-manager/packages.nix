@@ -87,6 +87,7 @@ in {
       # Android
       gnirehtet # CLI: Reverse tethering over adb for Android.
       scrcpy # CLI: Display and control Android devices over USB or TCP/IP.
+      qtscrcpy # GUI: Qt-based GUI for scrcpy.
       android-file-transfer # GUI: Reliable MTP client with minimalistic UI.
       trueseeing # CLI: Non-decompiling Android vulnerability scanner.
       /*
@@ -913,11 +914,11 @@ in {
       # End of Font Management
 
       # Screenshot Tools
-      /*
-      flameshot # GUI: Feature-rich screenshot tool.
       scrot # CLI: Command-line screenshot utility.
       maim # CLI: Command-line screenshot utility.
       shotgun # CLI: Minimal X screenshot utility.
+      /*
+      flameshot # GUI: Feature-rich screenshot tool.
       */
       #- Wayland Screenshot Tools
       /*
@@ -1043,11 +1044,11 @@ in {
       hyprpicker # CLI: Wayland color picker.
       */
       #- X11 Color Pickers
-      /*
-      gcolor2 # GUI: Simple GTK color selector.
       gcolor3 # GUI: Color selector.
       gpick # GUI: Advanced color picker.
       libsForQt5.kcolorchooser # GUI: KDE color chooser.
+      /*
+      gcolor2 # GUI: Simple GTK color selector.
       */
       # End of Color Pickers
 
