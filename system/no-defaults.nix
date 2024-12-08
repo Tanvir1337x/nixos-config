@@ -3,7 +3,7 @@
   # Get rid of default packages for minimalism
   environment.defaultPackages = lib.mkForce [];
 
-  # programs.nano.enable = false;
+  programs.nano.enable = false;
 
   documentation = {
     enable = false;
