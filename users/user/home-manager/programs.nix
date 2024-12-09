@@ -133,7 +133,7 @@ in {
         enable = true;
         tmuxinator.enable = true;
         tmuxp.enable = true;
-        shell = "\${pkgs.fish}/bin/fish";
+        shell = "${pkgs.fish}/bin/fish";
         terminal = "screen-256color";
         sensibleOnTop = true;
         secureSocket = true; # Store tmux socket under {file}/run, which is more secure
