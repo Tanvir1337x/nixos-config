@@ -658,10 +658,8 @@ in {
       # End of Entertainment
 
       # PipeWire Tools
-      /*
       helvum # GUI: GTK patchbay for PipeWire.
       qpwgraph # GUI: Qt graph manager for PipeWire, similar to QjackCtl.
-      */
       # End of PipeWire Tools
 
       # Compression and Archiving Tools
@@ -693,6 +691,9 @@ in {
       libarchive-qt # GUI: A Qt based archiving solution with libarchive backend.
       xar # CLI: Extensible archiver.
       peazip # GUI: Cross-platform file and archive manager.
+      /*
+      p7zip-rar # CLI: RAR codec for 7-Zip.
+      */
       # End of Compression and Archiving Tools
 
       # Document Viewers
