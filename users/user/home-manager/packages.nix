@@ -173,14 +173,16 @@ in {
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       grc # CLI: Generic text colorizer.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
+      trashy # CLI: Alternative to 'rm' and 'trash-cli'.
+      rip2 # CLI: Safe and ergonomic alternative to rm.
       /*
+      rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       zoxide # CLI: Fast 'cd' command that learns your habits.
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
       skim # CLI: Command-line fuzzy finder written in Rust.
       bat # CLI: Cat clone with syntax highlighting and Git integration.
       ripgrep # CLI: Fast and powerful search tool.
       mcfly # CLI: Enhanced Ctrl-R for smarter history search.
-      rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       exa # CLI: Modern replacement for 'ls' written in Rust.
       eza # CLI: Modern, maintained replacement for 'ls'.
       navi # CLI: Interactive cheatsheet tool for the command-line.
@@ -1116,8 +1118,13 @@ in {
       xfce.xfce4-taskmanager # GUI: XFCE task manager.
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
+      baobab # GUI: Disk usage analyzer for GNOME.
       wgetpaste # CLI: Command-line interface to pastebin services.
       libnotify # LIBRARY/CLI: Sends desktop notifications.
+      wmname # CLI: Prints/sets window manager name.
+      arandr # GUI: Visual frontend for XRandR.
+      libva-utils # CLI: Utilities and examples for VA-API.
+      glxinfo # CLI: OpenGL test utilities.
       /*
       nvitop # CLI: NVIDIA GPU process viewer.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
@@ -1136,7 +1143,6 @@ in {
       */
       #- End of jq
       #- Filesystem Tools
-      /*
       hdparm # CLI: Manipulates ATA/SATA drive parameters.
       btrfs-progs # CLI: Utilities for the Btrfs filesystem.
       compsize # CLI: Finds compression type/ratio on Btrfs files.
@@ -1144,6 +1150,7 @@ in {
       e2fsprogs # CLI: Tools for ext2/ext3/ext4 filesystems.
       duff # CLI: Finds duplicate files.
       dua # CLI: Learns about disk usage of directories.
+      # End of Filesystem Tools
       /*
       zenith-nvidia # CLI: System monitor with zoom-able charts and NVIDIA GPU usage.
       filezilla # GUI: FTP, FTPS, and SFTP client.
@@ -1151,12 +1158,9 @@ in {
       etcher # GUI: Flashes OS images to SD cards and USB drives.
       glances # CLI: Curses-based system monitor.
       gpu-viewer # GUI: Frontend for glxinfo, vulkaninfo, clinfo, and es2_info.
-      libva-utils # CLI: Utilities and examples for VA-API.
       curtail # GUI: Image compressor.
       hamster # GUI: Time tracking application.
-      arandr # GUI: Visual frontend for XRandR.
       ngrok # CLI: Exposes local web servers to the internet.
-      glxinfo # CLI: OpenGL test utilities.
       inxi # CLI: System information tool.
       treefmt # CLI: Formats code trees.
       cpupower-gui # GUI: GUI for cpupower.
@@ -1164,12 +1168,8 @@ in {
       doge # CLI: Displays Doge in the terminal.
       terminal-parrot # CLI: Shows animated party parrot in the terminal.
       kmon # CLI: Linux Kernel Manager and Activity Monitor.
-      trashy # CLI: Alternative to 'rm' and 'trash-cli'.
       shadowfox # CLI: Universal dark theme for Firefox.
-      baobab # GUI: Disk usage analyzer for GNOME.
-      wmname # CLI: Prints/sets window manager name.
       ocs-url # CLI: Open Collaboration System for store websites.
-      traceroute # CLI: Network route tracking tool.
       psensor # GUI: Hardware temperature monitor.
       stress # CLI: Workload generator for POSIX systems.
       s-tui # CLI: Stress Terminal UI monitoring tool.
@@ -1192,7 +1192,6 @@ in {
       wayland-utils # CLI: Wayland utilities (wayland-info).
       wdisplays # GUI: Graphical application for configuring Wayland displays.
       */
-      # End of Filesystem Tools
       # End of Essential System Utilities
 
       # Remote Desktop Clients
