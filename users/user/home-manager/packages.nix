@@ -583,6 +583,7 @@ in {
       #- End of Image Viewers
       #- Image Tools
       imagemagickBig # CLI: Suite for creating, editing, and converting images.
+      graphicsmagick # CLI: Swiss army knife of image processing.
       #- End of Image Tools
       #- Audio Players
       audacious # GUI: Lightweight and versatile audio player.
@@ -1112,6 +1113,7 @@ in {
       linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
       resources # GUI: System resource monitor.
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
+      xfce.xfce4-taskmanager # GUI: XFCE task manager.
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
       wgetpaste # CLI: Command-line interface to pastebin services.
@@ -1121,7 +1123,6 @@ in {
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
       xsettingsd # CLI: Provides settings to X11 applications.
-      xfce.xfce4-taskmanager # GUI: XFCE task manager.
       tree # CLI: Displays directory structure as a tree.
       smartmontools # CLI: Hard drive health monitoring tools.
       nvme-cli # CLI: NVM-Express user space tools.
@@ -1253,17 +1254,18 @@ in {
       */
       # End of Experimental Nix Tools
 
-      # Misc Packages
+      # Misc Tools
       goverlay # LIB: Opensource project that aims to create a Graphical UI to help manage Linux overlays.
       fuse-overlayfs # LIB: FUSE implementation for overlayfs.
       dwarfs # LIB: Fast high compression read-only file system.
       zenity # GUI: Tool to display dialogs from the commandline and shell scripts.
       dmidecode # CLI: Tool that reads information about your system's hardware from the BIOS according to the SMBIOS/DMI standard.
+      stress # CLI: Simple workload generator for POSIX systems. It imposes a configurable amount of CPU, memory, I/O, and disk stress on the system.
       /*
       kando # GUI/MENU: Cross-Platform Pie Menu.
       spicetify-cli # CLI: Command-line tool to customize Spotify client.
       */
-      # End of Misc Packages
+      # End of Misc Tools
     ];
   };
 }
