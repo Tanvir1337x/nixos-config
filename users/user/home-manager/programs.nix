@@ -125,8 +125,46 @@ in {
         enable = true;
         host = "tmate.io";
         port = 2222;
-        # dsaFingerprint = 
+        # dsaFingerprint =
         # rsaFingerprint =
+      };
+
+      tmux = {
+        enable = true;
+        tmuxinator.enable = true;
+        tmuxp.enable = true;
+        shell = "\${pkgs.fish}/bin/fish";
+        terminal = "screen-256color";
+        sensibleOnTop = true;
+        secureSocket = true; # Store tmux socket under {file}/run, which is more secure
+        reverseSplit = false;
+        newSession = true;
+        mouse = true; # Enable mouse support
+        keyMode = "emacs";
+        disableConfirmationPrompt = false;
+        customPaneNavigationAndResize = false;
+        clock24 = false; # Prefer 12-hour clock
+        baseIndex = 1; # Start window numbering at 1
+        aggressiveResize = true;
+        resizeAmount = 10;
+        historyLimit = 15000;
+
+        plugins = with pkgs.tmuxPlugins; [
+          tmux-thumbs # PLUGIN: Lightning fast version of tmux-fingers written in Rust, copy/pasting tmux like vimium/vimperator.
+          tmux-fzf # PLUGIN: Fuzzy finder for tmux.
+          tmux-floax # PLUGIN: Floating window support for tmux.
+          /*
+          tmux-powerline # PLUGIN: Statusbar for tmux that looks like vim-powerline.
+          continuum # PLUGIN: Continuous saving of tmux environment.
+          {
+            plugin = tmuxPlugins.continuum;
+            extraConfig = ''
+              set -g @continuum-restore 'on'
+              set -g @continuum-save-interval '60' # minutes
+            '';
+          }
+          */
+        ];
       };
 
       fzf = {

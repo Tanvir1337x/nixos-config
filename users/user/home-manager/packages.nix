@@ -7,6 +7,28 @@ _: let
   NixOS Applications (.desktops): /run/current-system/sw/share/applications/
   Home-manager Applications (.desktops): ~/.local/state/home-manager/gcroots/current-home/home-path/share/applications/
   */
+  /*
+  nix-software-center = import (pkgs.fetchFromGitHub {
+    owner = "snowfallorg";
+    repo = "nix-software-center";
+    rev = "216eb549f1ec222c2877d2194f2987527954f2c4";
+    sha256 = "sha256-hq3jlW5lyT2RkWhJ2/Oo+dt9FXtJ47zDDBBk8A8abMo=";
+  }) {};
+
+  nixos-conf-editor = import (pkgs.fetchFromGitHub {
+    owner = "snowfallorg";
+    repo = "nixos-conf-editor";
+    rev = "27b5e92f580f794c690093503869aab242f075ab";
+    sha256 = "sha256-UtLeZzDdk96sLTRcWsGrkWCslNUDytrGe0VmOTB/iig=";
+  }) {};
+
+  nix-editor = import (pkgs.fetchFromGitHub {
+    owner = "snowfallorg";
+    repo = "nix-editor";
+    rev = "b5017f8d61753ce6a3a1a2aa7e474d59146a8ae3";
+    sha256 = "sha256-Ne9NG7x45a8aJyAN+yYWbr/6mQHBVVkwZZ72EZHHRqw=";
+  }) {};
+  */
 in {
   imports = [
     (import "${home-manager}/nixos")
