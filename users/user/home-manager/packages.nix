@@ -172,6 +172,10 @@ in {
       */
       # End of JavaScript Development
 
+      # Perl Development
+      perl # CLI: Standard implementation of the Perl 5 programming language.
+      # End of Perl Development
+
       # File Sharing
       /*
       localsend # GUI: Open source cross-platform alternative to AirDrop.
