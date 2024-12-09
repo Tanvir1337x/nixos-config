@@ -121,6 +121,14 @@ in {
         enableFishIntegration = true;
       };
 
+      tmate = {
+        enable = true;
+        host = "tmate.io";
+        port = 2222;
+        # dsaFingerprint = 
+        # rsaFingerprint =
+      };
+
       fzf = {
         enable = true;
 
