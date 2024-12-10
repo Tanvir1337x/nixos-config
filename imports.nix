@@ -59,7 +59,7 @@
 
     # Hardware Misc
     # ./hardware/peripherals/argb.nix
-    # ./hardware/peripherals/tablet.nix
+    ./hardware/peripherals/tablet.nix
 
     # Nix Experimental
     # ./system/nix/flox.nix
