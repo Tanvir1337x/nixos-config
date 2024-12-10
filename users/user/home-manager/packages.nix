@@ -1242,11 +1242,9 @@ in {
 
       # Gaming and Windows Compatibility
       #- Gamepad Controllers
-      /*
       antimicrox # GUI: Maps keyboard and mouse to gamepads.
       gamepad-tool # GUI: Creates/modifies gamepad mappings for SDL2 games.
       xboxdrv # Driver: Xbox/Xbox 360 gamepad driver.
-      */
       # End of Gamepad Controllers
       #- Wine
       /*
