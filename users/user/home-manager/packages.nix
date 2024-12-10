@@ -1255,6 +1255,8 @@ in {
       wineWow64Packages.waylandFull # CLI: Wine with experimental native Wayland support.
       */
       #- Proton
+      protonup-ng # CLI: CLI program and API to automate the installation and update of GloriousEggroll's Proton-GE.
+      protonplus # GUI: Simple Wine and Proton-based compatibility tools manager.
       protontricks # CLI: Runs Winetricks commands for Proton games.
       protonup-qt # GUI: Manages Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris.
       #- Game Launchers
