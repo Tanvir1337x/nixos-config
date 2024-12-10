@@ -65,6 +65,7 @@
       font-awesome
       nerd-fonts.noto
       nerd-fonts.fira-code
+      nerd-fonts.sauce-code-pro # Needed by SpaceVim
       # nerd-fonts.Meslo # Recommended by ohmyposh <https://ohmyposh.dev/docs/installation/fonts>
 
       # Misc
