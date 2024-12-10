@@ -271,6 +271,10 @@ in {
         templates = null;
 
         extraConfig = {
+          XDG_WORKSPACE_DIR = "${config.home.homeDirectory}/workspace";
+          XDG_REPOSITORIES_DIR = "${config.home.homeDirectory}/repositories";
+          XDG_GAMES_DIR = "${config.home.homeDirectory}/games";
+          XDG_SHARED_DIR = "${config.home.homeDirectory}/shared";
           XDG_MEDIA_DIR = "${config.home.homeDirectory}/media";
           XDG_SCREENSHOT_DIR = "${config.home.homeDirectory}/media/pictures/screenshots";
           XDG_WALLPAPER_DIR = "${config.home.homeDirectory}/media/pictures/wallpapers";
