@@ -92,5 +92,10 @@
     #- <https://wiki.archlinux.org/title/wayland#Java>
     #- Can improve performance and reduce visual glitches
     _JAVA_AWT_WM_NONREPARENTING = "1";
+
+    # Better font rendering on Java applications
+    # <https://wiki.nixos.org/wiki/Java#Better_font_rendering>
+    # By default java does not enable anti-aliasing for font rendering. To fix this:
+    _JAVA_OPTIONS = "-Dawt.useSystemAAFontSettings=lcd";
   };
 }
