@@ -318,9 +318,7 @@ in {
 
       # P2P File Sharing
       #- Music
-      /*
       nicotine-plus # GUI: Modern and maintained graphical client for the SoulSeek peer-to-peer system.
-      */
       # End of P2P File Sharing
 
       # Email Clients
@@ -476,9 +474,9 @@ in {
 
       # Torrent Clients and Tools
       qbittorrent # GUI: Feature-rich BitTorrent client. For plugins: <https://github.com/qbittorrent/search-plugins>
+      tribler # GUI: Decentralized P2P file sharing client.
       /*
       qBittorrent-Enhanced-Edition # GUI: qBittorrent with additional features (community enhancements).
-      tribler # GUI: Decentralized P2P file sharing client.
       biglybt # GUI: BitTorrent client based on the Azureus that supports I2P darknet for privacy.
       bitcomet # GUI: Free BitTorrent download client.
       multiplex # GUI: Watch torrents with friends.
@@ -495,14 +493,14 @@ in {
       # End of Torrent Clients and Tools
 
       # YouTube/Spotify/SoundCloud Downloaders
-      /*
-      yt-dlp # CLI: Fork of youtube-dl with additional features.
-      tartube-yt-dlp # GUI: GUI frontend for youtube-dl and yt-dlp.
-      youtube-dl # CLI: Tool to download videos from YouTube and other sites (unmaintained).
-      yt-dlg # GUI: Cross-platform GUI for youtube-dl.
       ytmdl # CLI: CLI tool to download music from YouTube.
       spotdl # CLI: Spotify downloader.
       scdl # CLI: SoundCloud downloader.
+      tartube-yt-dlp # GUI: GUI frontend for youtube-dl and yt-dlp.
+      yt-dlg # GUI: Cross-platform GUI for youtube-dl.
+      /*
+      yt-dlp # CLI: Fork of youtube-dl with additional features.
+      youtube-dl # CLI: Tool to download videos from YouTube and other sites (unmaintained).
       */
       # End of YouTube/Spotify Downloaders
 
