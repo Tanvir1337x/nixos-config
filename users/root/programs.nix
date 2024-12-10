@@ -22,6 +22,29 @@
       enableZshIntegration = true;
     };
 
+    steam = {
+      enable = true;
+      protontricks.enable = true;
+      extest.enable = false; # For wayland
+
+      package = pkgs.steam.override {
+        extraEnv = {
+          MANGOHUD = true;
+          OBS_VKCAPTURE = true;
+          RADV_TEX_ANISO = 16;
+        };
+
+        extraLibraries = p:
+          with p; [
+            atk
+          ];
+      };
+
+      extraCompatPackages = with pkgs; [
+        proton-ge-bin
+      ];
+    };
+
     xonsh.enable = true;
 
     # <https://wiki.nixos.org/wiki/Bash>
