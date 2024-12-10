@@ -1247,22 +1247,22 @@ in {
       xboxdrv # Driver: Xbox/Xbox 360 gamepad driver.
       # End of Gamepad Controllers
       #- Wine
-      wineWowPackages.staging # CLI: Wine with Staging patches (version with experimental features).
+      wineWowPackages.stagingFull # CLI: Wine with Staging patches (version with experimental features).
       winetricks # GUI: Installs DLLs and components for Wine (all versions).
       bottles # GUI: Wine prefix manager.
       /*
-      wineWowPackages.stable # CLI: Wine with support for both 32-bit and 64-bit applications.
-      wine # CLI: 32-bit Wine for running Windows applications (32-bit only).
-      wine64 # CLI: 64-bit Wine for running Windows applications (64-bit only).
       bottles-unwrapped # GUI: Wine prefix manager.
-      wine-wayland # CLI: Wine with experimental native Wayland support.
+      wineWow64Packages.waylandFull # CLI: Wine with experimental native Wayland support.
       */
       #- Proton
       protontricks # CLI: Runs Winetricks commands for Proton games.
       protonup-qt # GUI: Manages Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris.
-      #- Misc Gaming Tools
+      #- Game Launchers
+      heroic # GUI: Native GOG, Epic, and Amazon Games Launcher for Linux, Windows and MacOS.
       cartridges # GUI: GTK4 + Libadwaita game launcher.
+      itch # GUI: Best way to play itch.io games.
       lutris # GUI: Open-source gaming platform for Linux.
+      # End of Game Launchers
       /*
       lutris-unwrapped # GUI: Open-source gaming platform for Linux.
       mangohud # CLI: Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
