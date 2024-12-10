@@ -36,6 +36,11 @@ in {
         };
       };
 
+      java = {
+        enable = true;
+        package = pkgs.openjdk;
+      };
+
       librewolf = {
         enable = true;
         # <https://librewolf.net/docs/settings>

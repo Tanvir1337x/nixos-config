@@ -22,12 +22,23 @@
       enableZshIntegration = true;
     };
 
+    java = {
+      enable = false;
+      package = pkgs.openjdk;
+      binfmt = true; # Needed to execute java jar’s and classes
+    };
+
     steam = {
       enable = true;
       protontricks.enable = true;
       extest.enable = false; # For wayland
 
       package = pkgs.steam.override {
+        /*
+        withJava = true;
+        withPrimus = true;
+        extraPackages = with pkgs; [ bumblebee glxinfo ];
+        */
         extraEnv = {
           MANGOHUD = true;
           OBS_VKCAPTURE = true;
