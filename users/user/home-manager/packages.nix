@@ -1241,6 +1241,14 @@ in {
       # End of Network Diagnostics
 
       # Gaming and Windows Compatibility
+      #- Games
+      /*
+      osu-lazer # GUI: Rhythm is just a *click* away (no score submission or multiplayer, see osu-lazer-bin).
+      osu-lazer-bin # GUI: Rhythm is just a *click* away (AppImage version for score submission and multiplayer, and binary distribution for Darwin systems).
+      (fufexan/nix-gaming) osu-lazer-bin # GUI: osu! lazer, extracted from the official AppImage.
+      (fufexan/nix-gaming) osu-stable # GUI: osu! stable version.
+      */
+      # End of Games
       #- Gamepad Controllers
       antimicrox # GUI: Maps keyboard and mouse to gamepads.
       gamepad-tool # GUI: Creates/modifies gamepad mappings for SDL2 games.

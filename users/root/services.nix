@@ -416,6 +416,36 @@
             '';
           };
         };
+
+        # slskd Instance
+        /*
+        "slskd.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 8080;
+            }
+          ];
+
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:1919";
+
+            extraConfig = ''
+              proxy_set_header Upgrade $http_upgrade;
+              proxy_set_header Connection "Upgrade";
+              proxy_set_header Host $host;
+              proxy_request_buffering off;
+            '';
+          };
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
+          };
+        };
+        */
       };
     };
 
@@ -440,6 +470,36 @@
           p.docker
           p.dnspython
         ];
+      };
+    };
+
+    # TODO: Setup/Configure slskd properly
+    slskd = {
+      enable = false;
+      package = pkgs.slskd;
+      domain = "slskd.local";
+
+      settings = {
+        web = {
+          port = 1919;
+          url_base = "/";
+          https.disabled = true;
+        };
+
+        directories = {
+          downloads = "/home/user/media/musics/slskd";
+          incomplete = "/home/user/media/musics/slskd/incomplete";
+        };
+
+        soulseek = {
+          # listen_port = 9459; # Default: 50300
+          description = "A slskd user. https://github.com/slskd/slskd";
+        };
+
+        shares = {
+          filters = ["\.ini$" "Thumbs.db$" "\.DS_Store$"];
+          directories = ["/home/user/media/musics"];
+        };
       };
     };
 

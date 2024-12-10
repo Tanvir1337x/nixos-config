@@ -58,7 +58,7 @@
     ./desktop/customization/qt.nix
 
     # Hardware Misc
-    # ./hardware/peripherals/argb.nix
+    ./hardware/peripherals/argb.nix
     ./hardware/peripherals/tablet.nix
 
     # Nix Experimental
