@@ -256,16 +256,17 @@ in {
         createDirectories = true;
 
         download = "${config.home.homeDirectory}/downloads";
+        documents = "${config.home.homeDirectory}/documents";
 
-        # music = "${config.home.homeDirectory}/media/musics";
+        music = "${config.home.homeDirectory}/media/musics";
         pictures = "${config.home.homeDirectory}/media/pictures";
-        # videos = "${config.home.homeDirectory}/media/videos";
+        videos = "${config.home.homeDirectory}/media/videos";
 
         # Don't need these
-        music = null;
-        videos = null;
+        # music = null;
+        # videos = null;
         desktop = null;
-        documents = null;
+        # documents = null;
         publicShare = null;
         templates = null;
 
