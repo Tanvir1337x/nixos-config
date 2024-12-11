@@ -83,6 +83,38 @@ in {
         package = pkgs.atuin;
       };
 
+      bun = {
+        enable = true;
+        enableGitIntegration = true;
+        package = pkgs.bun;
+
+        # <https://bun.sh/docs/runtime/bunfig>
+        settings = {
+          logLevel = "debug"; # "debug" | "warn" | "error"
+          smol = false; # Reduces memory usage at the cost of performance
+          telemetry = false; # Equivalent of DO_NOT_TRACK env variable
+
+          test = {
+            coverage = true;
+            coverageThreshold = 0.9; # To require 90% line-level and function-level coverage
+          };
+
+          install.lockfile = {
+            save = true;
+            print = "yarn";
+          };
+
+          install.cache = {
+            # when true, don't load from the global cache.
+            # Bun may still write to node_modules/.cache
+            disable = false;
+            disableManifest = false; # when true, always resolve the latest versions from the registry
+
+            dir = "/home/user/.bun/install/cache";
+          };
+        };
+      };
+
       broot = {
         enable = true;
 
