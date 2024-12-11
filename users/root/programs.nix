@@ -113,8 +113,9 @@
     };
 
     #- <https://wiki.nixos.org/wiki/Node.js>
+    # `npm set prefix ~/.npm-global` to use global packages
     npm = {
-      enable = false;
+      enable = true;
       npmrc = ''
         prefix = ''${HOME}/.npm
         color = true
