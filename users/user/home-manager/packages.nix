@@ -1180,14 +1180,14 @@ in {
       arandr # GUI: Visual frontend for XRandR.
       libva-utils # CLI: Utilities and examples for VA-API.
       glxinfo # CLI: OpenGL test utilities.
+      smartmontools # CLI: Hard drive health monitoring tools.
+      nvme-cli # CLI: NVM-Express user space tools.
       /*
       nvitop # CLI: NVIDIA GPU process viewer.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
       xsettingsd # CLI: Provides settings to X11 applications.
       tree # CLI: Displays directory structure as a tree.
-      smartmontools # CLI: Hard drive health monitoring tools.
-      nvme-cli # CLI: NVM-Express user space tools.
       lm_sensors # CLI: Hardware sensor reading tools.
       */
       #- jq - JSON Processor
