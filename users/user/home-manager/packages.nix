@@ -221,6 +221,8 @@ in {
       rip2 # CLI: Safe and ergonomic alternative to rm.
       scooter # CLI: Interactive find and replace in the terminal.
       radio-cli # CLI: Simple radio CLI written in rust.
+      gtop # CLI: System monitoring dashboard for the terminal.
+      duf # CLI: Disk Usage/Free Utility.
       /*
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       zoxide # CLI: Fast 'cd' command that learns your habits.
@@ -553,6 +555,7 @@ in {
       session-desktop # GUI: Onion routing based messenger.
       keybase-gui # GUI: Keybase GUI client.
       /*
+      _64gram # GUI: Unofficial Telegram Desktop providing Windows 64bit build and extra features.
       revolt-desktop # GUI: Open-source chat platform.
       slack # GUI: Desktop client for Slack.
       zulip # GUI: Desktop client for Zulip Chat.
@@ -1169,6 +1172,7 @@ in {
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
       baobab # GUI: Disk usage analyzer for GNOME.
+      k4dirstat # GUI: Small utility program that sums up disk usage for directory trees.
       wgetpaste # CLI: Command-line interface to pastebin services.
       libnotify # LIBRARY/CLI: Sends desktop notifications.
       wmname # CLI: Prints/sets window manager name.
