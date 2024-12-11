@@ -162,14 +162,15 @@ in {
 
       # JavaScript Development
       #- <https://wiki.nixos.org/wiki/Node.js>
-      /*
-      nodejs # CLI: Event-driven I/O framework for the V8 JavaScript engine.
       yarn # CLI: Fast, reliable, and secure dependency management for JavaScript.
-      nodePackages.npm # CLI: Package manager for JavaScript.
       nodenv # CLI: Manage multiple Node.js versions.
       node2nix # CLI: Generate Nix expressions to build NPM packages.
       yarn2nix # CLI: Convert packages.json and yarn.lock into a Nix expression.
       npkill # CLI: Easily find and remove old and heavy node_modules folders.
+      deno # CLI: Secure runtime for JavaScript and TypeScript.
+      /*
+      nodejs # CLI: Event-driven I/O framework for the V8 JavaScript engine.
+      nodePackages.npm # CLI: Package manager for JavaScript.
       */
       # End of JavaScript Development
 
