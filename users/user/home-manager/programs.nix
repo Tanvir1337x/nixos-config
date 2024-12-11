@@ -818,7 +818,7 @@ in {
           obs-replay-source # PLUGIN: Replay source for OBS studio.
           obs-pipewire-audio-capture # PLUGIN: Audio device and application capture for OBS Studio using PipeWire.
           obs-nvfbc # PLUGIN: OBS Studio source plugin for NVIDIA FBC API.
-          # obs-ndi # PLUGIN: Network A/V plugin for OBS Studio.
+          obs-ndi # PLUGIN: Network A/V plugin for OBS Studio.
           obs-mute-filter # PLUGIN: OBS Studio plugin to mute audio of a source
           obs-multi-rtmp # PLUGIN: Multi-site simultaneous broadcast plugin for OBS Studio.
           obs-move-transition # PLUGIN: Plugin for OBS Studio to move source to a new position during scene transition.
