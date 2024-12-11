@@ -1182,6 +1182,10 @@ in {
       glxinfo # CLI: OpenGL test utilities.
       smartmontools # CLI: Hard drive health monitoring tools.
       nvme-cli # CLI: NVM-Express user space tools.
+      hwinfo # CLI: Hardware detection tool.
+      cpuid # CLI: Dumps x86 CPUID information.
+      pciutils # CLI: Tools for PCI devices.
+      usbutils # CLI: Tools for USB devices.
       /*
       nvitop # CLI: NVIDIA GPU process viewer.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
@@ -1234,10 +1238,6 @@ in {
       vnstat # CLI: Network statistics utility.
       nload # CLI: Network traffic and bandwidth monitor.
       alsa-utils # CLI: ALSA utilities.
-      hwinfo # CLI: Hardware detection tool.
-      cpuid # CLI: Dumps x86 CPUID information.
-      pciutils # CLI: Tools for PCI devices.
-      usbutils # CLI: Tools for USB devices.
       pydf # CLI: Colorized 'df' clone.
       tmux # CLI: Terminal multiplexer.
       tmate # CLI: Instant terminal sharing.
