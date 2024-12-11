@@ -78,6 +78,7 @@
 
     # Overlays
     # ./overlays/awesome.nix
+    # ./overlays/jackett.nix
     ./overlays/zeronet.nix
     # ./overlays/discord.nix
     # ./overlays/mpv.nix

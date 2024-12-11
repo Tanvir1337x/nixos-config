@@ -1174,7 +1174,10 @@
     # <https://github.com/Jackett/Jackett>
     # Use <https://github.com/FlareSolverr/FlareSolverr> in addition
     # Tracking: <https://github.com/NixOS/nixpkgs/issues/294789>
-    jackett.enable = true; # WebUI: http://127.0.0.1:9117
+    jackett = {
+      enable = true; # WebUI: http://127.0.0.1:9117
+      # port = 9292; # Default: 9117
+    };
 
     # <https://wiki.nixos.org/wiki/GNOME#Running_ancient_applications>
     dbus.packages = with pkgs; [gnome2.GConf];
