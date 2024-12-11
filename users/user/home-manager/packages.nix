@@ -196,6 +196,18 @@ in {
       # End of Shell Plugins
       # End of Shells
 
+      # Encryption
+      picocrypt # GUI: Very small, very simple, yet very secure encryption tool, written in Go.
+      picocrypt-cli # CLI: Command-line interface for Picocrypt.
+      git-crypt # CLI: Transparent file encryption in git.
+      kdePackages.kgpg # GUI: Simple interface for GnuPG, a powerful encryption utility.
+      gnome-obfuscate # GUI: Censors private information in images.
+      /*
+      seahorse # GUI: Application for managing encryption keys and passwords in the GnomeKeyring.
+      veracrypt # GUI: On-the-fly encryption software.
+      */
+      # End of Encryption
+
       # OSINT
       octosuite # CLI: Advanced Github OSINT framework.
       sherlock # CLI: Hunt down social media accounts by username across social networks.
@@ -831,7 +843,6 @@ in {
       # End of Screen and Audio Recorders
 
       # Audio and Video Editors
-      /*
       #- Audio Editors
       audacity # GUI: Sound editor with a graphical interface.
       ardour # GUI: Multi-track hard disk recording software.
@@ -847,7 +858,6 @@ in {
       pitivi # GUI: Non-linear video editor using GStreamer.
       video-trimmer # GUI: Trims videos quickly.
       #- End of Video Editors
-      */
       #- Image Editors
       /*
       krita # GUI: Free and open-source painting application.
@@ -865,6 +875,10 @@ in {
       #- End of Vector Graphics and Other Editors
       */
       # End of Audio and Video Editors
+
+      # Data management
+      openrefine # GUI: Power tool for working with messy data and improving it.
+      # End of Data management
 
       # Desktop Customization Tools
       /*
@@ -1035,14 +1049,6 @@ in {
       gnuplot # GUI: Command-line graphing utility.
       */
       # End of Scientific Software
-
-      # Security Tools
-      /*
-      veracrypt # GUI: On-the-fly encryption software.
-      libsForQt5.kgpg # GUI: KDE interface for GnuPG.
-      gnome-obfuscate # GUI: Censors private information in images.
-      */
-      # End of Security Tools
 
       # Mathematics Software
       /*
