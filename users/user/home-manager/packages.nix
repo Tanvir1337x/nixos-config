@@ -940,7 +940,7 @@ in {
       # End of Status Bars
 
       # Compositors
-      picom-pijulius # Daemon: Picom fork with extensive animation support.
+      picom-pijulius-git # Daemon: Picom fork with extensive animation support.
       /*
       picom # Daemon: Compositing manager for X servers.
       fastcompmgr # Daemon: Fast compositor for X11
