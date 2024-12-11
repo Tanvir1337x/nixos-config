@@ -78,12 +78,12 @@ in {
       shfmt # CLI: Shell script formatter.
       wakatime # CLI: Tracks time spent on projects.
       gitkraken # GUI: Popular Git client with a user-friendly interface.
+      act # CLI: Run your GitHub Actions locally.
       just # CLI: Saves and runs project-specific commands.
       github-desktop # GUI: GUI for managing Git repositories and interacting with GitHub.
       meld # GUI: Visual diff and merge tool.
       code2prompt # CLI: Converts codebases into LLM prompts with source tree, templating, and token counting.
       /*
-      act # CLI: Run your GitHub Actions locally.
       serie # CLI: Displays a rich Git commit graph in your terminal.
       github-copilot-cli # CLI: Command-line interface for GitHub Copilot.
       shellharden # CLI: Corrective bash syntax highlighter.
@@ -169,6 +169,7 @@ in {
       nodenv # CLI: Manage multiple Node.js versions.
       node2nix # CLI: Generate Nix expressions to build NPM packages.
       yarn2nix # CLI: Convert packages.json and yarn.lock into a Nix expression.
+      npkill # CLI: Easily find and remove old and heavy node_modules folders.
       */
       # End of JavaScript Development
 
@@ -195,12 +196,19 @@ in {
       # End of Shell Plugins
       # End of Shells
 
+      # OSINT
+      octosuite # CLI: Advanced Github OSINT framework.
+      sherlock # CLI: Hunt down social media accounts by username across social networks.
+      # End of OSINT
+
       # Command-Line Utilities
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       grc # CLI: Generic text colorizer.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
       trashy # CLI: Alternative to 'rm' and 'trash-cli'.
       rip2 # CLI: Safe and ergonomic alternative to rm.
+      scooter # CLI: Interactive find and replace in the terminal.
+      radio-cli # CLI: Simple radio CLI written in rust.
       /*
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       zoxide # CLI: Fast 'cd' command that learns your habits.
@@ -354,7 +362,6 @@ in {
       # End of Password Cracking
 
       # Networking Tools
-      /*
       airgorah # GUI: GUI for Aircrack-ng; WiFi security auditing software mainly based on aircrack-ng tools suite.
       aircrack-ng # CLI: WiFi security auditing tools suite.
       wireshark # GUI: Powerful network protocol analyzer.
@@ -363,9 +370,8 @@ in {
       whois # CLI: Intelligent WHOIS client from Debian.
       nikto # CLI: Web server scanner.
       fping # CLI: Send ICMP echo probes to network hosts.
-      nettols # CLI: Set of tools for controlling the network subsystem in Linux.
+      nettools # CLI: Set of tools for controlling the network subsystem in Linux.
       netdiscover # CLI: Network address discovering tool, developed mainly for those wireless networks without dhcp server, it also works on hub/switched networks.
-      */
       # End of Networking Tools
 
       # Data Recovery
@@ -404,11 +410,11 @@ in {
       # Virtualization Tools
       distrobox # CLI: Wrapper around Podman or Docker for creating containers.
       distrobox-tui # CLI: A TUI for DistroBox.
+      lazydocker # TUI: Terminal UI for Docker and Docker Compose.
+      junest # CLI: Arch Linux distribution that runs on top of another without root.
       boxbuddy # GUI: Unofficial GUI for managing your Distroboxes, written with GTK4 + Libadwaita.
       gnome-boxes # GUI: GNOME application for accessing virtual systems.
       /*
-      lazydocker # TUI: Terminal UI for Docker and Docker Compose.
-      junest # CLI: Arch Linux distribution that runs on top of another without root.
       virt-manager # GUI: Graphical tool for managing virtual machines.
       docker-ls # CLI: Tools for browsing and manipulating Docker registries.
       docker-gc # CLI: Docker garbage collection tool.
@@ -516,6 +522,7 @@ in {
 
       # Nim
       /*
+      nim-unwrapped # CLI: Statically typed, imperative programming language.
       nph # CLI: Opinionated code formatter for Nim.
       */
       # End of Nim
@@ -1111,6 +1118,7 @@ in {
 
       # Miscellaneous Tools and Applications
       hydrus # GUI: Image tagging and searching system.
+      imgbrd-grabber # GUI: Very customizable imageboard/booru downloader with powerful filenaming features.
       /*
       gallery-dl # CLI: Downloads image galleries from various websites.
       sonic-visualiser # GUI: Music audio analysis tool.
