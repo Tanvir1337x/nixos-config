@@ -419,6 +419,12 @@ in {
       bubblewrap # CLI: Unprivileged sandboxing tool.
       # End of Sandboxing Tools
 
+      # Management Utilities
+      #- Social media cleanup tools
+      redact # GUI: The only platform that allows you to automatically clean up your old posts from services like Twitter, Reddit, Facebook, Discord, and more, all in one place.
+      # End of Social media cleanup tools
+      # End of Useful Utilities
+
       # Virtualization Tools
       distrobox # CLI: Wrapper around Podman or Docker for creating containers.
       distrobox-tui # CLI: A TUI for DistroBox.
