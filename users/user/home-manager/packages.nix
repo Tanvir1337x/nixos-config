@@ -384,6 +384,9 @@ in {
       fping # CLI: Send ICMP echo probes to network hosts.
       nettools # CLI: Set of tools for controlling the network subsystem in Linux.
       netdiscover # CLI: Network address discovering tool, developed mainly for those wireless networks without dhcp server, it also works on hub/switched networks.
+      nethogs # CLI: Small 'net top' tool, grouping bandwidth by process.
+      iptraf-ng # CLI: Console-based network monitoring utility (fork of iptraf).
+      bmon # CLI: Network bandwidth monitor.
       # End of Networking Tools
 
       # Data Recovery
