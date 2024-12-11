@@ -877,7 +877,9 @@ in {
       # End of Audio and Video Editors
 
       # Data management
+      /*
       openrefine # GUI: Power tool for working with messy data and improving it.
+      */
       # End of Data management
 
       # Desktop Customization Tools
