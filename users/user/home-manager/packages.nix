@@ -872,6 +872,7 @@ in {
       video-trimmer # GUI: Trims videos quickly.
       #- End of Video Editors
       #- Image Editors
+      pinta # GUI: Drawing/editing program modeled after Paint.NET.
       #-- Krita
       krita # GUI: Free and open-source painting application.
       krita-plugin-gmic # PLUGIN: GMic plugin for Krita.
@@ -1061,10 +1062,8 @@ in {
       # End of Antivirus Software
 
       # Media Converters
-      /*
       handbrake # GUI: Video converter and DVD ripper.
       rawtherapee # GUI: RAW image converter and photo editor.
-      */
       # End of Media Converters
 
       # Calculators
