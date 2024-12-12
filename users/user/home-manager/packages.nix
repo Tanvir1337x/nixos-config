@@ -872,21 +872,40 @@ in {
       video-trimmer # GUI: Trims videos quickly.
       #- End of Video Editors
       #- Image Editors
-      /*
+      #-- Krita
       krita # GUI: Free and open-source painting application.
+      krita-plugin-gmic # PLUGIN: GMic plugin for Krita.
+      # End of Krita
+      #-- GIMP
       gimp-with-plugins # GUI: GNU Image Manipulation Program with plugin support.
       gimpPlugins.gap # PLUGIN: GIMP Animation Package.
+      gimpPlugins.gmic # PLUGIN: GIMP plugin for the G'MIC image processing framework.
       gimpPlugins.bimp # PLUGIN: Batch Image Manipulation Plugin for GIMP.
       gimpPlugins.fourier # PLUGIN: Fourier transform plugin for GIMP.
       gimpPlugins.gimplensfun # PLUGIN: Lens distortion correction plugin for GIMP.
       gimpPlugins.farbfeld # PLUGIN: Farbfeld image format plugin for GIMP.
+      gimpPlugins.texturize # PLUGIN: Texturize plugin for GIMP.
+      gimpPlugins.lqrPlugin # PLUGIN: Liquid Rescale plugin for GIMP.
+      gimpPlugins.lightning # PLUGIN: Lightning plugin for GIMP.
+      gimpPlugins.waveletSharpen # PLUGIN: Wavelet sharpen plugin for GIMP.
+      /*
+      gimpPlugins.exposureBlend # PLUGIN: Exposure blending plugin for GIMP.
+      gimpPlugins.resynthesizer # PLUGIN: Resynthesizer plugin for GIMP.
+      */
+      # End of GIMP
       #- End of Image Editors
       #- Vector Graphics and Other Editors
+      #-- Inkscape
       inkscape-with-extensions # GUI: Vector graphics editor with extension support.
       inkscape-extensions.hexmap # EXTENSION: Creates hex grids and brick patterns in Inkscape.
       inkscape-extensions.applytransforms # EXTENSION: Removes matrix transforms in Inkscape.
-      #- End of Vector Graphics and Other Editors
+      inkscape-extensions.silhouette # EXTENSION: Extension to drive Silhouette vinyl cutters (e.g. Cameo, Portrait, Curio series) from within Inkscape.
+      inkscape-extensions.textext # EXTENSION: Re-editable LaTeX graphics for Inkscape.
+      /*
+      inkscape-extensions.inkcut # EXTENSION: Inkscape extension for cutting with a plotter.
       */
+      # End of Inkscape
+      #- End of Vector Graphics and Other Editors
       # End of Audio and Video Editors
 
       # Data management
