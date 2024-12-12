@@ -41,12 +41,11 @@
       "pcie_aspm=off" # Disables Active State Power Management (ASPM) for PCIe devices
       "logo.nologo" # Disables the display of the kernel logo during boot
 
-      "nvidia-drm.fbdev=0" # Disables the Nvidia framebuffer device, preventing potential conflicts with the Nvidia driver
-
       /*
       "splash" # Enables a splash screen during boot
       "split_lock_detect=off" # Disables detection of split lock operations
       "rd.udev.log_level=4" # Sets the udev log level to 4
+      "nvidia-drm.fbdev=0" # Disables the Nvidia framebuffer device
       */
     ];
 
