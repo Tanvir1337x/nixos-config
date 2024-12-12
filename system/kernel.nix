@@ -53,7 +53,7 @@
     blacklistedKernelModules = [
       "ucsi_ccg" # USB Type-C UCSI driver
       "i915" # Intel integrated graphics driver
-      # "amdgpu" # AMD GPU driver
+      "amdgpu" # AMD GPU driver
       "radeon" # Older AMD Radeon GPU driver
       "sp5100_tco" # For AMD Ryzen systems; hardware watchdog inside AMD 700 chipset series
     ];
