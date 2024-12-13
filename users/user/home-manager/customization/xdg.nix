@@ -21,6 +21,12 @@ in {
 
       # cat /home/user/.config/mimeapps.list
       mimeApps = {
+        associations = {
+          added = {
+            "application/x-bittorrent" = "org.qbittorrent.qBittorrent.desktop";
+          };
+        };
+
         defaultApplications = {
           # folders
           "inode/directory" = "thunar.desktop";
