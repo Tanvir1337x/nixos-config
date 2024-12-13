@@ -356,7 +356,6 @@ in {
       # End of Email Clients
 
       # Reverse Engineering Tools
-      /*
       ghidra # GUI: Software reverse engineering suite from NSA.
       radare2 # CLI: Reverse engineering framework and command-line tools.
       iaito # GUI: Graphical interface for Radare2.
@@ -365,7 +364,6 @@ in {
       rizin # CLI: Reverse engineering framework and command-line tools.
       apktool # CLI: Tool for reverse engineering Android apk files
       androguard # CLI/LIB: Reverse engineering and pentesting for Android applications
-      */
       # End of Reverse Engineering Tools
 
       # Password Cracking
@@ -505,19 +503,19 @@ in {
       # Torrent Clients and Tools
       qbittorrent # GUI: Feature-rich BitTorrent client. For plugins: <https://github.com/qbittorrent/search-plugins>
       tribler # GUI: Decentralized P2P file sharing client.
-      /*
-      qBittorrent-Enhanced-Edition # GUI: qBittorrent with additional features (community enhancements).
       biglybt # GUI: BitTorrent client based on the Azureus that supports I2P darknet for privacy.
       bitcomet # GUI: Free BitTorrent download client.
+      webtorrent_desktop # GUI: Streaming torrent app.
+      popcorntime # GUI: Streams movies and TV shows from torrents.
+      miru # GUI: Streams anime torrents in real-time.
+      /*
+      qbittorrent-enhanced # GUI: qBittorrent with additional features (community enhancements).
       multiplex # GUI: Watch torrents with friends.
       btfs # CLI: BitTorrent filesystem based on FUSE.
       jesec-rtorrent # CLI: Ncurses client for libtorrent.
       transmission # CLI: Fast and easy BitTorrent client.
       transmission-gtk # GUI: GTK interface for Transmission.
       deluge-gtk # GUI: Lightweight, cross-platform BitTorrent client.
-      webtorrent_desktop # GUI: Streaming torrent app.
-      popcorntime # GUI: Streams movies and TV shows from torrents.
-      miru # GUI: Streams anime torrents in real-time.
       flood # WEB: Modern web UI for torrent clients.
       */
       # End of Torrent Clients and Tools
