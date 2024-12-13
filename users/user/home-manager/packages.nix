@@ -844,16 +844,12 @@ in {
       gpu-screen-recorder-gtk # GUI: GUI for gpu-screen-recorder.
       */
       #- End of OBS Studio
-      /*
       peek # GUI: Simple animated GIF screen recorder.
       vhs # CLI: Generates terminal GIFs.
-      */
       #- Asciinema
-      /*
       asciinema # CLI: Terminal session recorder.
       asciinema-agg # CLI: Generates animated GIFs from asciinema recordings.
       asciinema-scenario # CLI: Creates asciinema videos from a text file.
-      */
       #- End of Asciinema
       # End of Screen and Audio Recorders
 

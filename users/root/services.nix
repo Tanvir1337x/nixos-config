@@ -1006,6 +1006,7 @@
     k3s = {
       enable = false;
       role = "server";
+      gracefulNodeShutdown.enable = true;
     };
 
     # TODO: tor, i2p, lokinet, freenet, gnunet
