@@ -33,6 +33,8 @@
       package = pkgs.wireshark;
     };
 
+    traceroute.enable = true;
+
     steam = {
       enable = true;
       protontricks.enable = true;
