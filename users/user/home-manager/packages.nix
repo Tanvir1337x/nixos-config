@@ -385,6 +385,8 @@ in {
       nethogs # CLI: Small 'net top' tool, grouping bandwidth by process.
       iptraf-ng # CLI: Console-based network monitoring utility (fork of iptraf).
       bmon # CLI: Network bandwidth monitor.
+      tshark # CLI: Powerful network protocol analyzer. WireShark CLI.
+      termshark # TUI: Terminal UI for wireshark-cli, inspired by Wireshark.
       /*
       wireshark # GUI: Powerful network protocol analyzer.
       traceroute # CLI: Tracks the route taken by packets over an IP network.
