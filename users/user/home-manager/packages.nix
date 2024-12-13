@@ -387,10 +387,10 @@ in {
       bmon # CLI: Network bandwidth monitor.
       tshark # CLI: Powerful network protocol analyzer. WireShark CLI.
       termshark # TUI: Terminal UI for wireshark-cli, inspired by Wireshark.
+      nmap # CLI: Free and open source utility for network discovery and security auditing.
       /*
       wireshark # GUI: Powerful network protocol analyzer.
       traceroute # CLI: Tracks the route taken by packets over an IP network.
-      nmap # CLI: Free and open source utility for network discovery and security auditing.
       */
       # End of Networking Tools
 
