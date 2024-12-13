@@ -377,9 +377,6 @@ in {
       # Networking Tools
       airgorah # GUI: GUI for Aircrack-ng; WiFi security auditing software mainly based on aircrack-ng tools suite.
       aircrack-ng # CLI: WiFi security auditing tools suite.
-      wireshark # GUI: Powerful network protocol analyzer.
-      nmap # CLI: Free and open source utility for network discovery and security auditing.
-      traceroute # CLI: Tracks the route taken by packets over an IP network.
       whois # CLI: Intelligent WHOIS client from Debian.
       nikto # CLI: Web server scanner.
       fping # CLI: Send ICMP echo probes to network hosts.
@@ -388,6 +385,11 @@ in {
       nethogs # CLI: Small 'net top' tool, grouping bandwidth by process.
       iptraf-ng # CLI: Console-based network monitoring utility (fork of iptraf).
       bmon # CLI: Network bandwidth monitor.
+      /*
+      wireshark # GUI: Powerful network protocol analyzer.
+      traceroute # CLI: Tracks the route taken by packets over an IP network.
+      nmap # CLI: Free and open source utility for network discovery and security auditing.
+      */
       # End of Networking Tools
 
       # Data Recovery
@@ -507,8 +509,8 @@ in {
       bitcomet # GUI: Free BitTorrent download client.
       webtorrent_desktop # GUI: Streaming torrent app.
       popcorntime # GUI: Streams movies and TV shows from torrents.
-      miru # GUI: Streams anime torrents in real-time.
       /*
+      miru # GUI: Streams anime torrents in real-time.
       qbittorrent-enhanced # GUI: qBittorrent with additional features (community enhancements).
       multiplex # GUI: Watch torrents with friends.
       btfs # CLI: BitTorrent filesystem based on FUSE.
