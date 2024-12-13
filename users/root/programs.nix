@@ -28,6 +28,11 @@
       binfmt = true; # Needed to execute java jar’s and classes
     };
 
+    wireshark = {
+      enable = true;
+      package = pkgs.wireshark;
+    };
+
     steam = {
       enable = true;
       protontricks.enable = true;
