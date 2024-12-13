@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     # USER.hblock # cli: shell script for blocking ads, malware and tracking domains
     gparted # GUI: partition manager for gnome.
+    libnotify # LIBRARY/CLI: Sends desktop notifications.
 
     # <https://wiki.nixos.org/wiki/Fish#System_wide>
     /*

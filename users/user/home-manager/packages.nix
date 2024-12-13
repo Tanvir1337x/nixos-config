@@ -1193,7 +1193,6 @@ in {
       baobab # GUI: Disk usage analyzer for GNOME.
       k4dirstat # GUI: Small utility program that sums up disk usage for directory trees.
       wgetpaste # CLI: Command-line interface to pastebin services.
-      libnotify # LIBRARY/CLI: Sends desktop notifications.
       wmname # CLI: Prints/sets window manager name.
       arandr # GUI: Visual frontend for XRandR.
       libva-utils # CLI: Utilities and examples for VA-API.
@@ -1206,6 +1205,7 @@ in {
       usbutils # CLI: Tools for USB devices.
       /*
       nvitop # CLI: NVIDIA GPU process viewer.
+      libnotify # LIBRARY/CLI: Sends desktop notifications.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
       xsettingsd # CLI: Provides settings to X11 applications.
