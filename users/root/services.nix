@@ -916,6 +916,7 @@
     # Aria2 daemon can be controlled via the RPC interface using
     # one of many WebUI
     # WebUI (default): <http://localhost:6800>
+    # TODO: Configure the aria2 service
     aria2 = {
       enable = false;
       openPorts = false;

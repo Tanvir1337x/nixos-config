@@ -232,6 +232,13 @@ in {
         ];
       };
 
+      # TODO: Configure the aria2 package
+      aria2 = {
+        enable = true;
+        # extraConfig =
+        # settings = {}
+      };
+
       thefuck = {
         enable = true;
         enableInstantMode = true; # Experimental as of 20/06/2024
