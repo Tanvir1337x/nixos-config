@@ -224,6 +224,11 @@ in {
       radio-cli # CLI: Simple radio CLI written in rust.
       gtop # CLI: System monitoring dashboard for the terminal.
       duf # CLI: Disk Usage/Free Utility.
+      progress # CLI: Shows the progress of coreutils programs.
+      gping # CLI: Ping with a graphical representation.
+      yq # CLI: Command-line YAML/XML/TOML processor.
+      cointop # CLI: Terminal-based UI for tracking cryptocurrencies.
+      glow # CLI: Renders Markdown on the CLI with styling.
       /*
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       zoxide # CLI: Fast 'cd' command that learns your habits.
@@ -235,10 +240,7 @@ in {
       exa # CLI: Modern replacement for 'ls' written in Rust.
       eza # CLI: Modern, maintained replacement for 'ls'.
       navi # CLI: Interactive cheatsheet tool for the command-line.
-      progress # CLI: Shows the progress of coreutils programs.
-      gping # CLI: Ping with a graphical representation.
       atuin # CLI: Shell history replacement with context recording and optional sync.
-      glow # CLI: Renders Markdown on the CLI with styling.
       tealdeer # CLI: Very fast implementation of tldr in Rust.
       fzf # CLI: Command-line fuzzy finder written in Go.
       cheat # CLI: Create and view interactive cheatsheets.
@@ -261,8 +263,6 @@ in {
       eva # CLI: Calculator REPL, similar to 'bc'.
       ddgr # CLI: DuckDuckGo search from the terminal.
       xplr # CLI: Hackable, minimal, fast TUI file explorer.
-      yq # CLI: Command-line YAML/XML/TOML processor.
-      cointop # CLI: Terminal-based UI for tracking cryptocurrencies.
       fd # CLI: Simple, fast, and user-friendly alternative to 'find'.
       ripgrep-all # CLI: Ripgrep with support for various file formats.
       */
@@ -1211,10 +1211,10 @@ in {
       lm_sensors # CLI: Hardware sensor reading tools.
       */
       #- jq - JSON Processor
-      /*
-      jq # CLI: Command-line JSON processor.
       jqp # CLI: TUI playground for jq.
       ijq # CLI: Interactive wrapper for jq.
+      /*
+      jq # CLI: Command-line JSON processor.
       */
       #- End of jq
       #- Filesystem Tools
@@ -1248,7 +1248,6 @@ in {
       psensor # GUI: Hardware temperature monitor.
       stress # CLI: Workload generator for POSIX systems.
       s-tui # CLI: Stress Terminal UI monitoring tool.
-      gping # CLI: Graphical ping utility.
       cpu-x # GUI: CPU, motherboard, and system information tool.
       dua # CLI: Disk usage analyzer.
       vnstat # CLI: Network statistics utility.
