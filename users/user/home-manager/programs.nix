@@ -921,6 +921,11 @@ in {
         };
       };
 
+      jq = {
+        enable = true;
+        # colors
+      };
+
       gh = {
         enable = true;
         gitCredentialHelper.enable = true;
