@@ -229,6 +229,7 @@ in {
       yq # CLI: Command-line YAML/XML/TOML processor.
       cointop # CLI: Terminal-based UI for tracking cryptocurrencies.
       glow # CLI: Renders Markdown on the CLI with styling.
+      tg-archive # CLI: A tool for exporting Telegram group chats into static websites like mailing list archives.
       /*
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       zoxide # CLI: Fast 'cd' command that learns your habits.
