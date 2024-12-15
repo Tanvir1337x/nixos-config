@@ -229,7 +229,6 @@ in {
       yq # CLI: Command-line YAML/XML/TOML processor.
       cointop # CLI: Terminal-based UI for tracking cryptocurrencies.
       glow # CLI: Renders Markdown on the CLI with styling.
-      tg-archive # CLI: A tool for exporting Telegram group chats into static websites like mailing list archives.
       /*
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       zoxide # CLI: Fast 'cd' command that learns your habits.
@@ -525,7 +524,15 @@ in {
       */
       # End of Torrent Clients and Tools
 
-      # YouTube/Spotify/SoundCloud Downloaders
+      # Downloaders
+      #- Matrix
+      matrix-commander # CLI: Simple but convenient CLI-based Matrix client app for sending and receiving.
+      # End of Matrix
+      #- Telegram
+      tdl # CLI: Telegram downloader/tools written in Golang.
+      tg-archive # CLI: A tool for exporting Telegram group chats into static websites like mailing list archives.
+      # End of Telegram
+      #- YouTube/Spotify/SoundCloud
       ytmdl # CLI: CLI tool to download music from YouTube.
       spotdl # CLI: Spotify downloader.
       scdl # CLI: SoundCloud downloader.
@@ -535,7 +542,23 @@ in {
       yt-dlp # CLI: Fork of youtube-dl with additional features.
       youtube-dl # CLI: Tool to download videos from YouTube and other sites (unmaintained).
       */
-      # End of YouTube/Spotify Downloaders
+      # End of YouTube/Spotify/SoundCloud Downloaders
+      #- Anime/Manga downloaders
+      jhentai # GUI: Cross-platform manga app made for e-hentai & exhentai by Flutter.
+      hakuneko # GUI: Manga & Anime Downloader.
+      ani-cli # CLI: Cli tool to browse and play anime.
+      animdl # CLI: Highly efficient, powerful and fast anime scraper.
+      adl # CLI: Popcorn anime scraper/downloader + trackma wrapper.
+      ani-skip # CLI: Automated solution to bypassing anime opening and ending sequences.
+      mangayomi # GUI: Read manga and stream anime from a variety of sources including BitTorrent.
+      mangal # CLI: CLI app written in Go which scrapes, downloads and packs manga into different formats.
+      manga-tui # TUI: Terminal-based manga reader and downloader with image support.
+      manga-cli # CLI: Bash script for reading mangas via the terminal by scraping manganato.
+      mloader # CLI: Command-line tool to download manga from mangaplus.
+      comic-mandown # CLI: Comic/manga/webtoon downloader and CBZ/EPUB/MOBI/PDF converter.
+      miru # GUI: Stream anime torrents, real-time with no waiting for downloads.
+      # End of Anime/Manga downloaders
+      # End of Downloaders
 
       # Networking Tools
       /*
@@ -638,6 +661,7 @@ in {
       darktable # GUI: Virtual lighttable and darkroom for photographers.
       fim # CLI: Lightweight, customizable image viewer.
       emulsion # GUI: Fast and minimalistic image viewer.
+      ahoviewer # GUI: GTK2 image viewer, manga reader, and booru browser.
       /*
       feh # CLI: Lightweight image viewer.
       */
