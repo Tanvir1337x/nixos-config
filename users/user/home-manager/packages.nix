@@ -414,6 +414,7 @@ in {
       freecad # GUI: Open-source 3D CAD/MCAD/CAx/CAE/PLM modeler.
       openscad # GUI: 3D parametric model compiler.
       openscad-unstable # GUI: Unstable version of OpenSCAD.
+      brlcad # GUI: BRL-CAD is a powerful cross-platform open source combinatorial solid modeling system.
       */
       # End of CAD Software
 
@@ -583,14 +584,14 @@ in {
       telegram-desktop # GUI: Official Telegram Desktop app.
       session-desktop # GUI: Onion routing based messenger.
       keybase-gui # GUI: Keybase GUI client.
-      /*
-      _64gram # GUI: Unofficial Telegram Desktop providing Windows 64bit build and extra features.
       revolt-desktop # GUI: Open-source chat platform.
       slack # GUI: Desktop client for Slack.
       zulip # GUI: Desktop client for Zulip Chat.
       simplex-chat-desktop # GUI: Desktop app for SimpleX Chat.
-      qtox # GUI: Qt Tox client.
       rocketchat-desktop # GUI: Desktop client for Rocket.Chat.
+      /*
+      _64gram # GUI: Unofficial Telegram Desktop providing Windows 64bit build and extra features.
+      qtox # GUI: Qt Tox client.
       wire-desktop # GUI: Secure messenger.
       */
       #- Discord
@@ -624,15 +625,13 @@ in {
       */
       #- End of Matrix Clients
       #- XMPP/Jabber Clients
-      /*
       dino # GUI: Modern Jabber/XMPP client using GTK/Vala.
-      */
       #- End of XMPP/Jabber Clients
+      zapzap # GUI: WhatsApp desktop application for Linux.
+      signal-desktop # GUI: Private, secure messenger.
       /*
       threema-desktop # GUI: Desktop client for Threema.
       gitter # GUI: Chat platform for developers (abandoned by upstream).
-      zapzap # GUI: WhatsApp desktop application for Linux.
-      signal-desktop # GUI: Private, secure messenger.
       keybase # CLI: Keybase command-line utility and service.
       */
       # End of Messaging and Chat Clients
@@ -897,6 +896,7 @@ in {
       video-trimmer # GUI: Trims videos quickly.
       #- End of Video Editors
       #- Image Editors
+      halftone # GUI: Simple app for giving images that pixel-art style.
       pinta # GUI: Drawing/editing program modeled after Paint.NET.
       #-- Krita
       krita # GUI: Free and open-source painting application.
@@ -1228,8 +1228,14 @@ in {
       cpuid # CLI: Dumps x86 CPUID information.
       pciutils # CLI: Tools for PCI devices.
       usbutils # CLI: Tools for USB devices.
-      /*
+      util-linux # CLI: Set of system utilities.
+      inxi # CLI: System information tool.
       nvitop # CLI: NVIDIA GPU process viewer.
+      kmon # CLI: Linux Kernel Manager and Activity Monitor.
+      psensor # GUI: Hardware temperature monitor.
+      s-tui # CLI: Stress Terminal UI monitoring tool.
+      cpu-x # GUI: CPU, motherboard, and system information tool.
+      /*
       libnotify # LIBRARY/CLI: Sends desktop notifications.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
@@ -1253,29 +1259,22 @@ in {
       duff # CLI: Finds duplicate files.
       dua # CLI: Learns about disk usage of directories.
       # End of Filesystem Tools
+      filezilla # GUI: FTP, FTPS, and SFTP client.
       /*
       zenith-nvidia # CLI: System monitor with zoom-able charts and NVIDIA GPU usage.
-      filezilla # GUI: FTP, FTPS, and SFTP client.
-      util-linux # CLI: Set of system utilities.
       etcher # GUI: Flashes OS images to SD cards and USB drives.
       glances # CLI: Curses-based system monitor.
       gpu-viewer # GUI: Frontend for glxinfo, vulkaninfo, clinfo, and es2_info.
       curtail # GUI: Image compressor.
       hamster # GUI: Time tracking application.
       ngrok # CLI: Exposes local web servers to the internet.
-      inxi # CLI: System information tool.
       treefmt # CLI: Formats code trees.
       cpupower-gui # GUI: GUI for cpupower.
       zenmonitor # GUI: Monitoring software for AMD Zen CPUs.
       doge # CLI: Displays Doge in the terminal.
       terminal-parrot # CLI: Shows animated party parrot in the terminal.
-      kmon # CLI: Linux Kernel Manager and Activity Monitor.
       shadowfox # CLI: Universal dark theme for Firefox.
       ocs-url # CLI: Open Collaboration System for store websites.
-      psensor # GUI: Hardware temperature monitor.
-      stress # CLI: Workload generator for POSIX systems.
-      s-tui # CLI: Stress Terminal UI monitoring tool.
-      cpu-x # GUI: CPU, motherboard, and system information tool.
       dua # CLI: Disk usage analyzer.
       vnstat # CLI: Network statistics utility.
       nload # CLI: Network traffic and bandwidth monitor.
