@@ -7,6 +7,7 @@
 
     firmware-updater # GUI: Firmware Updater for Linux.
     firmware-manager # GUI: Graphical frontend for firmware management.
+    gnome-firmware # GUI: Tool for installing firmware on devices.
 
     # <https://wiki.nixos.org/wiki/Fish#System_wide>
     /*
