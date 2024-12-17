@@ -1212,6 +1212,7 @@ in {
       linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
       resources # GUI: System resource monitor.
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
+      monitorets # GUI: Simple and quick view at the usage of your computer resources.
       xfce.xfce4-taskmanager # GUI: XFCE task manager.
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
@@ -1232,10 +1233,10 @@ in {
       inxi # CLI: System information tool.
       nvitop # CLI: NVIDIA GPU process viewer.
       kmon # CLI: Linux Kernel Manager and Activity Monitor.
-      psensor # GUI: Hardware temperature monitor.
       s-tui # CLI: Stress Terminal UI monitoring tool.
       cpu-x # GUI: CPU, motherboard, and system information tool.
       /*
+      psensor # GUI: Hardware temperature monitor. (Removed due to lack of maintenance upstream)
       libnotify # LIBRARY/CLI: Sends desktop notifications.
       #- https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#xsettings
       #- https://wiki.hyprland.org/FAQ/#gtk-settings-no-work--whatever
