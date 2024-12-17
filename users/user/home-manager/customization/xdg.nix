@@ -24,6 +24,8 @@ in {
         associations = {
           added = {
             "application/x-bittorrent" = "org.qbittorrent.qBittorrent.desktop";
+            "x-scheme-handler/tg" = "org.telegram.desktop.desktop";
+            "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
           };
         };
 
