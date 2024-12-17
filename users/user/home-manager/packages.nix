@@ -438,6 +438,7 @@ in {
       # Virtualization Tools
       distrobox # CLI: Wrapper around Podman or Docker for creating containers.
       distrobox-tui # CLI: A TUI for DistroBox.
+      boxbuddy # GUI: Unofficial GUI for managing your Distroboxes.
       lazydocker # TUI: Terminal UI for Docker and Docker Compose.
       junest # CLI: Arch Linux distribution that runs on top of another without root.
       boxbuddy # GUI: Unofficial GUI for managing your Distroboxes, written with GTK4 + Libadwaita.
@@ -1092,11 +1093,12 @@ in {
       # End of Media Converters
 
       # Calculators
-      /*
       qalculate-gtk # GUI: Advanced desktop calculator.
       galculator # GUI: GTK algebraic and RPN calculator.
       speedcrunch # GUI: Fast calculator for power users.
-      */
+      kdePackages.kcalc # GUI: Calculator offering everything a scientific calculator does, and more.
+      sums # GUI: Simple GTK postfix calculator for GNOME.
+      gnome-calculator # GUI: Application that solves mathematical equations and is suitable as a default application in a Desktop environment.
       # End of Calculators
 
       # Scientific Software
@@ -1217,6 +1219,7 @@ in {
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
       baobab # GUI: Disk usage analyzer for GNOME.
+      kdePackages.filelight # GUI: Quickly visualize your disk space usage.
       k4dirstat # GUI: Small utility program that sums up disk usage for directory trees.
       wgetpaste # CLI: Command-line interface to pastebin services.
       wmname # CLI: Prints/sets window manager name.
