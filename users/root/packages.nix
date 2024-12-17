@@ -5,6 +5,9 @@
     gparted # GUI: partition manager for gnome.
     libnotify # LIBRARY/CLI: Sends desktop notifications.
 
+    firmware-updater # GUI: Firmware Updater for Linux.
+    firmware-manager # GUI: Graphical frontend for firmware management.
+
     # <https://wiki.nixos.org/wiki/Fish#System_wide>
     /*
     fishPlugins.wakatime-fish # PLUGIN: wakatime fish plugin.
