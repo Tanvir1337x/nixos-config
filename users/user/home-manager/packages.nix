@@ -1221,6 +1221,7 @@ in {
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
       baobab # GUI: Disk usage analyzer for GNOME.
+      kdiskmark # GUI: HDD and SSD benchmark tool with a friendly graphical user interface.
       kdePackages.filelight # GUI: Quickly visualize your disk space usage.
       k4dirstat # GUI: Small utility program that sums up disk usage for directory trees.
       wgetpaste # CLI: Command-line interface to pastebin services.
