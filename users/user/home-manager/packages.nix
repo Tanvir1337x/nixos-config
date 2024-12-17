@@ -528,6 +528,7 @@ in {
       # Downloaders
       #- Matrix
       matrix-commander # CLI: Simple but convenient CLI-based Matrix client app for sending and receiving.
+      matrix-commander-rs # CLI: CLI-based Matrix client app for sending, receiving and much more.
       # End of Matrix
       #- Telegram
       tdl # CLI: Telegram downloader/tools written in Golang.
