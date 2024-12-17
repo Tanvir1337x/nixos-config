@@ -629,6 +629,7 @@ in {
       dino # GUI: Modern Jabber/XMPP client using GTK/Vala.
       #- End of XMPP/Jabber Clients
       zapzap # GUI: WhatsApp desktop application for Linux.
+      whatsie # GUI: Feature rich WhatsApp Client for Desktop Linux.
       signal-desktop # GUI: Private, secure messenger.
       /*
       threema-desktop # GUI: Desktop client for Threema.
@@ -1146,6 +1147,7 @@ in {
       gcolor3 # GUI: Color selector.
       gpick # GUI: Advanced color picker.
       libsForQt5.kcolorchooser # GUI: KDE color chooser.
+      kdePackages.kcolorpicker # GUI: Qt based Color Picker with popup menu.
       /*
       gcolor2 # GUI: Simple GTK color selector.
       */
