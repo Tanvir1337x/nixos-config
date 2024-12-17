@@ -1128,7 +1128,7 @@
 
     # DBus service that allows applications to update firmware
     # <https://wiki.nixos.org/wiki/Fwupd>
-    fwupd.enable = false;
+    fwupd.enable = true;
 
     /*
     deluge = {
