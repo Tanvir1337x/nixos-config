@@ -1218,6 +1218,7 @@ in {
       mission-center # GUI: Monitor your CPU, Memory, Disk, Network and GPU usage
       monitorets # GUI: Simple and quick view at the usage of your computer resources.
       xfce.xfce4-taskmanager # GUI: XFCE task manager.
+      clapgrep # GUI: One app to search through all your files.
       gnome-usage # GUI: System resource usage viewer.
       gnome-disk-utility # GUI: Disk management tool.
       baobab # GUI: Disk usage analyzer for GNOME.
