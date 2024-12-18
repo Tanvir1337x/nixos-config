@@ -1211,6 +1211,13 @@ in {
       */
       # End of Libraries
 
+      # USB related
+      ventoy-full # CLI: New Bootable USB Solution.
+      /*
+      etcher # GUI: Flashes OS images to SD cards and USB drives.
+      */
+      # End of USB related
+
       # Essential System Utilities
       nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
       linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
@@ -1270,7 +1277,6 @@ in {
       filezilla # GUI: FTP, FTPS, and SFTP client.
       /*
       zenith-nvidia # CLI: System monitor with zoom-able charts and NVIDIA GPU usage.
-      etcher # GUI: Flashes OS images to SD cards and USB drives.
       glances # CLI: Curses-based system monitor.
       gpu-viewer # GUI: Frontend for glxinfo, vulkaninfo, clinfo, and es2_info.
       curtail # GUI: Image compressor.
