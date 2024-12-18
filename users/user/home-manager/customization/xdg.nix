@@ -264,7 +264,7 @@ in {
         createDirectories = true;
 
         download = "${config.home.homeDirectory}/downloads";
-        documents = "${config.home.homeDirectory}/documents";
+        # documents = "${config.home.homeDirectory}/documents";
 
         music = "${config.home.homeDirectory}/media/musics";
         pictures = "${config.home.homeDirectory}/media/pictures";
@@ -274,7 +274,7 @@ in {
         # music = null;
         # videos = null;
         desktop = null;
-        # documents = null;
+        documents = null;
         publicShare = null;
         templates = null;
 
