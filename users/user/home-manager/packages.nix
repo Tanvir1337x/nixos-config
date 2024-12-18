@@ -1386,6 +1386,8 @@ in {
       zenity # GUI: Tool to display dialogs from the commandline and shell scripts.
       dmidecode # CLI: Tool that reads information about your system's hardware from the BIOS according to the SMBIOS/DMI standard.
       stress # CLI: Simple workload generator for POSIX systems. It imposes a configurable amount of CPU, memory, I/O, and disk stress on the system.
+      mokutil # CLI: Utility to manipulate machines owner keys.
+      efibootmgr # CLI: Linux user-space application to modify the Intel Extensible Firmware Interface (EFI) Boot Manager.
       /*
       kando # GUI/MENU: Cross-Platform Pie Menu.
       spicetify-cli # CLI: Command-line tool to customize Spotify client.
