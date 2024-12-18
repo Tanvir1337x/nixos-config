@@ -358,7 +358,7 @@ in {
         enable = true;
         # needed for rust lang server and rust-analyzer extension
         #- <https://wiki.nixos.org/wiki/Visual_Studio_Code#Use_VS_Code_extensions_without_additional_configuration>
-        package = pkgs.vscode.fhs; # GUI: vscode with fhs-3.0 environment (chroot).
+        package = pkgs.vscode-fhs; # GUI: vscode with fhs-3.0 environment (chroot).
       };
 
       kitty = {
