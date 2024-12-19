@@ -229,8 +229,22 @@ in {
       yq # CLI: Command-line YAML/XML/TOML processor.
       cointop # CLI: Terminal-based UI for tracking cryptocurrencies.
       glow # CLI: Renders Markdown on the CLI with styling.
+      kmon # CLI: Linux Kernel Manager and Activity Monitor.
+      dropwatch # CLI: Linux kernel dropped packet monitor.
+      kernel-hardening-checker # CLI: Tool for checking the security hardening options of the Linux kernel.
+
       systemctl-tui # TUI: Simple TUI for interacting with systemd services and their logs.
+      imgcat # CLI: Displays images in the terminal.
+      procs # CLI: Modern replacement for 'ps' written in Rust.
+      tokei # CLI: Counts lines of code.
+      runiq # CLI: Filters duplicate lines from input.
+      choose # CLI: Human-friendly alternative to 'cut' and 'awk'.
+      watchexec # CLI: Executes commands in response to file modifications.
+      bandwhich # CLI: Displays current network utilization.
+      grex # CLI: Generates regular expressions from test cases.
+      eva # CLI: Calculator REPL, similar to 'bc'.
       /*
+      out-of-tree # CLI: kernel {module, exploit} development tool.
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
       zoxide # CLI: Fast 'cd' command that learns your habits.
       broot # CLI: Interactive tree view, fuzzy search, and customizable commands.
@@ -245,23 +259,13 @@ in {
       tealdeer # CLI: Very fast implementation of tldr in Rust.
       fzf # CLI: Command-line fuzzy finder written in Go.
       cheat # CLI: Create and view interactive cheatsheets.
-      imgcat # CLI: Displays images in the terminal.
       noti # CLI: Monitors a process and triggers a notification.
       du-dust # CLI: Disk usage analyzer like 'du' but more intuitive.
       duf # CLI: Disk Usage/Free Utility.
       sd # CLI: Intuitive find & replace CLI (sed alternative).
-      procs # CLI: Modern replacement for 'ps' written in Rust.
-      tokei # CLI: Counts lines of code.
-      runiq # CLI: Filters duplicate lines from input.
-      choose # CLI: Human-friendly alternative to 'cut' and 'awk'.
-      watchexec # CLI: Executes commands in response to file modifications.
-      bandwhich # CLI: Displays current network utilization.
-      kmon # CLI: Linux Kernel Manager and Activity Monitor.
-      grex # CLI: Generates regular expressions from test cases.
       ouch # CLI: Compresses and decompresses files and directories.
       fclones # CLI: Efficient duplicate file finder and remover.
       ruplacer # CLI: Find and replace text in source files.
-      eva # CLI: Calculator REPL, similar to 'bc'.
       ddgr # CLI: DuckDuckGo search from the terminal.
       xplr # CLI: Hackable, minimal, fast TUI file explorer.
       fd # CLI: Simple, fast, and user-friendly alternative to 'find'.
@@ -1246,9 +1250,9 @@ in {
       util-linux # CLI: Set of system utilities.
       inxi # CLI: System information tool.
       nvitop # CLI: NVIDIA GPU process viewer.
-      kmon # CLI: Linux Kernel Manager and Activity Monitor.
       s-tui # CLI: Stress Terminal UI monitoring tool.
       cpu-x # GUI: CPU, motherboard, and system information tool.
+      kernelshark # GUI: GUI for trace-cmd which is an interface for the Linux kernel ftrace subsystem.
       /*
       psensor # GUI: Hardware temperature monitor. (Removed due to lack of maintenance upstream)
       libnotify # LIBRARY/CLI: Sends desktop notifications.
