@@ -215,6 +215,7 @@ in {
       # End of OSINT
 
       # Command-Line Utilities
+      youtube-tui # TUI: Aesthetically pleasing YouTube TUI written in Rust.
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       grc # CLI: Generic text colorizer.
       cod # Daemon: Generates Bash/Fish/Zsh autocompletions based on `--help` output.
@@ -547,6 +548,7 @@ in {
       tartube-yt-dlp # GUI: GUI frontend for youtube-dl and yt-dlp.
       yt-dlg # GUI: Cross-platform GUI for youtube-dl.
       /*
+      streamrip # CLI: Scriptable music downloader for Qobuz, Tidal, SoundCloud, and Deezer.
       yt-dlp # CLI: Fork of youtube-dl with additional features.
       youtube-dl # CLI: Tool to download videos from YouTube and other sites (unmaintained).
       */
@@ -714,9 +716,13 @@ in {
       # TODO: Use https://github.com/Gerg-L/spicetify-nix to theme Spotify.
       spotify # GUI: Spotify web music player.
       nuclear # GUI: Music streaming app similar to Spotify.
+      pipeline # GUI: Watch YouTube and PeerTube videos in one place.
+      youtube-music # GUI: Electron wrapper around YouTube Music.
+      gtk-pipe-viewer # GUI: GTK-based YouTube client.
+      lbry # GUI: Browser and wallet for LBRY.
       /*
+      pipe-viewer # CLI: A lightweight YouTube client for Linux, without requiring an API key.
       mov-cli # CLI: Browse and watch movies from the command-line.
-      lrby # GUI: Browser and wallet for LBRY.
       popcorntime # GUI: Streams movies and TV shows from torrents.
       */
       # End of Entertainment
