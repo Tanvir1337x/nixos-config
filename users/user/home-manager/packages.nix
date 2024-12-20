@@ -233,7 +233,6 @@ in {
       kmon # CLI: Linux Kernel Manager and Activity Monitor.
       dropwatch # CLI: Linux kernel dropped packet monitor.
       kernel-hardening-checker # CLI: Tool for checking the security hardening options of the Linux kernel.
-
       systemctl-tui # TUI: Simple TUI for interacting with systemd services and their logs.
       imgcat # CLI: Displays images in the terminal.
       procs # CLI: Modern replacement for 'ps' written in Rust.
@@ -244,6 +243,7 @@ in {
       bandwhich # CLI: Displays current network utilization.
       grex # CLI: Generates regular expressions from test cases.
       eva # CLI: Calculator REPL, similar to 'bc'.
+      discordchatexporter-cli # CLI: Tool to export Discord chat logs to a file.
       /*
       out-of-tree # CLI: kernel {module, exploit} development tool.
       rm-improved # CLI: Safer and more ergonomic replacement for 'rm'.
@@ -603,16 +603,20 @@ in {
       */
       #- Discord
       #-- Discord Clients
-      /*
       vesktop # GUI: Alternate Discord client by Vencord with built-in features.
       discord # GUI: Official Discord client.
-      armcord # GUI: Lightweight Discord client.
+      legcord # GUI: Lightweight, alternative desktop client for Discord.
+      webcord # GUI: A Discord and SpaceBar electron-based client implemented without Discord API.
       ripcord # GUI: Proprietary client for Discord and Slack.
       betterdiscordctl # CLI: Utility for managing BetterDiscord.
       cordless # TUI: Discord terminal client.
+      dorion # GUI: Tiny alternative Discord client.
+      discordo # TUI: Lightweight, secure, and feature-rich Discord terminal client.
       equibop # GUI: Custom Discord App aiming to give you better performance and improve linux support.
-      tanvir.suncord # GUI: A fork of Vencord with many extra plugins included.
-      */
+      equicord # GUI: The other cutest Discord client mod.
+      abaddon # GUI: A discord client reimplementation, written in C++.
+      goofcord # GUI: Highly configurable and privacy-focused Discord client.
+      dissent # GUI: A third-party Discord client designed for a smooth, native experience (formerly gtkcord4).
       #-- End of Discord Clients
       #-- Discord Miscellaneous
       /*
@@ -1229,6 +1233,7 @@ in {
       # End of USB related
 
       # Essential System Utilities
+      ddate # CLI: Discordian version of the date program.
       nvtopPackages.full # CLI: GPU task monitor for AMD, Intel, and NVIDIA.
       linux-wifi-hotspot # GUI: Creates Wi-Fi hotspots.
       resources # GUI: System resource monitor.
