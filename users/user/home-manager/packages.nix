@@ -1160,11 +1160,9 @@ in {
       #- X11 Color Pickers
       gcolor3 # GUI: Color selector.
       gpick # GUI: Advanced color picker.
+      eyedropper # GUI: Pick and format colors.
       libsForQt5.kcolorchooser # GUI: KDE color chooser.
       kdePackages.kcolorpicker # GUI: Qt based Color Picker with popup menu.
-      /*
-      gcolor2 # GUI: Simple GTK color selector.
-      */
       # End of Color Pickers
 
       # Electronics/Electrical Engineering Software
@@ -1263,6 +1261,7 @@ in {
       nvitop # CLI: NVIDIA GPU process viewer.
       s-tui # CLI: Stress Terminal UI monitoring tool.
       cpu-x # GUI: CPU, motherboard, and system information tool.
+      hddtemp # CLI: Tool for displaying hard disk temperature.
       kernelshark # GUI: GUI for trace-cmd which is an interface for the Linux kernel ftrace subsystem.
       /*
       psensor # GUI: Hardware temperature monitor. (Removed due to lack of maintenance upstream)
