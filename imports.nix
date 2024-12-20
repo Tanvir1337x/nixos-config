@@ -81,7 +81,7 @@
     ./overlays/picom.nix
     # ./overlays/jackett.nix
     ./overlays/zeronet.nix
-    # ./overlays/discord.nix
+    ./overlays/discord.nix
     # ./overlays/mpv.nix
     # ./overlays/electron.nix
   ];
