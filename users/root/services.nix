@@ -1009,7 +1009,8 @@
       gracefulNodeShutdown.enable = true;
     };
 
-    # TODO: tor, i2p, lokinet, freenet, gnunet
+    # TODO: tor, lokinet, freenet, gnunet
+    # TODO: i2p <https://geti2p.net/en/>. i2p+ <https://github.com/I2PPlus/i2pplus> <https://i2pplus.github.io/>
 
     # IPFS
     #- <https://wiki.nixos.org/wiki/IPFS>
