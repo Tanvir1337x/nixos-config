@@ -76,27 +76,27 @@ in {
       # TODO: Setup Declarative and reproducible Jupyter environments - <https://github.com/tweag/jupyenv>
       shellcheck # CLI: Static analysis tool for shell scripts.
       shfmt # CLI: Shell script formatter.
+      shc # CLI: Shell script compiler.
       wakatime # CLI: Tracks time spent on projects.
       gitkraken # GUI: Popular Git client with a user-friendly interface.
       act # CLI: Run your GitHub Actions locally.
       just # CLI: Saves and runs project-specific commands.
       github-desktop # GUI: GUI for managing Git repositories and interacting with GitHub.
       meld # GUI: Visual diff and merge tool.
+      libsForQt5.kompare # GUI: Diff/patch frontend for KDE.
+      diffuse # GUI: Graphical tool for merging and comparing text files.
       code2prompt # CLI: Converts codebases into LLM prompts with source tree, templating, and token counting.
+      processing # GUI: Language and IDE for electronic arts and visual programming.
       /*
       serie # CLI: Displays a rich Git commit graph in your terminal.
       github-copilot-cli # CLI: Command-line interface for GitHub Copilot.
       shellharden # CLI: Corrective bash syntax highlighter.
-      processing # GUI: Language and IDE for electronic arts and visual programming.
       sqlite # CLI: Self-contained, serverless, zero-configuration SQL database engine.
       sqliteman # GUI: Simple but powerful SQLite GUI database manager.
       polypane # GUI: Browser with unified devtools focused on responsiveness and accessibility.
       spyder # GUI: Scientific Python development environment.
       racket # GUI: General-purpose multi-paradigm programming language with Dr. Racket IDE.
-      libsForQt5.kompare # GUI: Diff/patch frontend for KDE.
-      diffuse # GUI: Graphical tool for merging and comparing text files.
       linkchecker # CLI: Checks websites for broken links.
-      shc # CLI: Shell script compiler.
       git-cola # GUI: Sleek and powerful Git GUI.
       gitg # GUI: GNOME GUI client to view Git repositories.
       gitoxide # CLI: Command-line application for interacting with Git repositories.
