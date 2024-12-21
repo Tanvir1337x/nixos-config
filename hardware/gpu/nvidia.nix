@@ -30,11 +30,13 @@
       # Required
       modesetting.enable = true;
 
-      # Experimental, and can cause sleep/suspend to fail
-      powerManagement.enable = false;
+      powerManagement = {
+        enable = false; # Experimental, and can cause sleep/suspend to fail
 
-      # Experimental and only works on modern Nvidia GPUs (Turing or newer)
-      powerManagement.finegrained = false;
+        # Experimental and only works on modern Nvidia GPUs (Turing or newer)
+        finegrained = false;
+      };
+
       nvidiaSettings = true; # GUI settings application, accessible via `nvidia-settings`
 
       # Nvidia open source kernel module (not to be confused with the

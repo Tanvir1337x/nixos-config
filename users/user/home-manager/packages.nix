@@ -1206,7 +1206,6 @@ in {
       gnome-podcasts # GUI: Podcast client for GNOME.
       figma-linux # GUI: Unofficial Figma desktop app for Linux.
       mousai # GUI: Music identification tool.
-      d-spy # GUI: D-Bus exploration tool.
       wike # GUI: Wikipedia reader for GNOME.
       gnome-dictionary # GUI: Dictionary application for GNOME.
       notion-app-enhanced # GUI: Notion desktop app with enhancements.
@@ -1262,6 +1261,7 @@ in {
       s-tui # CLI: Stress Terminal UI monitoring tool.
       cpu-x # GUI: CPU, motherboard, and system information tool.
       hddtemp # CLI: Tool for displaying hard disk temperature.
+      d-spy # GUI: D-Bus exploration tool.
       kernelshark # GUI: GUI for trace-cmd which is an interface for the Linux kernel ftrace subsystem.
       /*
       psensor # GUI: Hardware temperature monitor. (Removed due to lack of maintenance upstream)

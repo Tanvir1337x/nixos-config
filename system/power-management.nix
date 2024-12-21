@@ -1,9 +1,12 @@
 # Power Management Configuration
 _: {
-  # See other options here: <https://www.kernel.org/doc/html/v4.14/admin-guide/pm/cpufreq.html>
-  # Can also be changed through kernel config (CPU_FREQ_DEFAULT_GOV_PERFORMANCE=y)
-  # To check cpu governor: cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
-  powerManagement.cpuFreqGovernor = "performance";
+  powerManagement = {
+    enable = true; # This includes support for suspend-to-RAM and powersave features.
+    # See other options here: <https://www.kernel.org/doc/html/v4.14/admin-guide/pm/cpufreq.html>
+    # Can also be changed through kernel config (CPU_FREQ_DEFAULT_GOV_PERFORMANCE=y)
+    # To check cpu governor: cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+    cpuFreqGovernor = "performance";
+  };
 
   /*
   services.hddfancontrol = {
