@@ -215,6 +215,8 @@ in {
       # End of OSINT
 
       # Command-Line Utilities
+      see # CLI: Cute cat(1) for the terminal.
+      moar # CLI: Nice-to-use pager for humans.
       youtube-tui # TUI: Aesthetically pleasing YouTube TUI written in Rust.
       argc # CLI: Command-line options, arguments, and sub-commands parser for Bash.
       grc # CLI: Generic text colorizer.
@@ -229,6 +231,7 @@ in {
       gping # CLI: Ping with a graphical representation.
       yq # CLI: Command-line YAML/XML/TOML processor.
       cointop # CLI: Terminal-based UI for tracking cryptocurrencies.
+      terminal-stocks # CLI: Terminal based application that provides stock price information.
       glow # CLI: Renders Markdown on the CLI with styling.
       kmon # CLI: Linux Kernel Manager and Activity Monitor.
       dropwatch # CLI: Linux kernel dropped packet monitor.
@@ -288,14 +291,37 @@ in {
 
       # Fun/Novelty Tools
       cmatrix # CLI: Simulates The Matrix "falling code" effect.
+      neo # CLI: Simulates the digital rain from "The Matrix".
       figlet # CLI: Creates large letters from text.
+      toilet # CLI: Display large colourful characters in text mode.
       lolcat # CLI: Rainbow-colored 'cat'.
+      dotacat # CLI: Like lolcat, but fast.
       gay # CLI: Colors text with rainbow colors.
+      blahaj # CLI: Gay sharks at your local terminal.
       cowsay # CLI: Generates ASCII pictures of a cow with a message.
       ponysay # CLI: Cowsay reimplementation with ponies.
+      kittysay # CLI: Cowsay, but with a cute kitty.
+      charasay # CLI: Future of cowsay - Colorful characters saying something.
       pokemonsay # CLI: Prints Pokémon in the CLI.
       cbonsai # CLI: Grows bonsai trees in your terminal.
       genact # CLI: Nonsense activity generator.
+      nyancat # CLI: Nyancat in your terminal, rendered through ANSI escape sequences.
+      terminal-parrot # CLI: Shows colorful, animated party parrot in your terminial.
+      doge # CLI: Wow very terminal doge.
+      fortune # CLI: Program that displays a pseudorandom message from a database of quotations.
+      banner # CLI: Print large banners to ASCII terminals.
+      pipes # CLI: Animated pipes terminal screensaver.
+      hollywood # CLI: Fill your console with Hollywood melodrama technobabble.
+      nms # CLI: A command line tool that recreates the famous data decryption effect seen in the 1992 movie Sneakers.
+      asciiquarium-transparent # CLI: Aquarium/sea animation in ASCII art (with option of transparent background).
+      xkcdpass # CLI: Generate secure multiword passwords/passphrases, inspired by XKCD.
+      fireplace # CLI: Cozy fireplace in your terminal.
+      krabby # CLI: Print pokemon sprites in your terminal.
+      lavat # CLI: Lava lamp simulation in the terminal.
+      /*
+      fortune-kind # CLI: Kinder, curated fortune, written in rust.
+      asciiquarium # CLI: Enjoy the mysteries of the sea from the safety of your own terminal.
+      */
       # End of Fun/Novelty Tools
 
       # Nix Tools
@@ -445,6 +471,7 @@ in {
       distrobox-tui # CLI: A TUI for DistroBox.
       boxbuddy # GUI: Unofficial GUI for managing your Distroboxes.
       lazydocker # TUI: Terminal UI for Docker and Docker Compose.
+      podman-tui # TUI: Podman Terminal UI.
       junest # CLI: Arch Linux distribution that runs on top of another without root.
       boxbuddy # GUI: Unofficial GUI for managing your Distroboxes, written with GTK4 + Libadwaita.
       gnome-boxes # GUI: GNOME application for accessing virtual systems.
@@ -809,14 +836,16 @@ in {
       # End of File Managers
 
       # Terminal Emulators
-      /*
-      kitty # GUI: GPU-accelerated terminal emulator.
-      alacritty # GUI: GPU-accelerated terminal emulator.
-      wezterm # GUI: GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust.
+      waveterm # GUI: Open-source, cross-platform terminal for seamless workflows.
       warp-terminal # GUI: The modern intelligent terminal.
       xfce.xfce4-terminal # GUI: Modern terminal emulator for the Xfce desktop.
       mate.mate-terminal # GUI: Terminal emulator for MATE.
       lxterminal # GUI: Standard terminal emulator of LXDE.
+      blackbox-terminal # GUI: Beautiful GTK 4 terminal.
+      /*
+      kitty # GUI: GPU-accelerated terminal emulator.
+      alacritty # GUI: GPU-accelerated terminal emulator.
+      wezterm # GUI: GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust.
       */
       # End of Terminal Emulators
 
