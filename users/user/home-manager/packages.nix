@@ -580,6 +580,15 @@ in {
       */
       # End of Networking Tools
 
+      # Research Tools
+      /*
+      zotero # GUI: Collect, organize, cite, and share your research sources.
+      zotero-beta # GUI: Beta version of Zotero.
+      polymake # GUI: Software for research in polyhedral geometry.
+      yara-x # CLI: Tool to do pattern matching for malware research by VirusTotal.
+      /*
+      # End of Research Tools
+
       # Nim
       /*
       nim-unwrapped # CLI: Statically typed, imperative programming language.
@@ -605,6 +614,9 @@ in {
       #-- Discord Clients
       vesktop # GUI: Alternate Discord client by Vencord with built-in features.
       discord # GUI: Official Discord client.
+      discord-ptb # GUI: Discord Public Test Build.
+      discord-canary # GUI: Discord Canary Build.
+      discord-development # GUI: Discord Development Build.
       legcord # GUI: Lightweight, alternative desktop client for Discord.
       webcord # GUI: A Discord and SpaceBar electron-based client implemented without Discord API.
       ripcord # GUI: Proprietary client for Discord and Slack.
@@ -771,6 +783,7 @@ in {
       # End of Compression and Archiving Tools
 
       # Document Viewers
+      sioyek # GUI: PDF viewer designed for research papers and technical books.
       evince # GUI: GNOME document viewer.
       mate.atril # GUI: Multi-page document viewer for MATE.
       libsForQt5.okular # GUI: KDE document viewer.
