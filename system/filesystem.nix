@@ -123,6 +123,7 @@
       options = ["subvol=home" "compress=zstd:8" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
     };
 
+    /*
     # SATA HDDs
     "/mnt/media1" = {
       device = "/dev/disk/by-uuid/2decf340-db87-4575-b46f-46c0bd0d585f";
@@ -145,32 +146,6 @@
     # SATA SSDs
     "/mnt/media4" = {
       device = "/dev/disk/by-uuid/b41447d4-6b72-40e2-a815-94191c1290ea";
-      fsType = "btrfs";
-      options = ["compress=zstd:7" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
-    };
-
-    /*
-    "/mnt/radare" = {
-      device = "/dev/disk/by-uuid/";
-      fsType = "btrfs";
-      options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
-    };
-
-    "/mnt/sonare" = {
-      device = "/dev/disk/by-uuid/";
-      fsType = "btrfs";
-      options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
-    };
-
-    "/mnt/whispare" = {
-      device = "/dev/disk/by-uuid/";
-      fsType = "btrfs";
-      options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
-    };
-
-    # SSDs
-    "/mnt/homare" = {
-      device = "/dev/disk/by-uuid/";
       fsType = "btrfs";
       options = ["compress=zstd:7" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
     };
