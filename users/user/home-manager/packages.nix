@@ -420,7 +420,12 @@ in {
       tshark # CLI: Powerful network protocol analyzer. WireShark CLI.
       termshark # TUI: Terminal UI for wireshark-cli, inspired by Wireshark.
       nmap # CLI: Free and open source utility for network discovery and security auditing.
+      httrack # CLI: Offline browser and website mirroring utility.
+      katana # CLI: Next-generation crawling and spidering framework.
+      dnsrecon # CLI: DNS enumeration script.
+      dig # CLI: DNS lookup utility.
       /*
+      sniffnet # GUI: Cross-platform network traffic monitor.
       wireshark # GUI: Powerful network protocol analyzer.
       traceroute # CLI: Tracks the route taken by packets over an IP network.
       */
@@ -600,16 +605,6 @@ in {
       miru # GUI: Stream anime torrents, real-time with no waiting for downloads.
       # End of Anime/Manga downloaders
       # End of Downloaders
-
-      # Networking Tools
-      /*
-      httrack # CLI: Offline browser and website mirroring utility.
-      katana # CLI: Next-generation crawling and spidering framework.
-      dnsrecon # CLI: DNS enumeration script.
-      dig # CLI: DNS lookup utility.
-      sniffnet # GUI: Cross-platform network traffic monitor.
-      */
-      # End of Networking Tools
 
       # Research Tools
       /*
