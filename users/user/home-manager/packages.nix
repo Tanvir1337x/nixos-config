@@ -434,24 +434,28 @@ in {
       # End of Data Recovery
 
       # Debuggers
-      /*
       strace # CLI: System call tracer.
       valgrind # CLI: Debugging and profiling tool suite.
-      */
       # End of Debuggers
 
       # CAD Software
-      /*
       freecad # GUI: Open-source 3D CAD/MCAD/CAx/CAE/PLM modeler.
-      openscad # GUI: 3D parametric model compiler.
       openscad-unstable # GUI: Unstable version of OpenSCAD.
+      design # GUI: 2D CAD For GNOME.
+      qcad # GUI: 2D CAD package based on Qt.
+      librecad # GUI: 2D CAD package based on Qt.
+      solvespace # GUI: Parametric 3d CAD program.
+      leocad # GUI: CAD program for creating virtual LEGO models.
+      maskromtool # GUI: CAD tool for extracting bits from Mask ROM photographs.
+      /*
       brlcad # GUI: BRL-CAD is a powerful cross-platform open source combinatorial solid modeling system.
+      openscad # GUI: 3D parametric model compiler.
       */
       # End of CAD Software
 
       # 3D Modeling and Animation
-      /*
       blender # GUI: 3D creation/animation/publishing system.
+      /*
       blender-hip # GUI: Blender with HIP support for AMD GPUs.
       */
       # End of 3D Modeling and Animation
