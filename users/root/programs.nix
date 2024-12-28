@@ -33,6 +33,8 @@
       package = pkgs.wireshark;
     };
 
+    sniffnet.enable = true;
+
     traceroute.enable = true;
 
     steam = {
