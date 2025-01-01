@@ -10,9 +10,8 @@ in {
     services = {
       gnome-keyring.enable = true;
 
-      /*
       xsettingsd = {
-        enable = false;
+        enable = true;
         settings = {
           # Font
           "Xft/Antialias" = 1;
@@ -29,7 +28,6 @@ in {
           "Net/CursorBlink" = 1;
         };
       };
-      */
 
       flameshot = {
         enable = true;
