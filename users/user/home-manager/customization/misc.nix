@@ -10,18 +10,18 @@ in {
     home = {
       pointerCursor = {
         gtk.enable = true;
-        package = pkgs.afterglow-cursors-recolored;
-        name = "Afterglow-Recolored-Catppuccin-Maroon";
-        size = 38;
+        package = pkgs.bibata-cursors;
+        name = "Bibata-Original-Classic";
+        size = 32;
 
         x11 = {
           enable = true;
-          defaultCursor = "Afterglow-Recolored-Catppuccin-Maroon";
+          defaultCursor = "Bibata-Original-Classic";
         };
 
         hyprcursor = {
           enable = false;
-          size = 38;
+          size = 32;
         };
       };
     };

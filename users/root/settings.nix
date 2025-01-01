@@ -73,8 +73,8 @@
     # EDITOR = "micro";
     # VISUAL = "micro";
 
-    # XCURSOR_THEME = "Afterglow-Recolored-Catppuccin-Maroon";
-    # XCURSOR_SIZE = "30";
+    # XCURSOR_THEME = "Bibata-Original-Classic";
+    # XCURSOR_SIZE = "32";
 
     # QT_QPA_PLATFORM = "qt5ct";
     # QT_STYLE_OVERRIDE = "kvantum";

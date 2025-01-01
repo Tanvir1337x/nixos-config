@@ -21,9 +21,9 @@ in {
       };
 
       cursorTheme = {
-        package = pkgs.afterglow-cursors-recolored;
-        name = "Afterglow-Recolored-Catppuccin-Maroon";
-        size = 38;
+        package = pkgs.bibata-cursors;
+        name = "Bibata-Original-Classic";
+        size = 32;
       };
 
       font = {

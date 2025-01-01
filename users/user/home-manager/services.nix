@@ -23,7 +23,7 @@ in {
           # Theme
           "Net/ThemeName" = "Colloid-Dark";
           "Net/IconThemeName" = "Tela-black-dark";
-          "Gtk/CursorThemeName" = "Afterglow-Recolored-Catppuccin-Maroon";
+          "Gtk/CursorThemeName" = "Bibata-Original-Classic";
 
           # Misc
           "Net/CursorBlink" = 1;
