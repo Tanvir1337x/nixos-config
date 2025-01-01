@@ -1004,6 +1004,7 @@ in {
       nitrogen # GUI: Wallpaper browser and setter for X11.
       hyprpaper # GUI: Wayland wallpaper utility.
       swww # CLI: Animated wallpaper daemon for Wayland.
+      */
       #- End of Wallpaper Managers
       themix-gui # GUI: Theme designer with plugin support.
       lxappearance # GUI: Configures themes and fonts for GTK applications.
@@ -1013,7 +1014,6 @@ in {
       libsForQt5.qt5ct # GUI: Qt5 configuration tool.
       libsForQt5.qtstyleplugins # PLUGIN: Additional style plugins for Qt5.
       libsForQt5.qtstyleplugin-kvantum # GUI: Qt5 theme engine and configuration tool.
-      */
       # End of Desktop Customization Tools
 
       # Network Management
