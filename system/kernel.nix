@@ -73,15 +73,9 @@
         # For Xanmod kernel
         # CAUTION: Don't include newlines in extraConfig. It breaks the configuration file generation.
         extraConfig = ''
-          WERROR y
-          DEFAULT_HOSTNAME Cookie
           MNATIVE_AMD y
           CC_OPTIMIZE_FOR_PERFORMANCE y
           KERNEL_ZSTD y
-          MODULE_COMPRESS_NONE n
-          MODULE_COMPRESS_GZIP n
-          MODULE_COMPRESS_XZ n
-          MODULE_COMPRESS_ZSTD y
           ZSWAP_COMPRESSOR_DEFAULT_ZSTD y
           HIBERNATION_COMP_LZO n
           HIBERNATION_COMP_LZ4 y
@@ -99,13 +93,6 @@
           PREEMPT y
           PREEMPT_VOLUNTARY n
           PREEMPT_DYNAMIC y
-          TCP_CONG_BBR y
-          DEFAULT_BBR y
-          DEFAULT_TCP_CONG bbr
-          RCU_EXPERT y
-          RCU_BOOST y
-          RCU_BOOST_DELAY 0
-          RCU_EXP_KTHREAD y
           SCHEDSTATS y
         '';
       }
@@ -115,6 +102,23 @@
       SCHED_CLASS_EXT y
       SCHED_ALT y
       SCHED_PDS y
+      */
+      /*
+      WERROR y
+      DEFAULT_HOSTNAME Cookie
+
+      MODULE_COMPRESS_NONE n
+      MODULE_COMPRESS_GZIP n
+      MODULE_COMPRESS_XZ n
+      MODULE_COMPRESS_ZSTD y
+
+      TCP_CONG_BBR y
+      DEFAULT_BBR y
+      DEFAULT_TCP_CONG bbr
+      RCU_EXPERT y
+      RCU_BOOST y
+      RCU_BOOST_DELAY 0
+      RCU_EXP_KTHREAD y
       */
     ];
 
