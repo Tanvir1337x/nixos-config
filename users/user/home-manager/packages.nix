@@ -325,6 +325,7 @@ in {
       # End of Fun/Novelty Tools
 
       # Nix Tools
+      comma # CLI: Runs programs without installing them.
       nixd # Daemon: Nix language server.
       alejandra # CLI: Nix code formatter.
       statix # CLI: Linter and code suggestion tool for Nix.
