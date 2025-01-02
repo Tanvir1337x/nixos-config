@@ -1182,8 +1182,8 @@
       # port = 9292; # Default: 9117
     };
 
-    # <https://wiki.nixos.org/wiki/GNOME#Running_ancient_applications>
-    dbus.packages = with pkgs; [gnome2.GConf];
+    # <https://wiki.nixos.org/wiki/GNOME#To_run_old_applications>
+    # dbus.packages = with pkgs; [gnome2.GConf];
 
     # Automatically lock the screen after a period of inactivity
     xserver.xautolock = {
