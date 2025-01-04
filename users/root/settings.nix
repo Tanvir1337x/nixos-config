@@ -34,6 +34,9 @@
     # <https://docs.brew.sh/Analytics>
     HOMEBREW_NO_ANALYTICS = "1";
 
+    # <https://github.com/mem0ai/mem0?tab=readme-ov-file#anonymous-telemetry>
+    MEM0_TELEMETRY = "false";
+
     # <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_telemetry>
     POWERSHELL_TELEMETRY_OPTOUT = "1";
 
