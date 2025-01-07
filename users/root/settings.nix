@@ -79,7 +79,7 @@
     # XCURSOR_THEME = "Bibata-Original-Classic";
     # XCURSOR_SIZE = "32";
 
-    # QT_QPA_PLATFORM = "qt5ct";
+    # QT_QPA_PLATFORM = "qt6ct";
     # QT_STYLE_OVERRIDE = "kvantum";
 
     # Prevents Qt5 from auto-scaling the UI depending on screen DPI

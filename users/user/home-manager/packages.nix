@@ -83,7 +83,7 @@ in {
       just # CLI: Saves and runs project-specific commands.
       github-desktop # GUI: GUI for managing Git repositories and interacting with GitHub.
       meld # GUI: Visual diff and merge tool.
-      libsForQt5.kompare # GUI: Diff/patch frontend for KDE.
+      kdePackages.kompare # GUI: Diff/patch frontend for KDE.
       diffuse # GUI: Graphical tool for merging and comparing text files.
       code2prompt # CLI: Converts codebases into LLM prompts with source tree, templating, and token counting.
       processing # GUI: Language and IDE for electronic arts and visual programming.
@@ -181,7 +181,7 @@ in {
       # File Sharing
       /*
       localsend # GUI: Open source cross-platform alternative to AirDrop.
-      libsForQt5.kdeconnect-kde # GUI: KDE Connect integrates phone and computer.
+      kdePackages.kdeconnect-kde # GUI: KDE Connect integrates phone and computer.
       */
       # End of File Sharing
 
@@ -517,7 +517,7 @@ in {
       stockfish # Engine: Strong open-source chess engine.
       fairymax # Engine: Chess engine supporting fairy pieces.
       #- End of Chess Engines
-      libsForQt5.knights # GUI: Chess game for KDE.
+      kdePackages.knights # GUI: Chess game for KDE.
       */
       # End of Games
 
@@ -664,7 +664,7 @@ in {
       #-- End of Discord Miscellaneous
       #- Matrix Clients
       element-desktop # GUI: Popular Matrix client.
-      libsForQt5.neochat # GUI: KDE Matrix client.
+      kdePackages.neochat # GUI: KDE Matrix client.
       fractal # GUI: Matrix group messaging app.
       nheko # GUI: Desktop client for the Matrix protocol.
       cinny-desktop # GUI: Matrix client for desktop.
@@ -704,7 +704,7 @@ in {
       oculante # GUI: Minimalistic cross-platform image viewer.
       meh # GUI: Minimal image viewer using raw XLib.
       image-roll # GUI: GTK image viewer with basic image manipulation tools.
-      libsForQt5.gwenview # GUI: KDE image viewer.
+      kdePackages.gwenview # GUI: KDE image viewer.
       nsxiv # GUI: Suckless X image viewer.
       nomacs # GUI: Qt-based image viewer.
       napari # GUI: Fast, interactive, multi-dimensional image viewer.
@@ -778,7 +778,7 @@ in {
       # Compression and Archiving Tools
       mate.engrampa # GUI: Archive manager for MATE.
       lxqt.lxqt-archiver # GUI: Archive tool for LXQt.
-      libsForQt5.ark # GUI: KDE archive manager.
+      kdePackages.ark # GUI: KDE archive manager.
       xarchiver # GUI: GTK frontend for various archive formats (open and extract only).
       archiver # GUI: Create and extract archives, compress and decompress files.
       file-roller # GUI: Archive manager from GNOME.
@@ -813,7 +813,7 @@ in {
       sioyek # GUI: PDF viewer designed for research papers and technical books.
       evince # GUI: GNOME document viewer.
       mate.atril # GUI: Multi-page document viewer for MATE.
-      libsForQt5.okular # GUI: KDE document viewer.
+      kdePackages.okular # GUI: KDE document viewer.
       zathura # GUI: Highly customizable PDF viewer.
       llpp # GUI: MuPDF-based PDF pager written in OCaml.
       mupdf # GUI: Lightweight PDF, XPS, and ebook viewer.
@@ -827,8 +827,8 @@ in {
 
       # File Managers
       /*
-      libsForQt5.dolphin # GUI: KDE file manager.
-      libsForQt5.dolphin-plugins # PLUGIN: Plugins for Dolphin.
+      kdePackages.dolphin # GUI: KDE file manager.
+      kdePackages.dolphin-plugins # PLUGIN: Plugins for Dolphin.
       krusader # GUI: Twin-panel file manager for KDE.
       spaceFM # GUI: Multi-panel tabbed file manager.
       pcmanfm # GUI: File manager with GTK interface.
@@ -945,7 +945,8 @@ in {
       #- Video Editors
       losslesscut-bin # GUI: Lossless video/audio editor.
       openshot-qt # GUI: Free, open-source video editor.
-      libsForQt5.kdenlive # GUI: KDE video editor.
+      kdePackages.kdenlive # GUI: KDE video editor.
+      kdePackages.kwave # GUI: KDE sound editor.
       lightworks # GUI: Professional non-linear video editor.
       flowblade # GUI: Multitrack non-linear video editor.
       olive-editor # GUI: Professional open-source NLE video editor.
@@ -1012,9 +1013,10 @@ in {
       themechanger # GUI: Theme changing utility.
       nwg-look # GUI: Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based Wayland environment.
       wpgtk # GUI: Wallpaper and colorscheme generator and manager.
+      kdePackages.qt6ct # GUI: Qt6 configuration tool.
       libsForQt5.qt5ct # GUI: Qt5 configuration tool.
       libsForQt5.qtstyleplugins # PLUGIN: Additional style plugins for Qt5.
-      libsForQt5.qtstyleplugin-kvantum # GUI: Qt5 theme engine and configuration tool.
+      kdePackages.qtstyleplugin-kvantum # GUI: Qt5 theme engine and configuration tool.
       # End of Desktop Customization Tools
 
       # Network Management
@@ -1119,7 +1121,7 @@ in {
       stellarium # GUI: Free and open-source planetarium.
       celestia # GUI: Real-time 3D space simulation.
       kstars # GUI: Virtual planetarium and astronomy software.
-      libsForQt5.kalzium # GUI: Periodic Table of Elements.
+      kdePackages.kalzium # GUI: Periodic Table of Elements.
       */
       # End of Educational Software
 
@@ -1134,7 +1136,7 @@ in {
       # Software Centers
       /*
       gnome.gnome-software # GUI: GNOME software center (supports Flathub).
-      libsForQt5.discover # GUI: KDE software center (supports Flathub).
+      kdePackages.discover # GUI: KDE software center (supports Flathub).
       */
       # End of Software Centers
 
@@ -1203,7 +1205,7 @@ in {
       gcolor3 # GUI: Color selector.
       gpick # GUI: Advanced color picker.
       eyedropper # GUI: Pick and format colors.
-      libsForQt5.kcolorchooser # GUI: KDE color chooser.
+      kdePackages.kcolorchooser # GUI: KDE color chooser.
       kdePackages.kcolorpicker # GUI: Qt based Color Picker with popup menu.
       # End of Color Pickers
 
