@@ -21,14 +21,14 @@
     */
 
     user.services = {
-      polkit-gnome-authentication-agent-1 = {
-        description = "polkit-gnome-authentication-agent-1";
+      polkit-kde-authentication-agent-1 = {
+        description = "polkit-kde-authentication-agent-1";
         wantedBy = ["xdg-desktop-portal.service"];
         wants = ["xdg-desktop-portal.service"];
         after = ["xdg-desktop-portal.service"];
         serviceConfig = {
           Type = "simple";
-          ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+          ExecStart = "${pkgs.libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
           Restart = "on-failure";
           RestartSec = 1;
           TimeoutStopSec = 10;
@@ -80,14 +80,14 @@
       */
 
       /*
-      polkit-kde-authentication-agent-1 = {
-        description = "polkit-kde-authentication-agent-1";
+      polkit-gnome-authentication-agent-1 = {
+        description = "polkit-gnome-authentication-agent-1";
         wantedBy = ["xdg-desktop-portal.service"];
         wants = ["xdg-desktop-portal.service"];
         after = ["xdg-desktop-portal.service"];
         serviceConfig = {
           Type = "simple";
-          ExecStart = "${pkgs.libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
+          ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
           Restart = "on-failure";
           RestartSec = 1;
           TimeoutStopSec = 10;

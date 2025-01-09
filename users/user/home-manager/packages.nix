@@ -204,7 +204,7 @@ in {
       kdePackages.kgpg # GUI: Simple interface for GnuPG, a powerful encryption utility.
       gnome-obfuscate # GUI: Censors private information in images.
       /*
-      seahorse # GUI: Application for managing encryption keys and passwords in the Gnome Keyring.
+      seahorse # GUI: Application for managing encryption keys and passwords in the GnomeKeyring.
       veracrypt # GUI: On-the-fly encryption software.
       */
       # End of Encryption
