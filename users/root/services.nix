@@ -449,6 +449,9 @@
 
         # TODO: openrefine
         # TRACKING: <https://github.com/NixOS/nixpkgs/issues/364168>
+
+        # TODO: qBittorrent WebUI
+        # <https://github.com/qbittorrent/qBittorrent/wiki/NGINX-Reverse-Proxy-for-Web-UI>
       };
     };
 
@@ -1169,14 +1172,13 @@
     #- <https://github.com/jellyfin/jellyfin-media-player>
     # services.jellyfin.enable = true;
 
-    # TODO: SABnzbd, Spacedrive (https://www.spacedrive.com)
+    # TODO: SABnzbd
 
     # TODO: setup PhotoPrism
     #- <https://wiki.nixos.org/wiki/PhotoPrism>
 
     # <https://github.com/Jackett/Jackett>
-    # Use <https://github.com/FlareSolverr/FlareSolverr> in addition
-    # Tracking: <https://github.com/NixOS/nixpkgs/issues/294789>
+    # Use <https://github.com/FlareSolverr/FlareSolverr> in addition to Jackett
     jackett = {
       enable = true; # WebUI: http://127.0.0.1:9117
       # port = 9292; # Default: 9117

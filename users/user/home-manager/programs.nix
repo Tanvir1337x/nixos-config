@@ -232,11 +232,14 @@ in {
         ];
       };
 
-      # TODO: Configure the aria2 package
       aria2 = {
         enable = true;
-        # extraConfig =
-        # settings = {}
+
+        settings = {
+          seed-ratio = 0;
+          continue = true;
+          quiet = false;
+        };
       };
 
       thefuck = {
