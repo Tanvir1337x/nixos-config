@@ -123,33 +123,31 @@
       options = ["subvol=home" "compress=zstd:8" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
     };
 
-    /*
-    # SATA HDDs
+    # SATA SSDs
     "/mnt/media1" = {
-      device = "/dev/disk/by-uuid/2decf340-db87-4575-b46f-46c0bd0d585f";
+      device = "/dev/disk/by-uuid/13eb777e-94d2-450c-8790-0bf9aec9427e";
       fsType = "btrfs";
-      options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
+      options = ["compress=zstd:7" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
     };
 
+    # SATA HDDs
     "/mnt/media2" = {
-      device = "/dev/disk/by-uuid/19555de1-efde-4669-8544-034e2a5dd6d7";
+      device = "/dev/disk/by-uuid/207a0e00-6262-451d-9392-9e93e0e2a26d";
       fsType = "btrfs";
       options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
     };
 
     "/mnt/media3" = {
-      device = "/dev/disk/by-uuid/50324084-8cf5-40ef-b6ee-aad441063567";
+      device = "/dev/disk/by-uuid/47c033ef-d0c1-4069-84c5-a60fd5ea7ce2";
       fsType = "btrfs";
       options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
     };
 
-    # SATA SSDs
     "/mnt/media4" = {
-      device = "/dev/disk/by-uuid/b41447d4-6b72-40e2-a815-94191c1290ea";
+      device = "/dev/disk/by-uuid/9730427c-e271-4f15-be9e-d7dac7cf0f81";
       fsType = "btrfs";
-      options = ["compress=zstd:7" "noatime" "nodiratime" "ssd_spread" "discard=async" "space_cache=v2"];
+      options = ["compress=zstd:6" "noatime" "nodiratime" "autodefrag" "space_cache=v2"];
     };
-    */
 
     # ntfs drives - Requires fast boot to be disabled in Windows for write support
     /*
