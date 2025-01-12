@@ -43,6 +43,10 @@ in {
           "file:///home/user"
           "file:///home/user/downloads"
           "file:///home/user/media/pictures/screenshots"
+          "file:///mnt/media1"
+          "file:///mnt/media2"
+          "file:///mnt/media3"
+          "file:///mnt/media4"
           # "file:///mnt/windows"
           # "file:///mnt/games"
         ];
