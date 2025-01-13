@@ -12,6 +12,14 @@ in {
     ...
   }: {
     programs = {
+      gpg = {
+        enable = true;
+
+        settings = {
+          no-comments = false;
+        };
+      };
+
       firefox = {
         enable = true;
         package = pkgs.firefox-esr;
@@ -891,7 +899,6 @@ in {
         };
       };
 
-      gpg.enable = true;
       lazygit.enable = true;
       gitui.enable = true;
 
