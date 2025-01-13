@@ -87,6 +87,9 @@ in {
       diffuse # GUI: Graphical tool for merging and comparing text files.
       code2prompt # CLI: Converts codebases into LLM prompts with source tree, templating, and token counting.
       processing # GUI: Language and IDE for electronic arts and visual programming.
+      bootstrap-studio # GUI: Drag-and-drop designer for bootstrap.
+      termius # GUI: Cross-platform SSH client with cloud data sync and more.
+      figma-linux # GUI: Unofficial Electron-based Figma desktop app for Linux.
       /*
       serie # CLI: Displays a rich Git commit graph in your terminal.
       github-copilot-cli # CLI: Command-line interface for GitHub Copilot.
@@ -204,7 +207,7 @@ in {
       kdePackages.kgpg # GUI: Simple interface for GnuPG, a powerful encryption utility.
       gnome-obfuscate # GUI: Censors private information in images.
       /*
-      seahorse # GUI: Application for managing encryption keys and passwords in the GnomeKeyring.
+      seahorse # GUI: Application for managing encryption keys and passwords in the Gnome Keyring.
       veracrypt # GUI: On-the-fly encryption software.
       */
       # End of Encryption
@@ -1248,7 +1251,6 @@ in {
       sonic-visualiser # GUI: Music audio analysis tool.
       qtchan # GUI: 4chan browser.
       gnome-podcasts # GUI: Podcast client for GNOME.
-      figma-linux # GUI: Unofficial Figma desktop app for Linux.
       mousai # GUI: Music identification tool.
       wike # GUI: Wikipedia reader for GNOME.
       gnome-dictionary # GUI: Dictionary application for GNOME.
