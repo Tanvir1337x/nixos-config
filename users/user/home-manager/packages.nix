@@ -136,12 +136,10 @@ in {
       # End of Android
 
       # Cloud Storage Clients
-      /*
       megasync # Tray: MEGA Cloud Drive client.
       onedrivegui # GUI: OneDrive client with multi-account support.
       maestral-gui # GUI: GUI for Maestral, an open-source Dropbox client.
       cozy-drive # GUI: Cozy Cloud synchronization tool.
-      */
       # End of Cloud Storage Clients
 
       # TeX/LaTeX
