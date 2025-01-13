@@ -141,6 +141,8 @@ in {
         enableScDaemon = true;
         grabKeyboardAndMouse = true;
 
+        pinentryPackage = pkgs.pinentry-gnome3;
+
         enableBashIntegration = true;
         enableFishIntegration = true;
         enableZshIntegration = true;
