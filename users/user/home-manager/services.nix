@@ -137,6 +137,7 @@ in {
 
       gpg-agent = {
         enable = true;
+        verbose = true;
         enableSshSupport = true;
         enableScDaemon = true;
         grabKeyboardAndMouse = true;
