@@ -4,6 +4,7 @@
     # USER.hblock # cli: shell script for blocking ads, malware and tracking domains
     gparted # GUI: partition manager for gnome.
     libnotify # LIBRARY/CLI: Sends desktop notifications.
+    libsecret # LIBRARY: Library for storing and retrieving passwords and other secrets.
 
     firmware-updater # GUI: Firmware Updater for Linux.
     firmware-manager # GUI: Graphical frontend for firmware management.
