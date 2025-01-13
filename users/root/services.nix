@@ -1105,15 +1105,21 @@
 
     # https://wiki.nixos.org/wiki/SSH_public_key_authentication
     openssh = {
-      enable = false;
-      allowSFTP = false;
+      enable = true;
+      startWhenNeeded = true;
+      allowSFTP = true;
+      ports = [22];
+      openFirewall = true;
+
       settings = {
-        passwordAuthentication = true; # setting it to false requires public key authentication for better security
-        challengeResponseAuthentication = true;
-        kbdInteractiveAuthentication = false;
+        LogLevel = "VERBOSE";
+        X11Forwarding = true;
+        UsePAM = true;
+        PrintMotd = true;
         PermitRootLogin = "yes";
+        PasswordAuthentication = false; # setting it to false requires public key authentication for better security
+        challengeResponseAuthentication = true;
         AllowTcpForwarding = "yes";
-        X11Forwarding = "yes";
         AllowAgentForwarding = "yes";
         AllowStreamLocalForwarding = "yes";
         # AuthenticationMethods = "publickey";
