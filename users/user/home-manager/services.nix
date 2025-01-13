@@ -138,6 +138,13 @@ in {
       gpg-agent = {
         enable = true;
         enableSshSupport = true;
+        enableScDaemon = true;
+        grabKeyboardAndMouse = true;
+
+        enableBashIntegration = true;
+        enableFishIntegration = true;
+        enableZshIntegration = true;
+        enableNushellIntegration = true;
       };
 
       spotifyd = {
