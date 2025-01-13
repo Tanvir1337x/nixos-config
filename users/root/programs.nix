@@ -173,6 +173,17 @@
     # <https://wiki.nixos.org/wiki/Thunar#Configuration>
     xfconf.enable = true;
 
+    ssh = {
+      # Start the OpenSSH agent when you log in.
+      # The OpenSSH agent remembers private keys for you
+      # so that you don’t have to type in passphrases
+      # every time you make an SSH connection
+      # startAgent = true; # Note: Can't use ssh-agent and GnuPG agent with SSH support enabled at the same time
+      enableAskPassword = true;
+      forwardX11 = true;
+      agentTimeout = null; # Keep the private keys in memory forever
+    };
+
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
