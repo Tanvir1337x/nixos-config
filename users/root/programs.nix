@@ -184,12 +184,16 @@
       agentTimeout = null; # Keep the private keys in memory forever
     };
 
-    gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-      enableBrowserSocket = true;
-      enableExtraSocket = true;
-      pinentryPackage = pkgs.pinentry-gnome3;
+    gnupg = {
+      dirmngr.enable = true;
+
+      agent = {
+        enable = true;
+        enableSSHSupport = true;
+        enableBrowserSocket = true;
+        enableExtraSocket = true;
+        pinentryPackage = pkgs.pinentry-gnome3;
+      };
     };
 
     # <https://wiki.nixos.org/wiki/Git>
