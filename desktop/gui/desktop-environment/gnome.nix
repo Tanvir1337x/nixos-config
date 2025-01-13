@@ -6,6 +6,13 @@
     desktopManager.gnome.enable = true;
   };
 
+  # Simply using gdm/login there won’t work because GNOME keyring
+  # is supposed to be unlocked as part of gdm-password service
+  # <https://discourse.nixos.org/t/login-keyring-did-not-get-unlocked-hyprland/40869/12?u=tanvir1337x>
+  # security.pam.services.gdm.enableGnomeKeyring = true; # Load gnome-keyring at startup
+  security.pam.services.gdm-password.enableGnomeKeyring = true; # Load gnome-keyring at login
+  # security.pam.services.greetd.enableGnomeKeyring = true; # Load gnome-keyring at login
+
   services = {
     # Browser integration
     gnome.gnome-browser-connector.enable = true;
