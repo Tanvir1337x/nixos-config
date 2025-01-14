@@ -52,6 +52,16 @@ self: super: {
 }
 ```
 
+Disable the tests for jackett:
+
+```nix
+nixpkgs.overlays = [
+  (final: prev: {
+    jackett = prev.jackett.overrideAttrs {doCheck = false;};
+  })
+];
+```
+
 For Python packages:
 
 ```nix
