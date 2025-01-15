@@ -149,6 +149,7 @@
     atop = {
       enable = true;
       atopgpu.enable = true;
+      netatop.enable = true;
 
       atopService.enable = false;
       atopRotateTimer.enable = false;
