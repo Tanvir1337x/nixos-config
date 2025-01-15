@@ -6,11 +6,7 @@ in {
     (import "${home-manager}/nixos")
   ];
 
-  home-manager.users.user = {
-    pkgs,
-    lib,
-    ...
-  }: {
+  home-manager.users.user = {pkgs, ...}: {
     programs = {
       gpg = {
         enable = true;
