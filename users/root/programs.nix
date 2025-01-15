@@ -149,6 +149,10 @@
     atop = {
       enable = true;
       atopgpu.enable = true;
+
+      atopService.enable = false;
+      atopRotateTimer.enable = false;
+      atopacctService.enable = false;
     };
 
     thunar = {
