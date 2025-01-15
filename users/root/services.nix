@@ -419,6 +419,37 @@
           };
         };
 
+        # qBittorrent WebUI Instance
+        "qbittorrent.local" = {
+          listen = [
+            {
+              addr = "127.0.0.1";
+              port = 80;
+            }
+          ];
+
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:1337";
+
+            extraConfig = ''
+              proxy_http_version 1.1;
+              proxy_set_header Host $proxy_host;
+              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+              proxy_set_header X-Forwarded-Host $http_host;
+              proxy_set_header X-Forwarded-Proto $scheme;
+              client_max_body_size 100M;
+              proxy_cookie_path / "/; Secure";
+            '';
+          };
+
+          locations."/robots.txt" = {
+            extraConfig = ''
+              rewrite ^/(.*)  $1;
+              return 200 "User-agent: *\nDisallow: /";
+            '';
+          };
+        };
+
         # slskd Instance
         /*
         "slskd.local" = {
@@ -451,9 +482,6 @@
 
         # TODO: openrefine
         # TRACKING: <https://github.com/NixOS/nixpkgs/issues/364168>
-
-        # TODO: qBittorrent WebUI
-        # <https://github.com/qbittorrent/qBittorrent/wiki/NGINX-Reverse-Proxy-for-Web-UI>
       };
     };
 
