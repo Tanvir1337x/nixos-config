@@ -77,6 +77,9 @@ _: {
 
       127.0.0.1 zeronet.local
       ::11 zeronet.local
+
+      127.0.0.1 qbittorrent.local
+      ::11 qbittorrent.local
     '';
 
     # <https://wiki.nixos.org/wiki/WireGuard>
